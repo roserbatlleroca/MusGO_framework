@@ -1,0 +1,117 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+
+project:
+  name: MusicLDM
+  link: https://github.com/RetroCirce/MusicLDM/?tab=readme-ov-file
+  background: popular
+  license: Attribution-NonCommercial-ShareAlike 4.0 International
+  notes:
+
+org:
+  name: University of California San Diego, Mila-Quebec Artificial Intelligence Institute,
+    University of Surrey, LAION
+  link:
+  notes:
+
+# [1] Open Source Code
+sourcecode:
+  class: partial
+  link: https://github.com/RetroCirce/MusicLDM/?tab=readme-ov-file
+  notes: 'System source code is available at GitHub repository & Hugging Face Diffusers. '
+
+# [2] Training data
+trainingdata:
+  class: partial
+  link:
+  notes: 'MusicLDM is trained on the Audiostock dataset, which contains 9000 music
+    tracks for training and 1000 tracks for testing. Dataset is not directly provided,
+    no information about the original sources accessibility or requirements is provided. '
+
+# [3] Model weights
+modelweights:
+  class: open
+  link:
+  notes: 'Model checkpoints are available here: https://drive.google.com/drive/folders/15VDVcIgf99YRM5oGXhRxa_Rowl54uWho?usp=sharing'
+
+# [4] Code documentation
+codedoc:
+  class: open
+  link:
+  notes: 'Description on how to use the code is provided in the GitHub repo and through
+    Hugging Face Diffusers. '
+
+# [5] Training procedure
+trainprocedure:
+  class: open
+  link:
+  notes: 'Training procedure is documented in the research article preprint and in
+    the appendix additional page for the peer-reviewed version: https://musicldm.github.io/appendix/.
+    Authors include specifications on hyperparameters, GPU requirements and model
+    configurations. '
+
+# [6] Evaluation procedure
+evalprocedure:
+  class: open
+  link:
+  notes: ''
+
+# [7] Research paper
+paper:
+  class: open
+  link: https://arxiv.org/pdf/2308.01546
+  notes: 'This article has been accepted at ICASSP 2024. The access of such paper
+    is limited to IEEE Xplore access: https://ieeexplore.ieee.org/document/10447265.
+    A preprint is available in arXiv: https://arxiv.org/pdf/2308.01546'
+  date:
+
+# [8] Licensing
+license:
+  class: partial
+  link:
+  notes: Attribution-NonCommercial-ShareAlike 4.0 International
+
+# [9] Model Card
+modelcard:
+  class: star
+  link:
+  notes: 'Available at HuggingFace: https://huggingface.co/ucsd-reach/musicldm Information
+    about model’s evaluation and limitations is missing and model’s architecture is
+    just mentioned.  '
+
+# [10] Datasheet
+datasheet:
+  class: star
+  link:
+  notes: 'There is a data card: https://github.com/LAION-AI/audio-dataset/blob/main/data_card/Audiostock.md.
+    However, content is limited to data sources origin and details on how to reproduce
+    the data collection. Details on curation and other considerations, such as consent,
+    limitations and selection strategies are missing. '
+
+# [11] Package
+package:
+  class: ∅
+  link:
+  notes: ''
+
+# [12] User-oriented application
+ux:
+  class: ∅
+  link:
+  notes: 'API is shut down temporarily. Should be released again soon. '
+
+# [13] Demo Page
+suppage:
+  class: star
+  link:
+  notes: https://musicldm.github.io/

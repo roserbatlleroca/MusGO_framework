@@ -1,0 +1,107 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+
+project:
+  name: JASCO
+  link: https://github.com/facebookresearch/audiocraft/blob/main/docs/JASCO.md
+  background: popular
+  license: ' Code is released under MIT, model weights are released under CC-BY-NC
+    4.0.'
+  notes:
+
+org:
+  name: The Hebrew University of Jerusalem, Meta AI
+  link:
+  notes:
+
+# [1] Open Source Code
+sourcecode:
+  class: open
+  link: https://github.com/facebookresearch/audiocraft/blob/main/docs/JASCO.md
+  notes: Code is avialble at https://github.com/facebookresearch/audiocraft/blob/main/docs/JASCO.md
+
+# [2] Training data
+trainingdata:
+  class: partial
+  link:
+  notes: 'They describe the datasets used to training their model. However, there
+    is a 10k songs set that is not described (proprietary data). '
+
+# [3] Model weights
+modelweights:
+  class: open
+  link:
+  notes: 'Pretrained models are accessible via API '
+
+# [4] Code documentation
+codedoc:
+  class: open
+  link:
+  notes: 'Code is documented in GitHub repo, including installation requirements. '
+
+# [5] Training procedure
+trainprocedure:
+  class: partial
+  link:
+  notes: 'Training procedure is described in the research paper, but hardware requirements
+    are not mentioned. '
+
+# [6] Evaluation procedure
+evalprocedure:
+  class: open
+  link:
+  notes: ''
+
+# [7] Research paper
+paper:
+  class: open
+  link: https://arxiv.org/pdf/2406.10970
+  notes: 'Accepted at ISMIR 2024. '
+  date:
+
+# [8] Licensing
+license:
+  class: open
+  link:
+  notes: ' Code is released under MIT, model weights are released under CC-BY-NC 4.0.'
+
+# [9] Model Card
+modelcard:
+  class: star
+  link:
+  notes: 
+    https://github.com/facebookresearch/audiocraft/blob/main/model_cards/JASCO_MODEL_CARD.md
+
+# [10] Datasheet
+datasheet:
+  class: ∅
+  link:
+  notes: ''
+
+# [11] Package
+package:
+  class: star
+  link:
+  notes: Installable through audiocraft pip package
+
+# [12] User-oriented application
+ux:
+  class: star
+  link:
+  notes: 'API provided via Hugging Face. '
+
+# [13] Demo Page
+suppage:
+  class: star
+  link:
+  notes: https://pages.cs.huji.ac.il/adiyoss-lab/JASCO/

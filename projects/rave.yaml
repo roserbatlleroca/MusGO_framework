@@ -1,0 +1,105 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+
+project:
+  name: RAVE
+  link: https://github.com/acids-ircam/RAVE
+  background: open
+  license: System covered by an CC BY-NC 4.0 license.
+  notes:
+
+org:
+  name: IRCAM
+  link:
+  notes:
+
+# [1] Open Source Code
+sourcecode:
+  class: open
+  link: https://github.com/acids-ircam/RAVE
+  notes: Source code is available, including data preparation, model architecture,
+    training pipeline and inference.
+
+# [2] Training data
+trainingdata:
+  class: closed
+  link:
+  notes: 'Training data is internal and just briefly described. '
+
+# [3] Model weights
+modelweights:
+  class: open
+  link:
+  notes: Several pretrained models are provided.
+
+# [4] Code documentation
+codedoc:
+  class: open
+  link:
+  notes: Code is thoroughly documented, allowing for understanding and reproducibility
+    of the model.
+
+# [5] Training procedure
+trainprocedure:
+  class: open
+  link:
+  notes: Training procedure is described.
+
+# [6] Evaluation procedure
+evalprocedure:
+  class: open
+  link:
+  notes: ''
+
+# [7] Research paper
+paper:
+  class: partial
+  link: https://arxiv.org/pdf/2111.05011
+  notes: 'Rejected at ICLR 2022. No peer-reviewed version. '
+  date:
+
+# [8] Licensing
+license:
+  class: partial
+  link:
+  notes: System covered by an CC BY-NC 4.0 license.
+
+# [9] Model Card
+modelcard:
+  class: star
+  link:
+  notes: https://acids-ircam.github.io/rave_models_download
+
+# [10] Datasheet
+datasheet:
+  class: ∅
+  link:
+  notes: Not available.
+
+# [11] Package
+package:
+  class: star
+  link:
+  notes: Pip package is available.
+
+# [12] User-oriented application
+ux:
+  class: star
+  link:
+  notes: Real-time implementation of the model and tutorials are provided.
+
+# [13] Demo Page
+suppage:
+  class: star
+  link:
+  notes: https://anonymous84654.github.io/RAVE_anonymous/

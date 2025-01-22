@@ -1,0 +1,105 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+
+project:
+  name: VampNet
+  link: https://github.com/hugofloresgarcia/vampnet
+  background: open
+  license: MIT License
+  notes:
+
+org:
+  name: Northwestern University and Descript Inc
+  link:
+  notes:
+
+# [1] Open Source Code
+sourcecode:
+  class: open
+  link: https://github.com/hugofloresgarcia/vampnet
+  notes: System source code is available and accessible at https://github.com/hugofloresgarcia/vampnet.
+
+# [2] Training data
+trainingdata:
+  class: closed
+  link:
+  notes: 'Dataset is not available nor is completely described. '
+
+# [3] Model weights
+modelweights:
+  class: open
+  link:
+  notes: Model checkpoints are available https://zenodo.org/records/8136629. The weights
+    for the models are licensed https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ml
+
+# [4] Code documentation
+codedoc:
+  class: open
+  link:
+  notes: 'Codebase is documented. '
+
+# [5] Training procedure
+trainprocedure:
+  class: open
+  link:
+  notes: Described in the article, with multiple details on architecture, hyperparameters,
+    GPU usage
+
+# [6] Evaluation procedure
+evalprocedure:
+  class: partial
+  link:
+  notes: ''
+
+# [7] Research paper
+paper:
+  class: open
+  link: https://arxiv.org/abs/2307.04686
+  notes: 'Article peer-reviewed & accepted at ISMIR 2023: https://archives.ismir.net/ismir2023/paper/000042.pdf'
+  date:
+
+# [8] Licensing
+license:
+  class: open
+  link:
+  notes: MIT License
+
+# [9] Model Card
+modelcard:
+  class: ∅
+  link:
+  notes: ''
+
+# [10] Datasheet
+datasheet:
+  class: ∅
+  link:
+  notes: ''
+
+# [11] Package
+package:
+  class: ∅
+  link:
+  notes: ''
+
+# [12] User-oriented application
+ux:
+  class: star
+  link:
+  notes: 'Gradio UI is provided in the codebase. '
+
+# [13] Demo Page
+suppage:
+  class: star
+  link:
+  notes: 'Untitled (https://www.notion.so/e37aabd0d5f1493aa42c5711d0764b33?pvs=21) '

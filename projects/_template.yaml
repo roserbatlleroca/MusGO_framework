@@ -1,0 +1,104 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+
+project:
+    name:
+    link:
+    background:
+    license:
+    notes:
+
+org:
+    name:
+    link:
+    notes:
+
+# [1] System source code
+sourcecode:
+    class: closed
+    link:
+    notes:
+
+# [2] Training data
+trainingdata:
+    class: closed
+    link:
+    notes:
+
+# [3] Model weights
+modelweights:
+    class: closed
+    link:
+    notes:
+
+# [4] Code documentation 
+codedoc:
+    class: closed
+    link:
+    notes:
+
+# [5] Training procedure
+trainprocedure:
+    class: closed
+    link:
+    notes:
+
+# [6] Evaluation procedure
+evalprocedure:
+    class: closed
+    link:
+    notes:
+
+# [7] Research paper
+paper:
+    class: closed
+    link:
+    notes:
+    date: 
+
+# [8] Licensing
+license:
+    class: closed
+    link:
+    notes:
+
+# [9] Model card
+modelcard:
+    class: closed
+    link:
+    notes:
+
+# [10] Datasheet
+datasheet:
+    class: closed
+    link:
+    notes:
+
+# [11] Package
+package:
+    class: closed
+    link:
+    notes:
+
+# [12] User-oriented application
+ux:
+    class: closed
+    link:
+    notes:
+
+# [13] Supplementary Material Page
+suppage:
+    class: closed
+    link:
+    notes:
+

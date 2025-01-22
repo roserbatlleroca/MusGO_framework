@@ -1,0 +1,249 @@
+/* Reusing styles.csss from Opening up ChatGPT
+   HTML & CSS handcrafted by MD */
+
+/* Adapted to MusGO framework
+	by RBR and LIM */
+
+
+/* Colours
+   open:    #3e9b74
+   partial: #dd9f1c
+   closed:  #ca6014
+   (colourblind-friendly yellow, orange, red)
+   (I wish CSS vars worked as expected across browsers.)
+*/
+.colour-open { color:#129f57; }
+.colour-partial { color:#ff8e27; }
+.colour-closed { color:#c43119; }
+.colour-star { color:#fff}
+
+/* overall layout */
+
+#header, #content {
+	max-width:1200px;
+	margin: auto;
+	padding:0 1rem 0 1rem;
+}
+#footer > * {
+	max-width:1200px;
+	margin: auto;
+	padding:0 1rem 0 1rem;
+	color:#696969;
+}
+
+#footer a:link, #footer a:visited {
+	color:#696969;
+}
+
+#footer {
+	margin-top:2rem;
+	padding:2rem 1rem 2rem 1rem;
+	background-color:#f7f7f7;
+	font-size:0.8rem;
+}
+
+
+div#included-table {
+	margin:0 10px 0 0;
+}
+
+
+/* basic typography */
+
+html {  font-family:Arial, sans-serif;}
+
+blockquote { 
+	border-left:4px solid #f7f7f7;
+	padding-left:1em;
+	margin-left:1em;
+}
+
+p,li,blockquote { line-height:1.4rem; }
+
+/* responsize design */
+/* adjustments for mobile devices */
+
+@media (max-width:1200px) {
+/* make table vertically scrollable on smaller screens */
+	div#included-table {
+		display:block;
+/*		overflow-x:auto; */
+		white-space:nowrap;
+	}
+/* make citation a bit smaller */
+	#content p#citation {
+/*		font-size:1rem;
+		line-height:1.1rem; */
+		display:block;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space:nowrap;
+	}
+/* optimize line-height */
+	p,li { line-height:1.3rem; 
+		margin-bottom:0.5rem;
+	}
+}
+
+/* Title*/
+h1 a { border:none; }
+h1 a img#title-logo { 
+	display:inline-block;
+	padding-right:8px;
+	margin-bottom:-3px;
+	height:60%;
+}
+h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
+	color:#000000;
+	text-decoration:none;
+}
+
+/* Some special paragraphs */
+p.highlight { 
+	display:block;
+	padding:15px 20px;
+	background-color:#f7f7f7; !important
+}
+p#tagline a { padding-left:4px; }
+
+p#table-guide {
+	color:#696969;
+	font-size:0.8rem;
+	line-height:1.1rem;
+}
+
+span.link-icon { 
+	height:60%;
+	display:inline-block;
+} 
+
+span.openness { display:inline-block;
+padding:1px 5px; color:#ffffff }
+span.open { background-color:#3e9b74; }
+span.partial { background-color:#dd9f1c; }
+span.closed { background-color:#ca6014; }
+
+
+/* main table features */
+table {
+	display:table;
+	table-layout:fixed;
+	font-size:1rem;
+}
+
+/* default column width*/
+thead tr.main-header th {
+	width:100px;
+}
+
+thead tr.second-header th {
+	font-weight:normal;
+	font-size:0.8rem;
+	width:65px;
+	min-width:65px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+
+thead {
+	position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+	background-color: white;
+}
+
+/* custom width for some columns */
+table tr th.first-column {
+	display:block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+table tr td.llmbase, table tr td.rlbase {
+	max-width:240px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+
+}
+
+/* ensure that rows are the same height */
+tbody td.name-cell, tbody td.org {
+	display:block;
+	width:160px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+table tr td > * {
+	vertical-align:middle;
+}
+
+tbody tr td {
+	padding:0;
+}
+tbody tr.row-a td {
+	border-top:4px solid #ffffff;
+}
+tbody tr.row-b td {
+	border-bottom:4px solid #ffffff;
+}
+
+tr.row-b td {
+	padding-bottom:1px;
+}
+tr.row-a td {
+	padding-top:1px;
+}
+th {
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+  text-align:left
+}
+
+/* data cells */
+table .data-cell {
+	text-align:center;
+}
+table td.data-cell { background-color:#f7f7f7;}
+table td.data-cell.closed { background-color:#ca6014;}
+table td.data-cell.open {	background-color:#3e9b74;}
+table td.data-cell.partial { background-color:#dd9f1c;}
+table td.data-cell.star { background-color:#f7f7f7;}
+
+td.data-cell a {
+	display:block;
+	padding:2px 0 4px 0;
+}
+/* special treatment for our "~" */
+td.data-cell.partial a { padding:3px 0 3px 0; }
+
+/* links */
+td a:link, td a:visited, td a:active {
+	text-decoration:none;
+	color:#000;
+}
+td.data-cell a:link, td.data-cell a:visited, td.data-cell a:active {
+	color:#fff;
+}
+td.data-cell a:hover {
+	font-weight:bold;
+}
+/* I wish we could trust CSS vars to work */
+td.data-cell.open:hover { border-top-color:#3e9b74; }
+td.data-cell.partial:hover { border-top-color:#dd9f1c; }
+td.data-cell.closed:hover { border-top-color:#ca6014; }
+
+
+
+/* secondary rows should be less prominent */
+tr.row-b {
+	color:#cccccc;
+	font-size:0.8rem;
+}
+tr.row-b a:link, tr.row-b a:visited, tr.row-b a:active {
+	color:#cccccc;
+}
+tr.row-b .source-link { text-align:right }
+tr.row-b .source-link:active, tr.row-b .source-link:hover { font-weight:bold; }

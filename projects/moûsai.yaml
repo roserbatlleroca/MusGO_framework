@@ -1,0 +1,109 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+
+project:
+  name: Moûsai
+  link: https://github.com/archinetai/audio-diffusion-pytorch
+  background: open
+  license: 'Code is under the MIT license. '
+  notes:
+
+org:
+  name: ETH Zürich, IIT Kharagpur, Max Planck Institute
+  link:
+  notes:
+
+# [1] Open Source Code
+sourcecode:
+  class: partial
+  link: https://github.com/archinetai/audio-diffusion-pytorch
+  notes: They provide an audio diffusion library that includes different models. However,
+    the configs shown are indicative and untested, see https://arxiv.org/abs/2301.11757 for
+    the configs used in the paper.
+
+# [2] Training data
+trainingdata:
+  class: partial
+  link:
+  notes: 'How the data is collected and acquired, including licensing issues, is detailed
+    in the research paper. However, the exact list of songs in the dataset nor direct
+    access to the dataset is available. '
+
+# [3] Model weights
+modelweights:
+  class: closed
+  link:
+  notes: 'In the GitHub repo, authors mention that “no pre-trained models are provided
+    here”. '
+
+# [4] Code documentation
+codedoc:
+  class: partial
+  link:
+  notes: Code is partially describe. How to use Moûsai is not straightforward described.
+
+# [5] Training procedure
+trainprocedure:
+  class: open
+  link:
+  notes: 'Training procedure is describe in the article, including hardware requirements
+    and model configuration. '
+
+# [6] Evaluation procedure
+evalprocedure:
+  class: partial
+  link:
+  notes: ''
+
+# [7] Research paper
+paper:
+  class: open
+  link: https://arxiv.org/abs/2301.11757
+  notes: Accepted at ACL 2024
+  date:
+
+# [8] Licensing
+license:
+  class: open
+  link:
+  notes: 'Code is under the MIT license. '
+
+# [9] Model Card
+modelcard:
+  class: ∅
+  link:
+  notes: ''
+
+# [10] Datasheet
+datasheet:
+  class: ∅
+  link:
+  notes: ''
+
+# [11] Package
+package:
+  class: star
+  link:
+  notes: Code belongs to https://github.com/archinetai/audio-diffusion-pytorch library
+
+# [12] User-oriented application
+ux:
+  class: ∅
+  link:
+  notes: ''
+
+# [13] Demo Page
+suppage:
+  class: star
+  link:
+  notes: 'Supplementary material is available at Untitled (https://www.notion.so/ebe6e9e528984fa1b226d408f6002d87?pvs=21) '

@@ -1,0 +1,103 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+
+project:
+  name: DITTO-2
+  link: ''
+  background: popular
+  license: Not available.
+  notes:
+
+org:
+  name: University of California San Diego and Adobe Research
+  link:
+  notes:
+
+# [1] Open Source Code
+sourcecode:
+  class: closed
+  link: ''
+  notes: No code repository.
+
+# [2] Training data
+trainingdata:
+  class: closed
+  link:
+  notes: Training data neither available nor properly described.
+
+# [3] Model weights
+modelweights:
+  class: closed
+  link:
+  notes: Not provided.
+
+# [4] Code documentation
+codedoc:
+  class: closed
+  link:
+  notes: No code repository.
+
+# [5] Training procedure
+trainprocedure:
+  class: partial
+  link:
+  notes: Training procedure is partially described.
+
+# [6] Evaluation procedure
+evalprocedure:
+  class: partial
+  link:
+  notes: ''
+
+# [7] Research paper
+paper:
+  class: open
+  link: https://arxiv.org/abs/2405.20289
+  notes: Accepted at ISMIR 2024
+  date:
+
+# [8] Licensing
+license:
+  class: closed
+  link:
+  notes: Not available.
+
+# [9] Model Card
+modelcard:
+  class: ∅
+  link:
+  notes: Not available.
+
+# [10] Datasheet
+datasheet:
+  class: ∅
+  link:
+  notes: Not available.
+
+# [11] Package
+package:
+  class: ∅
+  link:
+  notes: Not available.
+
+# [12] User-oriented application
+ux:
+  class: ∅
+  link:
+  notes: Not available.
+
+# [13] Demo Page
+suppage:
+  class: star
+  link:
+  notes: https://ditto-music.github.io/ditto2/
