@@ -38,40 +38,40 @@ trainingdata:
 # [3] Model weights
 modelweights:
   class: open
-  link: ''
+  link: https://zenodo.org/records/8136629
   notes: Model checkpoints are available https://zenodo.org/records/8136629. The weights
     for the models are licensed https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ml
 
 # [4] Code documentation
 codedoc:
   class: open
-  link: ''
+  link: https://github.com/hugofloresgarcia/vampnet/blob/ismir-2023/README.md
   notes: 'Codebase is documented. '
 
 # [5] Training procedure
 trainprocedure:
   class: open
-  link: https://arxiv.org/abs/2307.04686
+  link: https://arxiv.org/pdf/2307.04686
   notes: Described in the article, with multiple details on architecture, hyperparameters,
     GPU usage
 
 # [6] Evaluation procedure
 evalprocedure:
   class: partial
-  link: https://arxiv.org/abs/2307.04686
+  link: https://arxiv.org/pdf/2307.04686
   notes: ''
 
 # [7] Research paper
 paper:
   class: open
-  link: https://archives.ismir.net/ismir2023/paper/000042.pdf
+  link: https://ismir2023program.ismir.net/poster_125.html
   notes: 'Article peer-reviewed & accepted at ISMIR 2023: https://archives.ismir.net/ismir2023/paper/000042.pdf'
   date:
 
 # [8] Licensing
 license:
   class: open
-  link: ''
+  link: https://github.com/hugofloresgarcia/vampnet/blob/ismir-2023/LICENSE
   notes: MIT License
 
 # [9] Model Card
@@ -95,11 +95,12 @@ package:
 # [12] User-oriented application
 ux:
   class: star
-  link: ''
+  link: https://github.com/hugofloresgarcia/vampnet/blob/ismir-2023/app.py
   notes: 'Gradio UI is provided in the codebase. '
 
 # [13] Demo Page
 suppage:
   class: star
-  link: ''
+  link: 
+    https://hugo-does-things.notion.site/VampNet-Music-Generation-via-Masked-Acoustic-Token-Modeling-e37aabd0d5f1493aa42c5711d0764b33
   notes: 'Untitled (https://www.notion.so/e37aabd0d5f1493aa42c5711d0764b33?pvs=21) '

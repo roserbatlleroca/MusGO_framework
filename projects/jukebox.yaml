@@ -40,13 +40,13 @@ trainingdata:
 # [3] Model weights
 modelweights:
   class: open
-  link: ''
+  link: https://huggingface.co/openai/jukebox-5b-lyrics/tree/main
   notes: Weights are available.
 
 # [4] Code documentation
 codedoc:
   class: open
-  link: ''
+  link: https://github.com/openai/jukebox/blob/master/README.md
   notes: 'Codebase is documented. '
 
 # [5] Training procedure
@@ -71,7 +71,7 @@ paper:
 # [8] Licensing
 license:
   class: partial
-  link: ''
+  link: https://github.com/openai/jukebox/blob/master/LICENSE
   notes: 'Codebase is licensed under a non-commercial use license by OpenAI. '
 
 # [9] Model Card
@@ -95,13 +95,14 @@ package:
 # [12] User-oriented application
 ux:
   class: ∅
-  link: ''
+  link: 
+    https://colab.research.google.com/github/openai/jukebox/blob/master/jukebox/Interacting_with_Jukebox.ipynb
   notes: ''
 
 # [13] Demo Page
 suppage:
   class: star
-  link: ''
+  link: https://openai.com/index/jukebox/
   notes: "A demo/summary page is available: https://openai.com/index/jukebox/\nHowever,
     sonifications of the examples generations are not available anymore. There exist
     another site with generation examples, but most of them are not available https://jukebox.openai.com/.
