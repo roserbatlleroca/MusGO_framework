@@ -1,6 +1,6 @@
 ---
 ####################################################################################################################################
-# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO_framework/). 
 # Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
 # For more details, check out: http://opening-up-chatgpt.github.io  
 ####################################################################################################################################
@@ -8,7 +8,7 @@
 
 # Thank you for contributing!
 # In filling out this yaml file, please follow the criteria as described here: 
-# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+# https://github.com/roserbatlleroca/MusGO_framework/tree/main/projects#criteria
 
 
 project:
@@ -32,72 +32,72 @@ sourcecode:
 # [2] Training data
 trainingdata:
   class: closed
-  link:
+  link: ''
   notes: Very limited description of the data used for training, and no sources provided.
 
 # [3] Model weights
 modelweights:
   class: closed
-  link:
+  link: ''
   notes: No model weights provided.
 
 # [4] Code documentation
 codedoc:
   class: closed
-  link:
+  link: ''
   notes: No source code available so no documentation.
 
 # [5] Training procedure
 trainprocedure:
   class: open
-  link:
+  link: https://arxiv.org/pdf/2311.07069
   notes: Training procedure is described in detail in the paper.
 
 # [6] Evaluation procedure
 evalprocedure:
   class: partial
-  link:
+  link: https://arxiv.org/pdf/2311.07069
   notes: ''
 
 # [7] Research paper
 paper:
   class: open
-  link: https://arxiv.org/pdf/2311.07069
+  link: https://dl.acm.org/doi/10.1109/TASLP.2024.3399026
   notes: A peer-reviewed paper is available and publicly accessible.
   date:
 
 # [8] Licensing
 license:
   class: closed
-  link:
+  link: ''
   notes: Not available.
 
 # [9] Model Card
 modelcard:
   class: ∅
-  link:
+  link: ''
   notes: No model card available.
 
 # [10] Datasheet
 datasheet:
   class: ∅
-  link:
+  link: ''
   notes: No datasheet available.
 
 # [11] Package
 package:
   class: ∅
-  link:
+  link: ''
   notes: No package available.
 
 # [12] User-oriented application
 ux:
   class: ∅
-  link:
+  link: ''
   notes: No user interface nor real-time implementation available.
 
 # [13] Demo Page
 suppage:
   class: star
-  link:
+  link: ''
   notes: https://musiccontrolnet.github.io/web/

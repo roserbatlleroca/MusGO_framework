@@ -1,6 +1,6 @@
 ---
 ####################################################################################################################################
-# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO_framework/). 
 # Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
 # For more details, check out: http://opening-up-chatgpt.github.io  
 ####################################################################################################################################
@@ -8,7 +8,7 @@
 
 # Thank you for contributing!
 # In filling out this yaml file, please follow the criteria as described here: 
-# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+# https://github.com/roserbatlleroca/MusGO_framework/tree/main/projects#criteria
 
 
 project:
@@ -32,75 +32,75 @@ sourcecode:
 # [2] Training data
 trainingdata:
   class: partial
-  link:
+  link: https://magenta.tensorflow.org/datasets/nsynth
   notes: Dataset is available, but the reduced version that they use and the newly
     created test/train splits are not provided.
 
 # [3] Model weights
 modelweights:
   class: open
-  link:
+  link: https://github.com/magenta/magenta/blob/main/magenta/models/gansynth/README.md
   notes: Two pretrained checkpoints are provided.
 
 # [4] Code documentation
 codedoc:
   class: open
-  link:
+  link: https://github.com/magenta/magenta/blob/main/magenta/models/gansynth/README.md
   notes: Codebase is documented, including high-level instructions and configuration
     files.
 
 # [5] Training procedure
 trainprocedure:
   class: open
-  link:
+  link: https://arxiv.org/pdf/1902.08710
   notes: Training procedure is fully documented, including hardware requirements and
     model configuration.
 
 # [6] Evaluation procedure
 evalprocedure:
   class: partial
-  link:
+  link: https://arxiv.org/pdf/1902.08710
   notes: ''
 
 # [7] Research paper
 paper:
   class: open
-  link: https://arxiv.org/abs/1902.08710
+  link: https://openreview.net/forum?id=H1xQVn09FX
   notes: Accepted at ICLR 2019.
   date:
 
 # [8] Licensing
 license:
   class: open
-  link:
+  link: https://github.com/magenta/magenta/blob/main/LICENSE
   notes: 'System is covered by Apache License. '
 
 # [9] Model Card
 modelcard:
   class: ∅
-  link:
+  link: ''
   notes: Very few details are given of the pretrained checkpoints.
 
 # [10] Datasheet
 datasheet:
   class: ∅
-  link:
+  link: ''
   notes: Not available.
 
 # [11] Package
 package:
   class: star
-  link:
+  link: https://pypi.org/project/magenta/
   notes: Available within the magenta pip package.
 
 # [12] User-oriented application
 ux:
   class: ∅
-  link:
+  link: ''
   notes: Not available.
 
 # [13] Demo Page
 suppage:
   class: star
-  link:
+  link: https://storage.googleapis.com/magentadata/papers/gansynth/index.html
   notes: https://storage.googleapis.com/magentadata/papers/gansynth/index.html

@@ -1,6 +1,6 @@
 ---
 ####################################################################################################################################
-# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO_framework/). 
 # Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
 # For more details, check out: http://opening-up-chatgpt.github.io  
 ####################################################################################################################################
@@ -8,7 +8,7 @@
 
 # Thank you for contributing!
 # In filling out this yaml file, please follow the criteria as described here: 
-# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+# https://github.com/roserbatlleroca/MusGO_framework/tree/main/projects#criteria
 
 
 project:
@@ -32,7 +32,7 @@ sourcecode:
 # [2] Training data
 trainingdata:
   class: partial
-  link:
+  link: ''
   notes: 'Training data is partially described in the preprint article. However, relevant
     information is missing, such as specific sources, and data itself cannot be accessed
     — dataset is not publicly available. '
@@ -40,69 +40,69 @@ trainingdata:
 # [3] Model weights
 modelweights:
   class: open
-  link:
+  link: ''
   notes: Weights are available.
 
 # [4] Code documentation
 codedoc:
   class: open
-  link:
+  link: ''
   notes: 'Codebase is documented. '
 
 # [5] Training procedure
 trainprocedure:
   class: open
-  link:
+  link: https://arxiv.org/pdf/2005.00341
   notes: 'Information available between article and GitHub repository.  '
 
 # [6] Evaluation procedure
 evalprocedure:
   class: partial
-  link:
+  link: https://arxiv.org/pdf/2005.00341
   notes: ''
 
 # [7] Research paper
 paper:
   class: partial
-  link: https://arxiv.org/pdf/2005.00341
+  link: 'No peer-reviewed article found. '
   notes: 'Only preprint of the research paper is available. '
   date:
 
 # [8] Licensing
 license:
   class: partial
-  link:
+  link: ''
   notes: 'Codebase is licensed under a non-commercial use license by OpenAI. '
 
 # [9] Model Card
 modelcard:
   class: ∅
-  link:
+  link: ''
   notes: 'Not available. '
 
 # [10] Datasheet
 datasheet:
   class: ∅
-  link:
+  link: ''
   notes: 'Not available. '
 
 # [11] Package
 package:
   class: ∅
-  link:
+  link: ''
   notes: 'Not available. Codebase is officially not mantained. '
 
 # [12] User-oriented application
 ux:
   class: ∅
-  link:
+  link: ''
   notes: ''
 
 # [13] Demo Page
 suppage:
   class: star
-  link:
-  notes: 'A demo/summary page is available: https://openai.com/index/jukebox/However,
+  link: ''
+  notes: "A demo/summary page is available: https://openai.com/index/jukebox/\nHowever,
     sonifications of the examples generations are not available anymore. There exist
     another site with generation examples, but most of them are not available https://jukebox.openai.com/.
-    In addition, a colab notebook is provided: https://colab.research.google.com/github/openai/jukebox/blob/master/jukebox/Interacting_with_Jukebox.ipynb'
+    In addition, a colab notebook is provided: https://colab.research.google.com/github/openai/jukebox/blob/master/jukebox/Interacting_with_Jukebox.ipynb"

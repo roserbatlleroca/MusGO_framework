@@ -67,8 +67,10 @@ def csv_to_yaml(csv_path, yaml_template):
 
             cells_e = ["sourcecode", "trainingdata", "modelweights", "codedoc", "trainprocedure", "evalprocedure", "paper", "license"]
             cells_e_names = ["Open Source Code", "Training data", "Model weights", "Code documentation", "Training procedure", "Evaluation procedure", "Research paper", "Licensing"]
+            cells_e_links = ["Repository", "Dataset", "Weights", "Readme", "Preprint", "Preprint", "Article", "License"]
             cells_n = ["modelcard", "datasheet", "package", "ux", "suppage"] # Nice-to-have categories
             cells_n_names = ["Model Card", "Datasheet", "Package", "User-oriented application", "Demo Page"]
+            cells_n_links = ["Model card", "Datasheet", "Package", "App", "Page"]
 
             for i, cell in enumerate(cells_e):
                 cell_e_name = cells_e_names[i]
@@ -76,18 +78,28 @@ def csv_to_yaml(csv_path, yaml_template):
                     cell_e_val = i + 6
                 else:
                     cell_e_val = i + 1
-                if "sourcecode" in cell:
-                    project_data[cell]['link'] = row.get('Repository', '')
-                elif "paper" in cell:
-                    project_data[cell]['link'] = row.get('Preprint', '')
-                project_data[cell]['class'] = row.get(f"[{cell_e_val}] {cell_e_name}", '')
+                if cells_e_links[i]:
+                    project_data[cell]['link'] = row.get(cells_e_links[i], '')
+                value = row.get(f"[{cell_e_val}] {cell_e_name}", '')
+                if '✓' in value:
+                    value = 'open'
+                elif '≃' in value:
+                    value = 'partial'
+                elif '✗' in value:
+                    value = 'closed'
+                project_data[cell]['class'] = value
                 project_data[cell]['notes'] = row.get(f"[{cell_e_val}] Notes", '')
                 project_data.yaml_set_comment_before_after_key(cell, before=f"\n[{i+1}] {cell_e_name}")
 
             for i, cell in enumerate(cells_n):
                 cell_n_name = cells_n_names[i]
                 cell_n_val = i + 8
-                project_data[cell]['class'] = row.get(f"[{cell_n_val}] {cell_n_name}", '')
+                if cells_n_links[i]:
+                    project_data[cell]['link'] = row.get(cells_n_links[i], '')
+                value = row.get(f"[{cell_n_val}] {cell_n_name}", '')
+                if '★' in value:
+                    value = 'star'
+                project_data[cell]['class'] = value              
                 project_data[cell]['notes'] = row.get(f"[{cell_n_val}] Notes", '')
                 project_data.yaml_set_comment_before_after_key(cell, before=f"\n[{i+9}] {cell_n_name}")
 

@@ -1,6 +1,6 @@
 ---
 ####################################################################################################################################
-# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO_framework/). 
 # Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
 # For more details, check out: http://opening-up-chatgpt.github.io  
 ####################################################################################################################################
@@ -8,12 +8,12 @@
 
 # Thank you for contributing!
 # In filling out this yaml file, please follow the criteria as described here: 
-# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+# https://github.com/roserbatlleroca/MusGO_framework/tree/main/projects#criteria
 
 
 project:
   name: MusicGen
-  link: https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md
+  link: https://github.com/facebookresearch/audiocraft
   background: open
   license: The code in this repository is released under the MIT license as found
     in the https://github.com/facebookresearch/audiocraft/blob/main/LICENSE. The models
@@ -29,14 +29,14 @@ org:
 # [1] Open Source Code
 sourcecode:
   class: open
-  link: https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md
+  link: https://github.com/facebookresearch/audiocraft
   notes: Code is provided in https://github.com/facebookresearch/audiocraft/ (Training
     and inference)
 
 # [2] Training data
 trainingdata:
   class: partial
-  link:
+  link: ''
   notes: “We rely on an internal dataset of 10K high-quality music tracks, and on
     the ShutterStock and Pond5 music data collections2 with respectively 25K and 365K
     instrument-only music tracks.” “Note that we do NOT provide any of the datasets
@@ -46,20 +46,20 @@ trainingdata:
 # [3] Model weights
 modelweights:
   class: open
-  link:
+  link: https://huggingface.co/facebook/musicgen-large/tree/main
   notes: Models are available in the GitHub repository and in Hugging Face.
 
 # [4] Code documentation
 codedoc:
   class: open
-  link:
+  link: https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md
   notes: 'Training code is available and seem well documented: https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md
     Warning: Since data is not available is not easy to replicate.'
 
 # [5] Training procedure
 trainprocedure:
   class: open
-  link:
+  link: https://arxiv.org/pdf/2306.05284
   notes: 'Training is well documented. https://github.com/facebookresearch/audiocraft/blob/main/docs/TRAINING.md
     with training pipelines and environment setup described. Note: Hardware use for
     training is described in the paper. '
@@ -67,20 +67,21 @@ trainprocedure:
 # [6] Evaluation procedure
 evalprocedure:
   class: open
-  link:
+  link: https://arxiv.org/pdf/2306.05284
   notes: ''
 
 # [7] Research paper
 paper:
   class: open
-  link: https://arxiv.org/pdf/2306.05284
+  link: 
+    https://proceedings.neurips.cc/paper_files/paper/2023/hash/94b472a1842cd7c56dcb125fb2765fbd-Abstract-Conference.html
   notes: Accepted at NeurIPS 2023
   date:
 
 # [8] Licensing
 license:
   class: open
-  link:
+  link: https://github.com/facebookresearch/audiocraft/blob/main/LICENSE
   notes: The code in this repository is released under the MIT license as found in
     the https://github.com/facebookresearch/audiocraft/blob/main/LICENSE. The models
     weights in this repository are released under the CC-BY-NC 4.0 license as found
@@ -89,32 +90,33 @@ license:
 # [9] Model Card
 modelcard:
   class: star
-  link:
+  link: 
+    https://github.com/facebookresearch/audiocraft/blob/main/model_cards/MUSICGEN_MODEL_CARD.md
   notes: Model card discusses intended use, limitations and biases. 
     https://github.com/facebookresearch/audiocraft/blob/main/model_cards/MUSICGEN_MODEL_CARD.md
 
 # [10] Datasheet
 datasheet:
   class: ∅
-  link:
+  link: ''
   notes: Data is copyrighted and not available.
 
 # [11] Package
 package:
   class: star
-  link:
+  link: https://pypi.org/project/audiocraft/
   notes: 'Has two packages: audiocraft package from Meta, and transformers package
     from Hugging Face. '
 
 # [12] User-oriented application
 ux:
   class: star
-  link:
+  link: https://huggingface.co/spaces/facebook/MusicGen
   notes: Demo in Hugging Face spaces, user-oriented gradio demo, and jupyter notebooks.
     https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md#usage
 
 # [13] Demo Page
 suppage:
   class: star
-  link:
+  link: https://ai.honu.io/papers/musicgen/
   notes: Supplementary material web page with sound examples. https://ai.honu.io/papers/musicgen/
