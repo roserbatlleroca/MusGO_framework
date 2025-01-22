@@ -49,33 +49,33 @@ modelweights:
 # [4] Code documentation
 codedoc:
   class: partial
-  link: ''
+  link: https://github.com/archinetai/audio-diffusion-pytorch/blob/main/README.md
   notes: Code is partially describe. How to use Moûsai is not straightforward described.
 
 # [5] Training procedure
 trainprocedure:
   class: open
-  link: https://arxiv.org/abs/2301.11757
+  link: https://arxiv.org/pdf/2301.11757
   notes: 'Training procedure is describe in the article, including hardware requirements
     and model configuration. '
 
 # [6] Evaluation procedure
 evalprocedure:
   class: partial
-  link: https://arxiv.org/abs/2301.11757
+  link: https://arxiv.org/pdf/2301.11757
   notes: ''
 
 # [7] Research paper
 paper:
   class: open
-  link: ''
+  link: https://aclanthology.org/2024.acl-long.437/
   notes: Accepted at ACL 2024
   date:
 
 # [8] Licensing
 license:
   class: open
-  link: ''
+  link: https://github.com/archinetai/audio-diffusion-pytorch/blob/main/LICENSE
   notes: 'Code is under the MIT license. '
 
 # [9] Model Card
@@ -93,7 +93,7 @@ datasheet:
 # [11] Package
 package:
   class: star
-  link: ''
+  link: https://pypi.org/project/audio-diffusion-pytorch/
   notes: Code belongs to https://github.com/archinetai/audio-diffusion-pytorch library
 
 # [12] User-oriented application
@@ -105,5 +105,6 @@ ux:
 # [13] Demo Page
 suppage:
   class: star
-  link: ''
+  link: 
+    https://diligent-pansy-4cb.notion.site/Music-Generation-with-Diffusion-ebe6e9e528984fa1b226d408f6002d87
   notes: 'Supplementary material is available at Untitled (https://www.notion.so/ebe6e9e528984fa1b226d408f6002d87?pvs=21) '

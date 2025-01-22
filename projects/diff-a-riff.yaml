@@ -50,19 +50,19 @@ codedoc:
 # [5] Training procedure
 trainprocedure:
   class: open
-  link: https://arxiv.org/abs/2406.08384
+  link: https://arxiv.org/pdf/2406.08384
   notes: Training procedure is properly described.
 
 # [6] Evaluation procedure
 evalprocedure:
   class: partial
-  link: https://arxiv.org/abs/2406.08384
+  link: https://arxiv.org/pdf/2406.08384
   notes: ''
 
 # [7] Research paper
 paper:
   class: open
-  link: https://arxiv.org/abs/2406.08384
+  link: https://ismir2024program.ismir.net/poster_225.html
   notes: Accepted at ISMIR 2024
   date:
 
@@ -99,5 +99,5 @@ ux:
 # [13] Demo Page
 suppage:
   class: star
-  link: ''
+  link: https://sonycslparis.github.io/diffariff-companion/
   notes: https://sonycslparis.github.io/diffariff-companion/

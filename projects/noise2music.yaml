@@ -66,7 +66,7 @@ evalprocedure:
 # [7] Research paper
 paper:
   class: partial
-  link: 'Not available. '
+  link: https://arxiv.org/abs/2302.03917
   notes: 'Preprint is available. No peer-reviewed version of the article has been
     found. '
   date:
@@ -104,5 +104,5 @@ ux:
 # [13] Demo Page
 suppage:
   class: star
-  link: ''
+  link: https://google-research.github.io/noise2music/
   notes: https://google-research.github.io/noise2music/

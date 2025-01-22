@@ -71,7 +71,7 @@ evalprocedure:
 # [7] Research paper
 paper:
   class: partial
-  link: ''
+  link: https://arxiv.org/abs/2407.14358
   notes: 'Paper is in arxiv but it is not peer-reviewed. '
   date:
 

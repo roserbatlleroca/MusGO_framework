@@ -39,13 +39,13 @@ trainingdata:
 # [3] Model weights
 modelweights:
   class: open
-  link: ''
+  link: https://acids-ircam.github.io/rave_models_download
   notes: Several pretrained models are provided.
 
 # [4] Code documentation
 codedoc:
   class: open
-  link: ''
+  link: https://github.com/acids-ircam/RAVE/blob/master/README.md
   notes: Code is thoroughly documented, allowing for understanding and reproducibility
     of the model.
 
@@ -64,20 +64,20 @@ evalprocedure:
 # [7] Research paper
 paper:
   class: partial
-  link: 'submitted to ICLR 2022, but rejected: https://openreview.net/forum?id=cdwobSbmsjA'
+  link: https://arxiv.org/abs/2111.05011
   notes: 'Rejected at ICLR 2022. No peer-reviewed version. '
   date:
 
 # [8] Licensing
 license:
   class: partial
-  link: ''
+  link: https://github.com/acids-ircam/RAVE/blob/master/LICENSE
   notes: System covered by an CC BY-NC 4.0 license.
 
 # [9] Model Card
 modelcard:
   class: star
-  link: ''
+  link: https://acids-ircam.github.io/rave_models_download
   notes: https://acids-ircam.github.io/rave_models_download
 
 # [10] Datasheet
@@ -89,17 +89,17 @@ datasheet:
 # [11] Package
 package:
   class: star
-  link: ''
+  link: https://pypi.org/project/acids-rave/
   notes: Pip package is available.
 
 # [12] User-oriented application
 ux:
   class: star
-  link: ''
+  link: https://forum.ircam.fr/projects/detail/rave-vst/
   notes: Real-time implementation of the model and tutorials are provided.
 
 # [13] Demo Page
 suppage:
   class: star
-  link: ''
+  link: https://anonymous84654.github.io/RAVE_anonymous/
   notes: https://anonymous84654.github.io/RAVE_anonymous/

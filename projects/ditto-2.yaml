@@ -62,7 +62,7 @@ evalprocedure:
 # [7] Research paper
 paper:
   class: open
-  link: 'Should be in the ISMIR website, but you need GD permision: https://ismir2024program.ismir.net/poster_146.html#paper'
+  link: https://ismir2024program.ismir.net/poster_146.html
   notes: Accepted at ISMIR 2024
   date:
 
@@ -99,5 +99,5 @@ ux:
 # [13] Demo Page
 suppage:
   class: star
-  link: ''
+  link: https://ditto-music.github.io/ditto2/
   notes: https://ditto-music.github.io/ditto2/

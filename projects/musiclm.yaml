@@ -62,7 +62,7 @@ evalprocedure:
 # [7] Research paper
 paper:
   class: partial
-  link: ''
+  link: https://arxiv.org/abs/2301.11325
   notes: Peer-reviewed paper not found.
   date:
 
@@ -99,5 +99,5 @@ ux:
 # [13] Demo Page
 suppage:
   class: star
-  link: ''
+  link: https://google-research.github.io/seanet/musiclm/examples/
   notes: https://google-research.github.io/seanet/musiclm/examples/

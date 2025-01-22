@@ -64,7 +64,7 @@ evalprocedure:
 # [7] Research paper
 paper:
   class: partial
-  link: 'No peer-reviewed article found. '
+  link: https://arxiv.org/abs/2005.00341
   notes: 'Only preprint of the research paper is available. '
   date:
 
