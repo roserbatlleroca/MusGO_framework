@@ -239,11 +239,12 @@ td.data-cell.closed:hover { border-top-color:#ca6014; }
 
 /* secondary rows should be less prominent */
 tr.row-b {
-	color:#cccccc;
+	/* color:#cccccc; */
+	color:#2f2f2f;
 	font-size:0.8rem;
 }
 tr.row-b a:link, tr.row-b a:visited, tr.row-b a:active {
-	color:#cccccc;
+	color:#2f2f2f
 }
 tr.row-b .source-link { text-align:right }
 tr.row-b .source-link:active, tr.row-b .source-link:hover { font-weight:bold; }
