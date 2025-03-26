@@ -25,9 +25,9 @@ def create_dataframe(files):
 
 def calculate_openness(df):
     openness_weights = {
-        "sourcecode": 1, 
-        "trainingdata": 1, 
-        "modelweights": 1, 
+        "sourcecode": 2, 
+        "trainingdata": 2, 
+        "modelweights": 2, 
         "codedoc": 1, 
         "trainprocedure": 1, 
         "evalprocedure": 1, 
@@ -47,7 +47,7 @@ def calculate_openness(df):
             vclass = df.loc[p, v + ".class"]
             vvalue = class_values[vclass] if vclass in class_values else 0
             cumul_openness += w * vvalue
-        cumul_openness = round(cumul_openness/8*100,0) # Normalising openness level to 100 points
+        cumul_openness = round(cumul_openness/11*100,0) # Normalising openness level to 100 points
         openness.append(int(cumul_openness))
     # add the openness variable to the DataFrame
     df["openness"] = openness

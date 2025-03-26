@@ -13,19 +13,34 @@
 </div>
 <div id="content">
 
-	<p class="highlight" id="description">Introducing <strong>MusGO</strong>: A community-driven framework for assessing openness in music-generative AI.
-    With the notable rise of generative models in the music domain, we pose the question: how open are they? 
-    MusGO is built and applied to assess openness in music-generative models. </p>
+	<p class="highlight" id="description"> With the notable rise of generative models in the music domain, we pose the question: how open are they?
+    Lacking of a clear definition of openness in music-generative AI, we propose <strong>MusGO</strong> (Music-Generative Open AI): a community-driven framework for assessing openness in music-generative AI.
+  MusGO is built together with the participation of the Music Information Retrieval (MIR) and applied to assess openness in music-generative models. 
+    </p>
 	
-	<p id="tagline"> Note that this site is part of the submission <em>'MusGO: A Community-Driven Framework for Asssessing Openness in Music-Generative AI'</em> at ACM Conference on Fairness, Accountability, and Transparency (FAccT '25), which is currently under review.</p>
-	
-	<h3>Openness assessment</h3>
-  <p id="table-guide"><em>How to interpret this table?</em> MusGO framework is composed of 13 different dimensions of openness. It distinguishes between <em>essential</em> (1-8) and <em>nice-to-have</em> (9-13) categories. 
-    Essential categories follow a three-level scale: (<span class="openness open"><strong>✔︎</strong> open</span>, <span class="openness partial"><strong>~</strong> partial</span> or <span class="openness closed"><strong>✘</strong> closed</span>). <!-- with a direct link to the available evidence; on hover, the cell will display the notes we have on file for that judgement. The name of each project is a direct link to source data.-->
-    Instead, nice-to-have categories are binary: whether that element exists (&#11088;) or not. The openness level is computed with the essential categories punctuations, where <strong>✔︎</strong> is 1, <strong>~</strong> is 0.5 and <strong>✘</strong> is 0 points. Openness level is normalised to obtained a value on a 100 point scale. 
-    Models are arranged in descending order of openness level, placing the <strong>most open model</strong> first.</p>
+	<p id="tagline"> Note that this site is part of the submission <em>'MusGO: A Community-Driven Framework for Asssessing Openness in Music-Generative AI'</em>, which is currently under review.</p>
+
+  <p>
+    📌 <strong>Want to learn more about MusGO?</strong> Check out the <a href="framework.html">MusGO Framework</a> for a full description.  </p>
+  <p>🔎 Dive into the <a href="survey.html">MIR survey results</a> on our dedicated page!  
+  </p>
   
-  
+
+	<h2>Openness assessment</h2>
+  <p id="table-guide"> <em>How to interpret this table?</em> MusGO framework consists of 13 dimensions of openness, distinguishing between <em>essential</em> (1-8) and <em>nice-to-have</em> (9-13) categories.  
+Essential categories follow a three-level scale:  
+(<span class="openness open"><strong>✔︎</strong> open</span>,  
+<span class="openness partial"><strong>~</strong> partial</span>, or  
+<span class="openness closed"><strong>✘</strong> closed</span>).  
+Nice-to-have categories are binary, indicating whether an element exists (⭐) or not.  
+
+Models are ranked in descending order based on an <strong>openness score</strong> (O), which aggregates their openness across essential categories. The score is computed as follows: <strong>✔︎</strong> (open) counts as 1 point, <strong>~</strong> (partial) as 0.5 points, and <strong>✘</strong> (closed) as 0 points. Since three essential categories were rated as more relevant in the survey, they are weighted twice as much. The final score is normalized to a 100-point scale using the formula:  
+
+O = ((E<sub>1</sub> + E<sub>2</sub> + E<sub>3</sub>) × 2 + (E<sub>4</sub> + E<sub>5</sub> + E<sub>6</sub> + E<sub>7</sub> + E<sub>8</sub>)) × (100 / 11).  
+</p>
+<p>
+
+</p>
 		<div id="included-table"></div>
 
 
