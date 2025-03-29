@@ -8,11 +8,16 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
     </head>
 
-    <body>
-        <div id="content"></div>
 
+    
+    <body>
+        <div id="header">
+            <h1><a href="" title="MusGO Framework: Detailed Criteria">MusGO Framework:</a> Detailed Criteria</h1>
+            </div>
+        
+        <div id="content">
     <script>
-        const markdownText = `# MusGO Framework: Detailed Criteria
+        const markdownText = `
 
 ## Essential
 
@@ -85,28 +90,27 @@
 
 #### [9] Model card. Is a model card or equivalent documentation provided? Does it offer comprehensive insight into the model’s architecture, training, tuning and evaluation?
 
-⭑ **Model card(s) available.** Model card(s) or equivalent documentation is available, providing insights into architecture, architecture, training, tuning, evaluation or intended use cases and limitations.
+⭐ **Model card(s) available.** Model card(s) or equivalent documentation is available, providing insights into architecture, architecture, training, tuning, evaluation or intended use cases and limitations.
 
 #### [10] Datasheet. Does the model include datasheets or equivalent documentation that provide a systematic and standardized account of the data used for training, focusing on collection, curation, and relevant considerations such as consent and limitations?
 
-⭑ **Datasheet(s) available.** Datasheets or equivalent documentation are available, offering an overview of data collection, curation, and considerations like consent, limitations, and selection strategies.
+⭐ **Datasheet(s) available.** Datasheets or equivalent documentation are available, offering an overview of data collection, curation, and considerations like consent, limitations, and selection strategies.
 
 #### [11] Package. Is the model released as an indexed software package or provided through an equivalent developeroriented solution to ensure the accessibility, usability, and reproducibility of the model?
 
-⭑ Packaged release available. A versioned software package release (e.g., PyPI, Conda, Homebrew) or equivalent solution is provided, ensuring easy installation, reproducibility, and usability.
+⭐ Packaged release available. A versioned software package release (e.g., PyPI, Conda, Homebrew) or equivalent solution is provided, ensuring easy installation, reproducibility, and usability.
 
 #### [12] User-oriented application. Is the model accessible via a user-oriented interface, such as an API, a real-time implementation or a UX tool for creative contexts?
 
-⭑ User-oriented application available. An accessible and user-oriented interface of the model exists, such as
+⭐ User-oriented application available. An accessible and user-oriented interface of the model exists, such as
 an API, a real-time model implementation, or a UX tool designed to enhance usability in creative contexts (e.g.
 for live performances or musicians’ creative processes).
 
 #### [13] Supplementary material page. Is there a demo page that showcases its capabilities by providing sonified generated examples of the model and demonstrates how to use the model in practice?
 
-⭑ Supplementary material page available. An accompanying website showcasing diverse examples, including
+⭐ Supplementary material page available. An accompanying website showcasing diverse examples, including
 sonified outputs and/or detailed usage demonstrations. In addition, the page may include interactive elements
 to help users understand the model’s capabilities and applications.
-
 `;
         document.getElementById("content").innerHTML = marked.parse(markdownText);
     </script>
