@@ -19,7 +19,9 @@ Every analysed model is evaluated in a specific YAML file. To contribute to the 
 #### **[2] Training data.** Is the training data of the model fully described, including sources, acquisition methods, and access conditions? Is training data available for inspection?
 
 **✗ Training data of the model is not available nor described.** The training data is not disclosed, and no information about the data sources, acquisition methods, or access conditions is provided.
+
 **≃ Some of the training data or information about the data is available.** Some of the training data of the model is available, or information about the data, such as its sources or a general description, is provided. However, the complete dataset is not provided, or information about the data is not complete. The level of detail provided does not allow for full reproducibility.
+
 **✓ The training data of the model is fully available and described.** The training data used for the model is described in detail, including its sources, acquisition methods, and any permissions or licenses associated with its use. Although direct access to the data may be restricted due to copyright or other legal concerns, all sources and relevant access conditions are fully disclosed to allow for transparency and informed inspection.
 
 
