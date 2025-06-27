@@ -73,7 +73,7 @@ Every analysed model is evaluated in a specific YAML file. To contribute to the 
 
 **✓ System is covered by a clear and adequate open license.** The system and all distributed materials are fully covered by clear and adequate open license, such as OSI or RAIL license.
 
-## Nice-to-have 
+## Desirable 
 
 #### [9] Model card. Is a model card or equivalent documentation provided? Does it offer comprehensive insight into the model’s architecture, training, tuning and evaluation?
 

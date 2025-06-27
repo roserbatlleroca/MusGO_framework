@@ -1,3 +1,6 @@
+# ! Note that this code has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+
 import yaml
 import glob
 import pandas as pd
@@ -57,7 +60,7 @@ def calculate_openness(df):
 def write_html(df):
     html_table = '<table>\n'
     html_table += '<thead>\n'
-    html_table += '<tr class="main-header"><th>Project</th><th colspan="8">Essential</th><th colspan="5">Nice-to-have</th>\n'
+    html_table += '<tr class="main-header"><th>Project</th><th colspan="8">Essential</th><th colspan="5">Desirable</th>\n'
     html_table += '<tr class="second-header"><th></th><th>Source code</th>' \
               '<th>Training data</th>' \
               '<th>Model weights</th>' \
@@ -77,7 +80,7 @@ def write_html(df):
     projects = df.index.tolist()
     for p in projects:
         cells_e = ["sourcecode", "trainingdata", "modelweights", "codedoc", "trainprocedure", "evalprocedure", "paper", "license"] # Essential categories
-        cells_n = ["modelcard", "datasheet", "package", "ux", "suppage"] # Nice-to-have categories
+        cells_n = ["modelcard", "datasheet", "package", "ux", "suppage"] # Desirable categories
         # first row
         source_link = "https://github.com/roserbatlleroca/MusGO_framework/blob/main" + df.loc[p, "source.file"]
         source_file = source_link.split("/")[-1]
@@ -104,7 +107,8 @@ def write_html(df):
         r2_html = '<tr class="row-b"><td class="org"><a target="_blank" href="{}" title="{}">{}</a></td>'.format(df.loc[p, "project.link"], df.loc[p, "project.notes"], df.loc[p, "org.name"])
         #r2_html += '<td colspan="3" class="llmbase">LLM base: {}</td><td colspan="3" class="rlbase">RL base: {}</td>'.format(df.loc[p, "project.llmbase"], df.loc[p, "project.rlbase"])
         #r2_html += '<td colspan="7"></td><td class="source-link"><a href="{}" title="{}" target="_blank">&sect;</a></td></tr>\n'.format(source_link, source_file)
-        r2_html += '<td colspan="7"></td><td class="source-link"><a href="{}" title="{}" target="_blank">{}</a></td></tr>\n'.format(df.loc[p, "org.link"], df.loc[p, "org.name"], df.loc[p, "openness"])
+        #r2_html += '<td colspan="7"></td><td class="source-link"><a href="{}" title="{}" target="_blank">{}</a></td></tr>\n'.format(df.loc[p, "org.link"], df.loc[p, "org.name"], df.loc[p, "openness"])
+        r2_html += '<td colspan="7"></td><td class="source-link"><a href="{}" title="{}" target="_blank"></a></td></tr>\n'.format(df.loc[p, "org.link"], df.loc[p, "org.name"])
         html_table += r2_html
     # closing tags
     html_table += '</tbody>\n'
@@ -114,7 +118,7 @@ def write_html(df):
 def write_simplified_html(df):
     html_table = '<table>\n'
     html_table += '<thead>\n'
-    html_table += '<tr class="main-header"><th>Project</th><th colspan="8">Essential</th><th colspan="5">Nice-to-have</th>\n'
+    html_table += '<tr class="main-header"><th>Project</th><th colspan="8">Essential</th><th colspan="5">Desirable</th>\n'
     html_table += '<tr class="second-header"><th></th><th>Source code</th>' \
               '<th>Training data</th>' \
               '<th>Model weights</th>' \
@@ -136,7 +140,7 @@ def write_simplified_html(df):
         # add data by looping through each row and converting it 2 rows for the html table.
         # also add classes to the <td> elements for colour coding and links to source of the class judgement: https://github.com/liesenf/awesome-open-chatgpt/issues/12
         cells_e = ["sourcecode", "trainingdata", "modelweights", "codedoc", "trainprocedure", "evalprocedure", "paper", "license"] # Essential categories
-        cells_n = ["modelcard", "datasheet", "package", "ux", "suppage"] # Nice-to-have categories
+        cells_n = ["modelcard", "datasheet", "package", "ux", "suppage"] # Desirable categories
         
         source_link = "https://github.com/roserbatlleroca/MusGO_framework/blob/main" + df.loc[p, "source.file"]
         source_file = source_link.split("/")[-1]

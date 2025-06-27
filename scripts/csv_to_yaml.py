@@ -1,3 +1,6 @@
+# ! Note that this code has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+
 import csv
 import ruamel.yaml as yaml
 from ruamel.yaml.comments import CommentedMap
@@ -68,7 +71,7 @@ def csv_to_yaml(csv_path, yaml_template):
             cells_e = ["sourcecode", "trainingdata", "modelweights", "codedoc", "trainprocedure", "evalprocedure", "paper", "license"]
             cells_e_names = ["Open Source Code", "Training data", "Model weights", "Code documentation", "Training procedure", "Evaluation procedure", "Research paper", "Licensing"]
             cells_e_links = ["Repository", "Dataset", "Weights", "Readme", "Preprint", "Preprint", "Article", "License"]
-            cells_n = ["modelcard", "datasheet", "package", "ux", "suppage"] # Nice-to-have categories
+            cells_n = ["modelcard", "datasheet", "package", "ux", "suppage"] # Desirable categories
             cells_n_names = ["Model Card", "Datasheet", "Package", "User-oriented application", "Demo Page"]
             cells_n_links = ["Model card", "Datasheet", "Package", "App", "Page"]
 
