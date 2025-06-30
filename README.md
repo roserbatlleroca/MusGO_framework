@@ -12,8 +12,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2507.X-<COLOR>.svg)]()
 
 
-The **Music-Generative Open AI (MusGO)** framework is a community-driven framework built to assess openness in music-generative models. With a collaborative approach, it invites contributions from researchers and artists, supports public scrutiny, and enables tracking of model evolution to promote transparency, accountability, and responsible development. 
-This article has been accepted at the 26th International Society for Music Information Retrieval (ISMIR) Conference. 
+The **Music-Generative Open AI (MusGO)** framework is a community-driven framework built to assess openness in music-generative models. With a collaborative approach, it invites contributions from researchers and artists, supports public scrutiny, and enables tracking of model evolution to promote transparency, accountability, and responsible development. This article has been accepted at the 26th International Society for Music Information Retrieval (ISMIR) Conference. 
 
 📍 View the **[MusGO leaderboard](https://roserbatlleroca.github.io/MusGO_framework/index.html)** to explore current model assessments.
 
@@ -30,20 +29,11 @@ Since 2023, generative AI has rapidly advanced in the music domain. Despite sign
 
 MusGO is composed of **13 categories**: 8 _essential_ and 5 _desirable_. Essential categories follow an **openness-graded scale** of three levels: **closed** (🔴), **partial** (🟠) and **fully open** (🟢). Instead, desirable categories are binary, indicating whether the element exists (**⭐**) or not. Framework criteria is detailed [here](https://roserbatlleroca.github.io/MusGO_framework/framework.html).
 
-<div align="center">
+### Essential Categories
+Open source code • Training data • Model weights • Code documentation •  Training procedure • Evaluation procedure • Research paper • Licensing  
 
-| **Essential**                            | **Desirable**                     |
-|------------------------------------------|-----------------------------------|
-| Open source code                         | Model card                        |
-| Training data                            | Datasheet                         |
-| Model weights                            | Package                           |
-| Code documentation                       | User-oriented application         |
-| Training procedure                       | Supplementary material page       |
-| Evaluation procedure                     |                                   |
-| Research paper                           |                                   |
-| Licensing                                |                                   |
-
-</div>
+### Desirable Categories
+Model card • Datasheet • Package • User-oriented application • Supplementary material page
 
 ## 🚀 Contribute
  
