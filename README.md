@@ -1,34 +1,69 @@
-# MusGO Framework: Assessing Openness in Music-Generative AI 
-We introduce the **Music-Generative Open AI (MusGO)** framework, a community-driven framework built to assess openness in music-generative models. 
+<div align="center">
 
-### Abstract 
-Since 2023, the music domain has witnessed a notable rise in generative AI, marked by the emergence of highly promising models. Despite their significant advances, music-generative models raise critical ethical challenges concerning multiple stakeholders and traditional music creative practices. The lack of transparency and the need for accountability and mitigating risks, such as the potential replication of artists’ works, underscore the importance of fostering openness in music-generative models. With upcoming regulations such as the EU AI Act encouraging open models, several generative models are being released claiming to be ‘open’. However, what exactly constitutes an open model continues to be widely debated. In this article, we adopt and adapt a recently proposed evidence-based framework for assessing openness in LLMs to the music domain. We scrutinise the proposed framework with a survey of 110 participants from the Music Information Retrieval (MIR) community, refining the assessment criteria based on their feedback. Our revised framework __MusGO__ (Music-Generative Open AI) comprises 13 categories, distinguished between *essential* (8) and *desirable* (5), based on the level of relevance established from the survey. We evaluate 16 state-of-the-art generative models, offering an in-depth analysis of their openness across these criteria. Our evaluation indicates that while open models are available, the community must be aware of \textit*open-washing*. As part of our contribution, we provide an openness leaderboard, showcasing the degree of openness of the analysed models, and making it fully open to public scrutiny and community contribution. Through this work, we aim to clarify the concept of openness in music-generative AI and promote its transparent and responsible development.
+# MusGO: A Community-Driven Framework For Assessing Openness in Music-Generative AI
 
+**Roser Batlle-Roca**<sup>1</sup>, **Laura Ibáñez-Martínez**<sup>1</sup>,**Xavier Serra**<sup>1</sup>, **Emilia Gómez**<sup>1,2</sup>, **Martín Rocamora**<sup>1</sup>
+
+<sup>1</sup>Music Technology Group, Universitat Pompeu Fabra, Barcelona
+
+<sup>2</sup>Joint Research Centre, European Comission, Sevilla 
+
+
+[![License: MIT](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+[![arXiv](https://img.shields.io/badge/arXiv-2507.X-<COLOR>.svg)]()
+
+
+The **Music-Generative Open AI (MusGO)** framework is a community-driven framework built to assess openness in music-generative models. With a collaborative approach, it invites contributions from researchers and artists, supports public scrutiny, and enables tracking of model evolution to promote transparency, accountability, and responsible development. This article has been accepted at the 26th International Society for Music Information Retrieval (ISMIR) Conference. 
+
+📍 View the **[MusGO leaderboard](https://roserbatlleroca.github.io/MusGO_framework/index.html)** to explore current model assessments.
+
+</div>
+
+---
+## Abstract 
+
+Since 2023, generative AI has rapidly advanced in the music domain. Despite significant technological advancements, music-generative models raise critical ethical challenges, including a lack of transparency and accountability, along with risks such as the replication of artists’ works, which highlights the importance of fostering openness. With upcoming regulations such as the EU AI Act encouraging open models, many generative models are being released labelled as ‘open’. However, the definition of an open model remains widely debated. In this article, we adapt a recently proposed evidence-based framework for assessing openness in LLMs to the music domain. Using feedback from a survey of 110 participants from the Music Information Retrieval (MIR) community, we refine the framework into MusGO (Music-Generative Open AI), which comprises 13 openness categories: 8 *essential* and 5 *desirable*. We evaluate 16 state-of-the-art generative models and provide an openness leaderboard that is fully open to public scrutiny and community contributions. Through this work, we aim to clarify the concept of openness in music-generative AI and promote its transparent and responsible development.
+
+---
 
 ## The MusGO framework
 
-MusGO is composed of **13 categories**:
+MusGO is composed of **13 categories**: 8 _essential_ and 5 _desirable_. Essential categories follow an **openness-graded scale** of three levels: **closed** (🔴), **partial** (🟠) and **fully open** (🟢). Instead, desirable categories are binary, indicating whether the element exists (**⭐**) or not. Framework criteria is detailed [here](https://roserbatlleroca.github.io/MusGO_framework/framework.html).
 
-- **8 essential categories**:
-1. *Open source code*  
-2. *Training data*  
-3. *Model weights*  
-4. *Code documentation*  
-5. *Training procedure*  
-6. *Evaluation procedure*  
-7. *Research paper*  
-8. *Licensing*  
-- **5 desirable categories**:
-9. *Model card*  
-10. *Datasheet*  
-11. *Package*  
-12. *User-oriented application*  
-13. *Supplementary material page*  
+<div style="display: flex; gap: 40px;">
 
-Essential categories follow an **openness-graded scale** of three levels: **closed** (🔴), **partial** (🟠) and **fully open** (🟢). 
+<div style="flex: 1;">
 
-Desirable categories are binary, indicating whether the element exists (**⭐**) or not.
+**Essential:**
 
+- Open source code  
+- Training data  
+- Model weights  
+- Code documentation  
+- Training procedure  
+- Evaluation procedure  
+- Research paper  
+- Licensing  
+
+</div>
+
+<div style="flex: 1;">
+
+**Desirable:**
+
+- Model card  
+- Datasheet  
+- Package  
+- User-oriented application  
+- Supplementary material page  
+
+</div>
+
+</div>
+
+## 🚀 Contribute
+ 
+ (tbd)
 
 ## 📚 Citation 
 
@@ -38,6 +73,7 @@ Desirable categories are binary, indicating whether the element exists (**⭐**)
   author={Roser Batlle-Roca and Laura Ibáñez-Martínez and Xavier Serra and Emilia Gómez and Martín Rocamora},
   journal={Proceedings of the 26th International Society for Music Information Retrieval Conference, Daejeon, South Korea},
   year={2025}, 
+  url={}, 
 }
 ```
 
