@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MusGO Model Evaluation Checklist</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 2em;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .section {
+      margin-top: 2em;
+    }
+    .category {
+      margin-bottom: 1.5em;
+    }
+    .category-title {
+      font-weight: bold;
+      margin-bottom: 0.3em;
+    }
+    .checkbox-item {
+      margin-left: 1em;
+    }
+    .sublist {
+      margin-left: 2em;
+      margin-top: 0.3em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎼 MusGO Model Evaluation Checklist</h1>
+  <p>Use this checklist to assess a music-generative model according to the <strong>MusGO framework</strong>. You can evaluate each element individually and use the results to inform contributions or leaderboard entries.</p>
+
+  <div class="section">
+    <h2>✅ Essential Categories</h2>
+
+    <div class="category">
+      <div class="category-title">1. <strong>Source code:</strong></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Source code is fully open.</label></div>
+      <div class="checkbox-item">It includes:</div>
+      <div class="sublist">
+        <label><input type="checkbox"> Data processing</label><br>
+        <label><input type="checkbox"> Model architecture</label><br>
+        <label><input type="checkbox"> Training pipeline</label><br>
+        <label><input type="checkbox"> Inference code</label>
+      </div>
+    </div>
+
+    <div class="category">
+      <div class="category-title">2. <strong>Training data:</strong></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Training data is fully described.</label></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Training data is accessible.</label></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Includes licensing and sourcing information.</label></div>
+    </div>
+
+    <div class="category">
+      <div class="category-title">3. <strong>Model weights:</strong></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Model weights are publicly shared and usable.</label></div>
+    </div>
+
+    <div class="category">
+      <div class="category-title">4. <strong>Code documentation:</strong></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Documentation enables replication, extension, and use.</label></div>
+    </div>
+
+    <div class="category">
+      <div class="category-title">5. <strong>Training procedure:</strong></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Training procedure is fully described.</label></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Includes configurations and hardware requirements.</label></div>
+    </div>
+
+    <div class="category">
+      <div class="category-title">6. <strong>Evaluation procedure:</strong></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Evaluation procedure is fully documented.</label></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Includes data, metrics, and methodology.</label></div>
+    </div>
+
+    <div class="category">
+      <div class="category-title">7. <strong>Research paper:</strong></div>
+      <div class="checkbox-item"><label><input type="checkbox"> A peer-reviewed research paper or technical report is available.</label></div>
+    </div>
+
+    <div class="category">
+      <div class="category-title">8. <strong>Licensing:</strong></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Clear and context-appropriate open license applies to all components.</label></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>🌟 Desirable Categories</h2>
+
+    <div class="category">
+      <div class="category-title">9. <strong>Model card:</strong></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Model card or equivalent documentation is available.</label></div>
+    </div>
+
+    <div class="category">
+      <div class="category-title">10. <strong>Datasheet:</strong></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Datasheet or data documentation is available.</label></div>
+    </div>
+
+    <div class="category">
+      <div class="category-title">11. <strong>Package:</strong></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Model is released as an installable or versioned package (e.g. PyPI, Conda).</label></div>
+    </div>
+
+    <div class="category">
+      <div class="category-title">12. <strong>User-oriented application:</strong></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Interface for interaction exists (e.g., API, demo app, UX tool).</label></div>
+    </div>
+
+    <div class="category">
+      <div class="category-title">13. <strong>Supplementary material page:</strong></div>
+      <div class="checkbox-item"><label><input type="checkbox"> A page or demo exists showcasing generated examples.</label></div>
+    </div>
+  </div>
+
+</body>
+</html>

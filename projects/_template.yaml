@@ -10,6 +10,11 @@
 # In filling out this yaml file, please follow the criteria as described here: 
 # https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
 
+# Remember to replace the template values with the actual information of the project you are evaluating.
+# Essential categories [1-8] should be classified as either `open`, `partial`, or `closed`.
+# Desirable categories [9-13] can be classified as `star` or `∅` (not applicable).
+# Notes should be provided for each category, explaining the classification and any relevant details.
+
 
 project:
     name:
@@ -74,31 +79,31 @@ license:
 
 # [9] Model card
 modelcard:
-    class: closed
+    class: ∅
     link:
     notes:
 
 # [10] Datasheet
 datasheet:
-    class: closed
+    class: ∅
     link:
     notes:
 
 # [11] Package
 package:
-    class: closed
+    class: ∅
     link:
     notes:
 
 # [12] User-oriented application
 ux:
-    class: closed
+    class: ∅
     link:
     notes:
 
 # [13] Supplementary Material Page
 suppage:
-    class: closed
+    class: ∅
     link:
     notes:
 

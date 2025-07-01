@@ -5,6 +5,7 @@
 **Roser Batlle-Roca**<sup>1</sup>, **Laura Ibáñez-Martínez**<sup>1</sup>,**Xavier Serra**<sup>1</sup>, **Emilia Gómez**<sup>1,2</sup>, **Martín Rocamora**<sup>1</sup>
 
 <sup>1</sup>Music Technology Group, Universitat Pompeu Fabra, Barcelona
+
 <sup>2</sup>Joint Research Centre, European Comission, Sevilla 
 
 
@@ -36,8 +37,30 @@ Open source code • Training data • Model weights • Code documentation • 
 Model card • Datasheet • Package • User-oriented application • Supplementary material page
 
 ## 🚀 Contribute
- 
- (tbd)
+
+To help expand or refine the MusGO leaderboard, you can contribute by: 
+
+- **Adding a new model** to the leaderboard. 
+- **Proposing updates or modifications** to the evaluation of exisiting models. 
+
+To get started, head over to our [**How to contribute?** page](projects/README.md). It includes:
+
+- Instructions for submitting models via pull request
+- Guidelines for proposing changes or opening issues
+- A checklist to support evidence-based assessments
+
+
+ Your feedback helps us maintain fair and up-to-date openness assessments. Thank you for contributing to the improvement of MusGO!
+
+## 💬 Any doubts or thoughts? Help us improve!
+
+We’d love to hear your feedback, questions, or suggestions for improving the MusGO framework and the evaluation process. We encourage you to open up issues to: 
+- Flag a particular assessment in the current evaluations. 
+- Suggest improvements to the evaluation framework. 
+- Ask questions about how to interpret the categories. 
+
+You can also contact us directly at [roser.batlle@upf.edu](mailto:roser.batlle@upf.edu) and [laura.ibanez@upf.edu](mailto:laura.ibanez@upf.edu). 
+
 
 ## 📚 Citation 
 
