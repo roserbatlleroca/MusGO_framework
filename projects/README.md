@@ -1,5 +1,5 @@
 
-# 📋 How to conduct an evidence-based assessment with MusGO? 
+# How to conduct an evidence-based assessment with MusGO? 
 
 The MusGO framework is designed to guide fair and transparent evaluations of openness in music-generative AI models. To ensure consistency and traceability, we encourage all contributors to follow an evidence-based approach.
 
@@ -10,7 +10,7 @@ Once your assessment is complete, follow the instructions below to learn how to 
 
 ---
 
-# 🤝 How to contribute? 
+# How to contribute? 
 
 ## Adding a new model
 
@@ -37,8 +37,8 @@ Once your YAML file is complete:
 
 - Open a **pull request** with your new model file.
 - The repository maintainers will **review your submission**:
-  - ✅ If everything looks good, your model will be merged into the leaderboard.
-  - ⚠️ If we spot any missing info or inconsistencies, we’ll reach out to clarify or request edits.
+  - If everything looks good, your model will be merged into the leaderboard.
+  - If we spot any missing info or inconsistencies, we’ll reach out to clarify or request edits.
 - Once all issues are addressed, the model will be officially added!
 
 

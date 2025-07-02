@@ -2,7 +2,7 @@
 
 # MusGO: A Community-Driven Framework For Assessing Openness in Music-Generative AI
 
-**Roser Batlle-Roca**<sup>1</sup>, **Laura Ibáñez-Martínez**<sup>1</sup>,**Xavier Serra**<sup>1</sup>, **Emilia Gómez**<sup>1,2</sup>, **Martín Rocamora**<sup>1</sup>
+**Roser Batlle-Roca**<sup>1</sup>, **Laura Ibáñez-Martínez**<sup>1</sup>, **Xavier Serra**<sup>1</sup>, **Emilia Gómez**<sup>1,2</sup>, **Martín Rocamora**<sup>1</sup>
 
 <sup>1</sup>Music Technology Group, Universitat Pompeu Fabra, Barcelona
 
@@ -38,7 +38,7 @@ Open source code • Training data • Model weights • Code documentation • 
 ### Desirable Categories
 Model card • Datasheet • Package • User-oriented application • Supplementary material page
 
-## 🚀 Contribute
+## Contribute
 
 To help expand or refine the MusGO leaderboard, you can contribute by: 
 
@@ -64,7 +64,7 @@ We’d love to hear your feedback, questions, or suggestions for improving the M
 You can also contact us directly at [roser.batlle@upf.edu](mailto:roser.batlle@upf.edu) and [laura.ibanez@upf.edu](mailto:laura.ibanez@upf.edu). 
 
 
-## 📚 Citation 
+## Citation 
 
 ```
 @article{batlleroca2025musgo,
