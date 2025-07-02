@@ -1,76 +1,128 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MusGO Framework: Assessing Opennesss in Music-Generative AI</title>
+<title>MusGO Framework: Assessing Openness in Music-Generative AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 <link href="styles.css" rel="stylesheet"/>
-<script data-domain="roserbatlleroca.github.io/MusGO_framework/" defer="" src="https://plausible.io/js/script.js"></script>
+<script data-domain="roserbatlleroca.github.io/MusGO_framework/" defer src="https://plausible.io/js/script.js"></script>
+<style>
+  body {
+  font-family: 'Open Sans', sans-serif;
+  }
+  .highlight {
+    background-color: #f0f0f0;
+    padding: 1em;
+    /* border-left: 4px solid #ccc; */
+  }
+  #table-guide em {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  #table-guide {
+  background-color: #f8f8f8;
+  padding: 1em;
+  font-size: 1em;
+
+  }
+  #table-guide p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  }
+  #table-guide {
+  background-color: #f8f8f8;
+  padding: 0.5em 1em 0.5em 1em; /* top, right, bottom, left */
+  font-size: 1em;
+}
+
+</style>
 </head>
 <body>
 <div id="header">
-<h1><a href="" title="MusGO Framework: Assessing Opennesss in Music-Generative AI">MusGO Framework:</a> Assessing Opennesss in Music-Generative AI</h1><!--<img alt="Opening up ChatGPT" id="title-logo" src="logos/openchatgpt-logo-favicon-red-on-transparent.png"/>Opening up ChatGPT</a>: tracking openness of instruction-tuned LLMs</h1>--> 
+<h1>MusGO Framework:</a> Assessing Openness in Music-Generative AI</h1>
 </div>
+
 <div id="content">
 
-	<p class="highlight" id="description"> With the notable rise of generative models in the music domain, we pose the question: how open are they?
-    Lacking of a clear definition of openness in music-generative AI, we propose <strong>MusGO</strong> (Music-Generative Open AI): a community-driven framework for assessing openness in music-generative AI.
-  MusGO is built together with the participation of the Music Information Retrieval (MIR) and applied to assess openness in music-generative models. 
-    </p>
-	
-	<p id="tagline"> Note that this site is part of the submission <em>'MusGO: A Community-Driven Framework for Asssessing Openness in Music-Generative AI'</em>, which is currently under review.</p>
+  <p class="highlight" id="description">
+    The <strong>Music-Generative Open AI (MusGO)</strong> framework is a community-driven framework built to assess openness in music-generative models. With a collaborative approach, it invites contributions from researchers and artists, supports public scrutiny, and enables tracking of model evolution to promote transparency, accountability, and responsible development.
+  </p>
 
   <p>
-    📌 <strong>Want to learn more about MusGO?</strong> Check out the <a href="framework.html">MusGO Framework</a> for a full description.  </p>
-  <p>🔎 Dive into the <a href="survey.html">MIR survey results</a> on our dedicated page!  
+This website builds on the paper <em>“MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI”</em>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
+Emilia Gómez, and Martín Rocamora.  
+It serves not only as a companion to the publication, but also as a living resource, which is continuously updated and shaped by contributions from the community. 
+<br>
+ <br><a href="https://arxiv.org/pdf/X">Read the paper</a>  
+  | <a href="https://github.com/roserbatlleroca/MusGO_framework">GitHub Repository</a>
+  | <a href="framework.html">MusGO Framework</a>
+  | <a href="https://github.com/roserbatlleroca/MusGO_framework/blob/main/projects/README.md">How to contribute?</a>
+  | <a href="survey.html">MIR Survey Results</a>
+  | <a href="https://github.com/roserbatlleroca/MusGO_framework/tree/main?tab=readme-ov-file#-any-doubts-or-thoughts-help-us-improve">Help us improve!</a>
+</p>
+
+
+
+  <h2>Openness assessment</h2>
+  <div id="table-guide" class="highlight"><p>
+    <em>How to interpret this table?</em> MusGO framework consists of 13 dimensions of openness, distinguishing between <em>essential</em> (1–8) and <em>desirable</em> (9–13) categories.  
+    Essential categories follow a three-level scale:  
+    (<span class="openness open"><strong>✔︎</strong> open</span>,  
+    <span class="openness partial"><strong>~</strong> partial</span>, or  
+    <span class="openness closed"><strong>✘</strong> closed</span>).  
+    Desirable categories are binary, indicating whether an element exists (⭐) or not.  
+
   </p>
-  
-
-	<h2>Openness assessment</h2>
-  <p id="table-guide"> <em>How to interpret this table?</em> MusGO framework consists of 13 dimensions of openness, distinguishing between <em>essential</em> (1-8) and <em>desirable</em> (9-13) categories.  
-Essential categories follow a three-level scale:  
-(<span class="openness open"><strong>✔︎</strong> open</span>,  
-<span class="openness partial"><strong>~</strong> partial</span>, or  
-<span class="openness closed"><strong>✘</strong> closed</span>).  
-Desirable categories are binary, indicating whether an element exists (⭐) or not.  
-
-Models are ranked in descending order based on an <strong>openness score</strong> (O), which aggregates their openness across essential categories. The score is computed as follows: <strong>✔︎</strong> (open) counts as 1 point, <strong>~</strong> (partial) as 0.5 points, and <strong>✘</strong> (closed) as 0 points. Since three essential categories were rated as more relevant in the survey, they are weighted twice as much. The final score is normalized to a 100-point scale using the formula:  
-
-O = ((E<sub>1</sub> + E<sub>2</sub> + E<sub>3</sub>) × 2 + (E<sub>4</sub> + E<sub>5</sub> + E<sub>6</sub> + E<sub>7</sub> + E<sub>8</sub>)) × (100 / 11).  
-</p>
-<p>
-
-</p>
-		<div id="included-table"></div>
-
-
-	
-<h4>Acknowledgments</h4>
-<p>This site is an adapted version of <a href="https://opening-up-chatgpt.github.io/">https://opening-up-chatgpt.github.io/</a>.
- We are deeply grateful to the original creators, Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse, for their groundbreaking work on openness, transparency, and accountability in generative AI, which has inspired and shaped this project.</p>
  <p>
-    For more details, please refer to their papers:
+
+    
+    Models are ordered using a weighted
+    openness score (O), based on essential categories (E) and
+    normalised to a 100-point scale. Considering survey findings,
+    the three most relevant categories (E<sub>1</sub>, E<sub>2</sub> and E<sub>3</sub>,
+    all with M<sub>1,2,3</sub>=5) are weighted twice as much as the others.
+    Note that the score is used for ordering purposes only,
+    and we do not intend to reduce openness to a single value.
+    When models achieve the same score, the order is determined
+    by the highest number of fulfilled desirable categories.
+
+
   </p>
+
+</div>
+
+
+
+  <div id="included-table"></div>
+
+  <h4>Acknowledgments</h4>
+  <p>This site is an adapted version of <a href="https://opening-up-chatgpt.github.io/">https://opening-up-chatgpt.github.io/</a>.  
+  We are deeply grateful to the original creators, Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse, for their groundbreaking work on openness, transparency, and accountability in generative AI, which has inspired and shaped this project.</p>
+
+  <p>For more details, please refer to their papers:</p>
   <ul>
     <li>
       Liesenfeld, Andreas, Alianda Lopez, and Mark Dingemanse. 2023. 
       <em>“Opening up ChatGPT: Tracking Openness, Transparency, and Accountability in Instruction-Tuned Text Generators.”</em> 
-      In <em>CUI '23: Proceedings of the 5th International Conference on Conversational User Interfaces</em>, July 19-21, Eindhoven. 
+      In <em>CUI '23: Proceedings of the 5th International Conference on Conversational User Interfaces</em>, July 19–21, Eindhoven.  
       DOI: <a href="https://doi.org/10.1145/3571884.3604316" target="_blank">10.1145/3571884.3604316</a>.
     </li>
     <li>
       Andreas Liesenfeld and Mark Dingemanse. 2024. 
       <em>“Rethinking open source generative AI: open washing and the EU AI Act.”</em> 
-      In <em>The 2024 ACM Conference on Fairness, Accountability, and Transparency (FAccT '24)</em>. 
+      In <em>The 2024 ACM Conference on Fairness, Accountability, and Transparency (FAccT '24)</em>.  
       DOI: <a href="https://doi.org/10.1145/3630106.3659005" target="_blank">10.1145/3630106.3659005</a>.
     </li>
   </ul>
 
 </div><!-- #content -->
+
 <div id="footer">
 <p>This site is an adapted version of <a href="https://opening-up-chatgpt.github.io/">https://opening-up-chatgpt.github.io/</a>.</p>
 <p class="copyright">Website &amp; code © 2025 by the authors.</p>
 <p id="build-time"></p>
 </div>
+
 </body>
 </html>

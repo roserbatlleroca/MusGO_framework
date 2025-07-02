@@ -109,7 +109,7 @@ p#tagline a { padding-left:4px; }
 p#table-guide {
 	color:#696969;
 	font-size:0.8rem;
-	line-height:1.1rem;
+	line-height:1em;
 }
 
 span.link-icon { 
@@ -118,7 +118,7 @@ span.link-icon {
 } 
 
 span.openness { display:inline-block;
-padding:1px 5px; color:#fefefe }
+padding:1px 3px; color:#fefefe }
 span.open { background-color:#3e9b74; }
 span.partial { background-color:#dd9f1c; }
 span.closed { background-color:#ca6014; }
