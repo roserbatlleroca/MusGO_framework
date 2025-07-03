@@ -1,45 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>MusGO Model Evaluation Checklist</title>
-  <style>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusGO Model Evaluation Checklist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"/>
+    <script data-domain="roserbatlleroca.github.io/MusGO_framework/" defer src="https://plausible.io/js/script.js"></script>
+    <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 2em;
-      line-height: 1.6;
+      font-family: 'Open Sans', sans-serif;
     }
-    h1, h2 {
-      color: #333;
+    
+  .highlight {
+    background-color: #f0f0f0;
+    padding: 1em;
+    /* border-left: 4px solid #ccc; */
+  }
+  #table-guide em {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  #table-guide {
+  background-color: #f8f8f8;
+  padding: 1em;
+  font-size: 1em;
+
+  }
+  #table-guide p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  }
+  #table-guide {
+  background-color: #f8f8f8;
+  padding: 0.5em 1em 0.5em 1em; /* top, right, bottom, left */
+  font-size: 1em;
+  }
+  .section {
+      margin-top: 0em;
     }
-    .section {
-      margin-top: 2em;
-    }
-    .category {
+  .category {
       margin-bottom: 1.5em;
     }
-    .category-title {
+  .category-title {
       font-weight: bold;
       margin-bottom: 0.3em;
     }
-    .checkbox-item {
+  .checkbox-item {
       margin-left: 1em;
+      line-height: 1.5em;
+      margin-top: 0.5em;
     }
-    .sublist {
+  .sublist {
       margin-left: 2em;
       margin-top: 0.3em;
     }
+  .section-container {
+ display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-between;
+  align-items: flex-start;
+  }
+  .essential-section,
+  .desirable-section {
+    flex: 1 1 45%;
+    min-width: 300px;
+  }
   </style>
 </head>
 <body>
 
-  <h1>🎼 MusGO Model Evaluation Checklist</h1>
-  <p>Use this checklist to assess a music-generative model according to the <strong>MusGO framework</strong>. You can evaluate each element individually and use the results to inform contributions or leaderboard entries.</p>
+  <div id="header">
+  <h1>MusGO Framework: Evaluation Checklist</h1>
+  </div>
 
-  <div class="section">
-    <h2>✅ Essential Categories</h2>
+  <div id="content">
+    
+      <p class="highlight" id="description">
+    
+      We here provide an evaluation checklist based on the criteria of the <strong>Music-Generative Open AI (MusGO)</strong> framework.   
+       This evaluation checklist is linked to the research article <em>“MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI”</em>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
+Emilia Gómez, and Martín Rocamora.
+      </p>
+
+      Use this checklist to assess a music-generative model 
+      according to the proposed framework. This checklist is designed to be a practical tool for evaluating the openness of music-generative models, ensuring that all essential and desirable aspects are considered.
+
+
+    <p>
+                <a href="https://arxiv.org/pdf/X">Read the paper</a>  
+                | <a href="https://github.com/roserbatlleroca/MusGO_framework">GitHub Repository</a>
+                | <a href="index.html">Openness Leaderdboard</a>
+                | <a href="framework.html">MusGO Framework</a>
+                | <a href="https://github.com/roserbatlleroca/MusGO_framework/blob/main/projects/README.md">How to contribute?</a>
+                | <a href="https://github.com/roserbatlleroca/MusGO_framework/tree/main?tab=readme-ov-file#-any-doubts-or-thoughts-help-us-improve">Help us improve!</a>
+</p>
+
+<div class="section-container">
+
+      <div class="section essential-section">
+    <h2>Essential</h2>
 
     <div class="category">
       <div class="category-title">1. <strong>Source code:</strong></div>
@@ -49,52 +110,85 @@
         <label><input type="checkbox"> Data processing</label><br>
         <label><input type="checkbox"> Model architecture</label><br>
         <label><input type="checkbox"> Training pipeline</label><br>
-        <label><input type="checkbox"> Inference code</label>
+        <label><input type="checkbox"> Inference code</label><br>
       </div>
+      <div class="checkbox-item"><label><input type="checkbox"> The code is shared in a well-organised and usable format, allowing detailed analysis.</label></div>
     </div>
 
     <div class="category">
       <div class="category-title">2. <strong>Training data:</strong></div>
       <div class="checkbox-item"><label><input type="checkbox"> Training data is fully described.</label></div>
+      <div class="checkbox-item">It includes:</div>
+        <div class="sublist">
+          <label><input type="checkbox"> Data sources</label><br>
+          <label><input type="checkbox"> Data acquisition methods</label><br>
+          <label><input type="checkbox"> Data permissions or licenses associated with its use</label><br>
+        </div>
       <div class="checkbox-item"><label><input type="checkbox"> Training data is accessible.</label></div>
-      <div class="checkbox-item"><label><input type="checkbox"> Includes licensing and sourcing information.</label></div>
+      <div class="checkbox-item"><strong>OR</strong></div>
+      <div class="checkbox-item"><label><input type="checkbox"> If direct access to the data is restricted due to copyright or other legal concerns, all sources and relevant access conditions
+are fully disclosed to allow for transparency and informed inspection.</label></div>
     </div>
 
     <div class="category">
       <div class="category-title">3. <strong>Model weights:</strong></div>
-      <div class="checkbox-item"><label><input type="checkbox"> Model weights are publicly shared and usable.</label></div>
+      <div class="checkbox-item"><label><input type="checkbox"> All model weights are publicly available and usable.</label></div>
     </div>
 
     <div class="category">
-      <div class="category-title">4. <strong>Code documentation:</strong></div>
-      <div class="checkbox-item"><label><input type="checkbox"> Documentation enables replication, extension, and use.</label></div>
+  <div class="category-title">4. <strong>Code documentation:</strong></div>
+      <div class="checkbox-item"><label><input type="checkbox"> The codebase is fully documented.</label></div>
+      <div class="checkbox-item">It includes:</div>
+      <div class="sublist">
+        <label><input type="checkbox"> Clear instructions for use and replication</label><br>
+        <label><input type="checkbox"> Environment setup and requirements</label><br>
+        <label><input type="checkbox"> Configuration guides</label><br>
+        <label><input type="checkbox"> Well-commented source code</label><br>
+        <label><input type="checkbox"> (Optional) Guidance on how to extend or modify the codebase.</label>
+  </div>
     </div>
 
     <div class="category">
       <div class="category-title">5. <strong>Training procedure:</strong></div>
       <div class="checkbox-item"><label><input type="checkbox"> Training procedure is fully described.</label></div>
-      <div class="checkbox-item"><label><input type="checkbox"> Includes configurations and hardware requirements.</label></div>
-    </div>
+     <div class="checkbox-item">It includes:</div>
+      <div class="sublist">
+        <label><input type="checkbox"> Hardware requirements</label><br>
+        <label><input type="checkbox"> Model configuration</label><br>
+        <label><input type="checkbox"> Configuration guides</label><br>
+      </div>
+      <div class="checkbox-item"><label><input type="checkbox"> It allows others to replicate the model and understand the system.</label></div>
+  </div>
 
     <div class="category">
       <div class="category-title">6. <strong>Evaluation procedure:</strong></div>
       <div class="checkbox-item"><label><input type="checkbox"> Evaluation procedure is fully documented.</label></div>
-      <div class="checkbox-item"><label><input type="checkbox"> Includes data, metrics, and methodology.</label></div>
+      <div class="checkbox-item">It includes:</div>
+      <div class="sublist">
+        <label><input type="checkbox"> Evaluation data</label><br>
+        <label><input type="checkbox"> Evaluation metrics</label><br>
+        <label><input type="checkbox"> Evaluation process, with necessary code.</label><br>
+      </div>
     </div>
 
     <div class="category">
       <div class="category-title">7. <strong>Research paper:</strong></div>
-      <div class="checkbox-item"><label><input type="checkbox"> A peer-reviewed research paper or technical report is available.</label></div>
+      <div class="checkbox-item"><label><input type="checkbox"> A research paper or technical report is available.</label></div>
+      <div class="checkbox-item"><label><input type="checkbox"> A peer-reviewed research paper is available.</label><br>
+      <em>Note that if the peer-reviewed research paper is not available through open access publication, we consider the category to be “fully open” when a preprint of
+such research paper is available.</em>
+      </div>
+    
     </div>
 
     <div class="category">
       <div class="category-title">8. <strong>Licensing:</strong></div>
-      <div class="checkbox-item"><label><input type="checkbox"> Clear and context-appropriate open license applies to all components.</label></div>
+      <div class="checkbox-item"><label><input type="checkbox"> Clear and context-appropriate open license, such as OSI or RAIL, applies to all components.</label></div>
     </div>
   </div>
 
-  <div class="section">
-    <h2>🌟 Desirable Categories</h2>
+  <div class="section desirable-section">
+    <h2>Desirable</h2>
 
     <div class="category">
       <div class="category-title">9. <strong>Model card:</strong></div>
@@ -121,6 +215,6 @@
       <div class="checkbox-item"><label><input type="checkbox"> A page or demo exists showcasing generated examples.</label></div>
     </div>
   </div>
-
+</div>
 </body>
 </html>
