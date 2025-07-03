@@ -2,8 +2,22 @@
 
 <html>
     <head>
-        <title>MIR survey</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>MusGO Framework: MIR Survey</title>
+         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet"/>
+        <script data-domain="roserbatlleroca.github.io/MusGO_framework/" defer src="https://plausible.io/js/script.js"></script>
+    <style>
+        body {
+      font-family: 'Open Sans', sans-serif;
+    }
+    
+  .highlight {
+    background-color: #f0f0f0;
+    padding: 1em;
+    /* border-left: 4px solid #ccc; */
+  }
+  </style>
+
     </head>
 
     <body>
@@ -12,24 +26,32 @@
         </div>
 
         <div id="content">
-            <p class="highlight" id="description"> We here present a summary from the results of the <a href="https://www.ismir.net/">Music Information Retrival (MIR) community</a> survey, focusing on participants characterisitcs.
-                This survey is linked to the research article '<em>MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI</em>', which is currently under review.
-                The survey was conducted to gather insights from the MIR community on the proposed preliminary adapted framework and its categories.
+            <p class="highlight" id="description"> We here present complementary insights from the <a href="https://www.ismir.net/">Music Information Retrival (MIR) community</a> survey, focusing on participants characterisitcs.
+                This survey is linked to the research article <em>“MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI”</em>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
+Emilia Gómez, and Martín Rocamora.
             </p>
-            <p> 
-                📌 <strong>Want to learn more about MusGO?</strong> Check out the <a href="framework.html">MusGO Framework</a> for a full description.
-            </p>
-            <p>
-                🏁 Check out the music-generative models openness <a href="index.html">leaderdboard</a>.
-            </p>
-        </div>
 
+           <p>The survey was conducted to gather insights from the MIR community on a proposed preliminary adapted framework and its categories. 
+            Based on participants' feedback, we refined the framework to better align with the specific nuance of the music domain. 
+            This included clarifying category descriptions, addressing disagreements, and incorporating music-specific concerns such as IP-protected training data, the importance of sonified examples, and the usability requirements of musicians. </p>
+            <p>
+
+         <a href="https://arxiv.org/pdf/X">Read the paper</a>  
+            | <a href="https://github.com/roserbatlleroca/MusGO_framework">GitHub Repository</a>
+            | <a href="index.html">Openness Leaderdboard</a>
+            | <a href="framework.html">Detailed Criteria</a>
+            | <a href="https://github.com/roserbatlleroca/MusGO_framework/blob/main/projects/README.md">How to contribute?</a>
+
+            | <a href="https://github.com/roserbatlleroca/MusGO_framework/tree/main?tab=readme-ov-file#-any-doubts-or-thoughts-help-us-improve">Help us improve!</a>
+            </p>
+      </div>
         <div id="content">
-            <h2>MIR Survey</h2>
+            <h2>Methodology</h2>
            
             <p>
                 The survey included a statement for each category reflecting the top open level 
-                (<em>fully open</em>). Participants were asked to assess the proposed statement by:
+                (<em>fully open</em>) of the adapted framewrok from <a href="https://dl.acm.org/doi/pdf/10.1145/3630106.3659005">Liesenfeld and Dingemanse (2024)</a>. The preliminary criteria assessed in the survey is available <a href="https://docs.google.com/document/d/1V0dLMFJHQuAcZky2IgpT_g6BR03j8Lk7FMUVzAYOgQ4/edit?usp=sharing">here</a>. 
+                Participants were asked to assess the proposed statement by:
             </p>
             <ul>
                 <li><strong>Relevance</strong> — how important they consider the category in determining the openness of a model, rated on a 5-level scale where 1 is <em>not relevant</em> and 5 is <em>very relevant</em>.</li>
@@ -46,6 +68,10 @@
             </p>
 
         </div>
+
+        
+
+
         <div id="content">
             <h2>Participants</h2>
            
@@ -60,17 +86,22 @@
                 Following, Figure 2 highlights the diver represenetation of roles within the MIR community. 
             </p>
             
-            <!-- Figure: 1 -->
-            <div style="text-align: center;">
-                <img src="fig/fig1.png" alt="Geographical distribution of participants" style="width: 600px; height: auto;">
-                <p><strong>Figure 1:</strong> Distribution of participants by geographical location.</p>
-            </div>
-            
-            <!-- Figure: 2 -->
-            <div style="text-align: center; margin-top: 20px;">
-                <img src="fig/fi2.png" alt="Roles of participants in the MIR community" style="width: 600px; height: auto;">
-                <p><strong>Figure 2:</strong> Distribution of participants by roles within the MIR community.</p>
-            </div>
+      <div style="display: flex; justify-content: center; gap: 2em; flex-wrap: wrap; margin-top: 20px;">
+
+        <!-- Figure: 1 -->
+        <div style="text-align: center; flex: 1 1 45%;">
+            <img src="fig/fig1.png" alt="Geographical distribution of participants" style="width: 100%; height: auto; max-width: 450px;">
+            <p><strong>Figure 1:</strong> Distribution of participants by geographical location.</p>
+        </div>
+
+        <!-- Figure: 2 -->
+        <div style="text-align: center; flex: 1 1 45%;">
+            <img src="fig/fi2.png" alt="Roles of participants in the MIR community" style="width: 100%; height: auto; max-width: 450px;">
+            <p><strong>Figure 2:</strong> Distribution of participants by roles within the MIR community.</p>
+        </div>
+
+        </div>
+
             
             <p>
                 Although we intended for a more inclusive representation, the obtained sample is biased towards males in academia based in Europe and North America. 
