@@ -3,7 +3,7 @@
 
 The MusGO framework is designed to guide fair and transparent evaluations of openness in music-generative AI models. To ensure consistency and traceability, we encourage all contributors to follow an evidence-based approach.
 
-You can find the complete definition and descriptions of all MusGO criteria on the [**MusGO Framework page**](https://roserbatlleroca.github.io/MusGO_framework/framework.html). To evaluate a new model or validate a current assessment, we recommend using the [MusGO checklist](/docs/checklist.html) to guide your evaluation step-by-step. 
+You can find the complete definition and descriptions of all MusGO criteria on the [**MusGO Framework page**](https://roserbatlleroca.github.io/MusGO_framework/framework.html). To evaluate a new model or validate a current assessment, we recommend using the [MusGO checklist](https://roserbatlleroca.github.io/MusGO_framework/checklist.html) to guide your evaluation step-by-step. 
 
 Once your assessment is complete, follow the instructions below to learn how to [add a new model](#adding-a-new-model) or [amend an existing evaluation](#amending-a-current-evaluation).
 
