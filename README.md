@@ -86,3 +86,11 @@ For more details, please refer to their papers:
 
 - Liesenfeld, Andreas, Alianda Lopez, and Mark Dingemanse. 2023. *“Opening up ChatGPT: Tracking Openness, Transparency, and Accountability in Instruction-Tuned Text Generators.”* In *CUI '23: Proceedings of the 5th International Conference on Conversational User Interfaces*, July 19-21, Eindhoven. DOI: [10.1145/3571884.3604316](https://doi.org/10.1145/3571884.3604316).
 - Andreas Liesenfeld and Mark Dingemanse. 2024. *“Rethinking open source generative AI: open washing and the EU AI Act.”* In *The 2024 ACM Conference on Fairness, Accountability, and Transparency (FAccT '24)*. DOI: [10.1145/3630106.3659005](https://doi.org/10.1145/3630106.3659005).
+
+This work has been supported by _IA y Música: Cátedra en Inteligencia Artificial y Música_ (TSI-100929-2023-1), funded by the Secretaría de Estado de Digitalización e Inteligencia Artificial and the European Union-Next Generation EU, and _IMPA: Multimodal AI for Audio Processing_ (PID2023-152250OB-I00), funded by the Ministry of Science, Innovation and Universities of the Spanish Government, the Agencia Estatal de Investigación (AEI) and cofinanced by the European Union.
+
+We also thank our colleagues at the Music Technology Group at Universitat Pompeu Fabra for their thoughtful insights, constructive discussions and active engagement throughout the development of this work.
+
+<p align="center">
+  <img src="docs/fig/MTG-logo.png" width="340">
+</p>
