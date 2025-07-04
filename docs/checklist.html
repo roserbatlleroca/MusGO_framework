@@ -67,6 +67,27 @@
     flex: 1 1 45%;
     min-width: 300px;
   }
+  #footer {
+  padding: 1em;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  max-width: 70%;
+}
+
+.footer-image img {
+  max-height: 60px; /* adjust as needed */
+  width: auto;
+}
   </style>
 </head>
 <body>
@@ -213,5 +234,19 @@ such research paper is available.</em>
     </div>
   </div>
 </div>
+
+<div id="footer">
+    <div class="footer-content">
+        <div class="footer-text">
+        <p class="copyright">Website &amp; code © 2025 by the authors.</p>
+        <p id="build-time"></p>
+        </div>
+    
+        <div class="footer-image">
+        <img src="fig/MTG-logo.png" alt="MTG logo" />
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

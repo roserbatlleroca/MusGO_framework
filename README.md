@@ -4,8 +4,7 @@
 
 **Roser Batlle-Roca**<sup>1</sup>, **Laura Ibáñez-Martínez**<sup>1</sup>, **Xavier Serra**<sup>1</sup>, **Emilia Gómez**<sup>1,2</sup>, **Martín Rocamora**<sup>1</sup>
 
-<sup>1</sup>Music Technology Group, Universitat Pompeu Fabra, Barcelona
-
+<sup>1</sup>Music Technology Group, Universitat Pompeu Fabra, Barcelona<br>
 <sup>2</sup>Joint Research Centre, European Comission, Sevilla 
 
 
