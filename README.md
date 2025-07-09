@@ -9,7 +9,7 @@
 
 
 [![License: MIT](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![arXiv](https://img.shields.io/badge/arXiv-2507.X-<COLOR>.svg)]()
+[![arXiv](https://img.shields.io/badge/arXiv-2507.03599-<COLOR>.svg)]()
 
 
 The **Music-Generative Open AI (MusGO)** framework is a community-driven framework built to assess openness in music-generative models. With a collaborative approach, it invites contributions from researchers and artists, supports public scrutiny, and enables tracking of model evolution to promote transparency, accountability, and responsible development. 
@@ -73,7 +73,7 @@ You can also contact us directly at [roser.batlle@upf.edu](mailto:roser.batlle@u
   author={Roser Batlle-Roca and Laura Ibáñez-Martínez and Xavier Serra and Emilia Gómez and Martín Rocamora},
   journal={Proceedings of the 26th International Society for Music Information Retrieval Conference, Daejeon, South Korea},
   year={2025}, 
-  url={}, 
+  url={http://arxiv.org/abs/2507.03599}, 
 }
 ```
 
