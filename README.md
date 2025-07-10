@@ -9,7 +9,7 @@
 
 
 [![License: MIT](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![arXiv](https://img.shields.io/badge/arXiv-2507.03599-<COLOR>.svg)]()
+[![arXiv](https://img.shields.io/badge/arXiv-2507.03599-<COLOR>.svg)](http://arxiv.org/pdf/2507.03599)
 
 
 The **Music-Generative Open AI (MusGO)** framework is a community-driven framework built to assess openness in music-generative models. With a collaborative approach, it invites contributions from researchers and artists, supports public scrutiny, and enables tracking of model evolution to promote transparency, accountability, and responsible development. 
