@@ -14,11 +14,11 @@
 project:
   name: Moûsai
   link: https://github.com/archinetai/audio-diffusion-pytorch
-  license: 'Code is under the MIT license. '
+  license: MIT license.
   notes:
 
 org:
-  name: ETH Zürich, IIT Kharagpur, Max Planck Institute
+  name: ETH Zürich, IIT Kharagpur, Max Planck Institute
   link:
   notes:
 
@@ -34,16 +34,16 @@ sourcecode:
 trainingdata:
   class: partial
   link: ''
-  notes: 'How the data is collected and acquired, including licensing issues, is detailed
+  notes: How the data is collected and acquired, including licensing issues, is detailed
     in the research paper. However, the exact list of songs in the dataset nor direct
-    access to the dataset is available. '
+    access to the dataset is available.
 
 # [3] Model weights
 modelweights:
   class: closed
   link: ''
-  notes: 'In the GitHub repo, authors mention that “no pre-trained models are provided
-    here”. '
+  notes: In the GitHub repo, authors mention that “no pre-trained models are provided
+    here”. 
 
 # [4] Code documentation
 codedoc:
@@ -55,27 +55,27 @@ codedoc:
 trainprocedure:
   class: open
   link: https://arxiv.org/pdf/2301.11757
-  notes: 'Training procedure is describe in the article, including hardware requirements
-    and model configuration. '
+  notes: Training procedure is describe in the article, including hardware requirements
+    and model configuration. 
 
 # [6] Evaluation procedure
 evalprocedure:
   class: partial
   link: https://arxiv.org/pdf/2301.11757
-  notes: ''
+  notes: Evaluation data or code for evaluation are not specified.
 
 # [7] Research paper
 paper:
   class: open
   link: https://aclanthology.org/2024.acl-long.437/
-  notes: Accepted at ACL 2024
+  notes: Accepted at ACL 2024.
   date:
 
 # [8] Licensing
 license:
   class: open
   link: https://github.com/archinetai/audio-diffusion-pytorch/blob/main/LICENSE
-  notes: 'Code is under the MIT license. '
+  notes: Code is under the MIT license. 
 
 # [9] Model Card
 modelcard:
@@ -93,7 +93,7 @@ datasheet:
 package:
   class: star
   link: https://pypi.org/project/audio-diffusion-pytorch/
-  notes: Code belongs to https://github.com/archinetai/audio-diffusion-pytorch library
+  notes: Code belongs to https://github.com/archinetai/audio-diffusion-pytorch library.
 
 # [12] User-oriented application
 ux:
@@ -104,6 +104,5 @@ ux:
 # [13] Demo Page
 suppage:
   class: star
-  link: 
-    https://diligent-pansy-4cb.notion.site/Music-Generation-with-Diffusion-ebe6e9e528984fa1b226d408f6002d87
-  notes: 'Supplementary material is available at Untitled (https://www.notion.so/ebe6e9e528984fa1b226d408f6002d87?pvs=21) '
+  link: https://diligent-pansy-4cb.notion.site/Music-Generation-with-Diffusion-ebe6e9e528984fa1b226d408f6002d87
+  notes: Supplementary material is available. 

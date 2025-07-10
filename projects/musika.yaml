@@ -14,7 +14,7 @@
 project:
   name: Musika
   link: https://github.com/marcoppasini/musika
-  license: 'MIT License. '
+  license: MIT License. 
   notes:
 
 org:
@@ -26,43 +26,43 @@ org:
 sourcecode:
   class: open
   link: https://github.com/marcoppasini/musika
-  notes: 'Codebase is available and complete. '
+  notes: Codebase is available and complete. 
 
 # [2] Training data
 trainingdata:
   class: partial
-  link: ''
-  notes: 'Training data is described in the research paper. Some of the data used
-    is publicly available: LibriTTS corpus. However, there are some sections of the
+  link: 
+  notes: Training data is described in the research paper. Some of the data used
+    is publicly available (LibriTTS corpus). However, there are some sections of the
     used data that are not accessible or detailed enough to fully reconstruct the
-    dataset:  South by SouthWest. Also, music coming from http://jamendo.com under
-    “techno” genre, it not detailed. '
+    dataset (South by SouthWest). Also, music coming from http://jamendo.com under
+    “techno” genre is not detailed. 
 
 # [3] Model weights
 modelweights:
   class: open
   link: https://huggingface.co/musika/musika_techno/tree/main
-  notes: 'Weights are publicly available. '
+  notes: Weights are publicly available. 
 
 # [4] Code documentation
 codedoc:
   class: open
   link: https://github.com/marcoppasini/musika/blob/main/README.md
-  notes: 'Codebase is documented, including details on environment and configuration
-    settings. '
+  notes: Codebase is documented, including details on environment and configuration
+    settings. 
 
 # [5] Training procedure
 trainprocedure:
   class: open
   link: https://arxiv.org/pdf/2208.08706
-  notes: 'Detailed in research paper and proper instructions are given in the model
-    repository. '
+  notes: Detailed in research paper and proper instructions are given in the model
+    repository. 
 
 # [6] Evaluation procedure
 evalprocedure:
   class: partial
   link: https://arxiv.org/pdf/2208.08706
-  notes: ''
+  notes: FAD is used for evaluation. However, there are details missing on the evaluation procedure. 
 
 # [7] Research paper
 paper:
@@ -75,36 +75,36 @@ paper:
 license:
   class: open
   link: https://github.com/marcoppasini/musika/blob/main/LICENSE
-  notes: 'MIT License. '
+  notes: MIT License. 
 
 # [9] Model Card
 modelcard:
   class: ∅
-  link: https://huggingface.co/musika/musika_techno
-  notes: 'Not available. '
+  link: 
+  notes: Not available. 
 
 # [10] Datasheet
 datasheet:
   class: ∅
-  link: ''
-  notes: 'Not available. '
+  link: 
+  notes: Not available. 
 
 # [11] Package
 package:
   class: ∅
-  link: ''
-  notes: 'Not available. Source code is provided through GitHub, but not as an installable
-    packaged or with version control. '
+  link: 
+  notes: Not available. Source code is provided through GitHub, but not as an installable
+    packaged or with version control. 
 
 # [12] User-oriented application
 ux:
   class: star
   link: https://colab.research.google.com/drive/1PowSw3doBURwLE-OTCiWkO8HVbS5paRb
-  notes: 'An interface is provided through Gradio. In addition, there is a colab notebook
-    that intends to ease accessibility for non technical users: https://colab.research.google.com/drive/1PowSw3doBURwLE-OTCiWkO8HVbS5paRb'
+  notes: An interface is provided through Gradio. In addition, there is a colab notebook
+    that intends to ease accessibility for non technical users. 
 
 # [13] Demo Page
 suppage:
   class: star
   link: https://marcoppasini.github.io/musika
-  notes: https://marcoppasini.github.io/musika
+  notes: Complementary page is available with sound examples and demonstration of the model's capabilities.

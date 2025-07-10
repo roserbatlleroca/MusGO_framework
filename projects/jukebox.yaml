@@ -14,7 +14,7 @@
 project:
   name: Jukebox
   link: https://github.com/openai/jukebox
-  license: 'Codebase is licensed under a non-commercial use license by OpenAI. '
+  license: Codebase is licensed under a non-commercial use license by OpenAI. 
   notes:
 
 org:
@@ -26,15 +26,17 @@ org:
 sourcecode:
   class: open
   link: https://github.com/openai/jukebox
-  notes: Code is available at https://github.com/openai/jukebox
+  notes: Code is available at GitHub repository. The codebase is not actively maintained
+    anymore, but it is still available for use. It includes the model architecture, training
+    and evaluation code, and utilities for generating music samples.
 
 # [2] Training data
 trainingdata:
   class: partial
-  link: ''
-  notes: 'Training data is partially described in the preprint article. However, relevant
+  link: 
+  notes: Training data is partially described in the preprint article. However, relevant
     information is missing, such as specific sources, and data itself cannot be accessed
-    — dataset is not publicly available. '
+    — dataset is not publicly available. 
 
 # [3] Model weights
 modelweights:
@@ -46,63 +48,63 @@ modelweights:
 codedoc:
   class: open
   link: https://github.com/openai/jukebox/blob/master/README.md
-  notes: 'Codebase is documented. '
+  notes: Codebase is documented. 
 
 # [5] Training procedure
 trainprocedure:
   class: open
   link: https://arxiv.org/pdf/2005.00341
-  notes: 'Information available between article and GitHub repository.  '
+  notes: Information available between article and GitHub repository.  
 
 # [6] Evaluation procedure
 evalprocedure:
   class: partial
   link: https://arxiv.org/pdf/2005.00341
-  notes: ''
+  notes: Part of the evaluation procedure is documented in the research paper. However, key information is missing, 
+    such as the evaluation dataset, objective evaluation metrics and details on the manual evaluation. 
 
 # [7] Research paper
 paper:
   class: partial
   link: https://arxiv.org/abs/2005.00341
-  notes: 'Only preprint of the research paper is available. '
+  notes: Only preprint of the research paper is available. 
   date:
 
 # [8] Licensing
 license:
   class: partial
   link: https://github.com/openai/jukebox/blob/master/LICENSE
-  notes: 'Codebase is licensed under a non-commercial use license by OpenAI. '
+  notes: Codebase is licensed under a non-commercial use license by OpenAI. 
 
 # [9] Model Card
 modelcard:
   class: ∅
-  link: ''
-  notes: 'Not available. '
+  link: 
+  notes: Not available. 
 
 # [10] Datasheet
 datasheet:
   class: ∅
-  link: ''
-  notes: 'Not available. '
+  link: 
+  notes: Not available. 
 
 # [11] Package
 package:
   class: ∅
-  link: ''
-  notes: 'Not available. Codebase is officially not mantained. '
+  link: 
+  notes: Not available. Codebase is officially not mantained. 
 
 # [12] User-oriented application
 ux:
   class: ∅
   link: 
     https://colab.research.google.com/github/openai/jukebox/blob/master/jukebox/Interacting_with_Jukebox.ipynb
-  notes: ''
+  notes: Only a colab notebook is available. 
 
 # [13] Demo Page
 suppage:
   class: star
   link: https://openai.com/index/jukebox/
-  notes: "A demo/summary page is available: https://openai.com/index/jukebox/\nHowever,
-    sonifications of the examples generations are not available anymore. There exist
+  notes: A demo/summary page is available. However, most sonifications of the examples generations are not available anymore. There exist
     another site with generation examples, but most of them are not available https://jukebox.openai.com/.
-    In addition, a colab notebook is provided: https://colab.research.google.com/github/openai/jukebox/blob/master/jukebox/Interacting_with_Jukebox.ipynb"
+    

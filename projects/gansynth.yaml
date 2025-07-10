@@ -14,7 +14,7 @@
 project:
   name: GANsynth
   link: https://github.com/magenta/magenta/tree/main/magenta/models/gansynth
-  license: 'System is covered by Apache License. '
+  license: System is covered by Apache License. 
   notes:
 
 org:
@@ -59,7 +59,7 @@ trainprocedure:
 evalprocedure:
   class: partial
   link: https://arxiv.org/pdf/1902.08710
-  notes: ''
+  notes: Evaluation metrics are described but exact implementations are not referenced.
 
 # [7] Research paper
 paper:
@@ -72,18 +72,18 @@ paper:
 license:
   class: open
   link: https://github.com/magenta/magenta/blob/main/LICENSE
-  notes: 'System is covered by Apache License. '
+  notes: System is covered by Apache License. 
 
 # [9] Model Card
 modelcard:
   class: ∅
-  link: ''
+  link: 
   notes: Very few details are given of the pretrained checkpoints.
 
 # [10] Datasheet
 datasheet:
   class: ∅
-  link: ''
+  link: 
   notes: Not available.
 
 # [11] Package
@@ -95,11 +95,11 @@ package:
 # [12] User-oriented application
 ux:
   class: ∅
-  link: ''
+  link: 
   notes: Not available.
 
 # [13] Demo Page
 suppage:
   class: star
   link: https://storage.googleapis.com/magentadata/papers/gansynth/index.html
-  notes: https://storage.googleapis.com/magentadata/papers/gansynth/index.html
+  notes: Demo page is available, including sound examples of the model's capabilities.

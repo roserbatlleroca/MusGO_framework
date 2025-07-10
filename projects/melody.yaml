@@ -13,7 +13,7 @@
 
 project:
   name: MeLoDy
-  link: ''
+  link: https://efficient-melody.github.io/
   license: Not available.
   notes:
 
@@ -25,25 +25,25 @@ org:
 # [1] Open Source Code
 sourcecode:
   class: closed
-  link: ''
+  link: 
   notes: No source code.
 
 # [2] Training data
 trainingdata:
   class: closed
-  link: ''
+  link: 
   notes: Not provided and only briefly described.
 
 # [3] Model weights
 modelweights:
   class: closed
-  link: ''
+  link: 
   notes: Not provided.
 
 # [4] Code documentation
 codedoc:
   class: closed
-  link: ''
+  link: 
   notes: No source code.
 
 # [5] Training procedure
@@ -56,47 +56,46 @@ trainprocedure:
 evalprocedure:
   class: partial
   link: https://arxiv.org/pdf/2305.15719
-  notes: ''
+  notes: Missing information about data and specific implementations.
 
 # [7] Research paper
 paper:
   class: open
   link: https://dl.acm.org/doi/10.5555/3666122.3666888
-  notes: 'Accepted at NeurIPS 2023: https://dl.acm.org/doi/10.5555/3666122.3666888'
-  date:
+  notes: Accepted at NeurIPS 2023. 
 
 # [8] Licensing
 license:
   class: closed
-  link: ''
+  link: 
   notes: Not available.
 
 # [9] Model Card
 modelcard:
   class: ∅
-  link: ''
+  link: 
   notes: Not provided.
 
 # [10] Datasheet
 datasheet:
   class: ∅
-  link: ''
+  link: 
   notes: Not provided.
 
 # [11] Package
 package:
   class: ∅
-  link: ''
+  link: 
   notes: Not provided.
 
 # [12] User-oriented application
 ux:
   class: ∅
-  link: ''
+  link: 
   notes: Not provided.
 
 # [13] Demo Page
 suppage:
   class: star
   link: https://efficient-melody.github.io/#
-  notes: https://efficient-melody.github.io/#
+  notes: A complementary web page with sound examples and demonstration of the model's capabilities is available. 

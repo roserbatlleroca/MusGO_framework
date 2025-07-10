@@ -13,7 +13,7 @@
 
 project:
   name: Music ControlNet
-  link: ''
+  link: https://musiccontrolnet.github.io/web/
   license: Not available.
   notes:
 
@@ -25,25 +25,25 @@ org:
 # [1] Open Source Code
 sourcecode:
   class: closed
-  link: ''
+  link: 
   notes: No official code repository available.
 
 # [2] Training data
 trainingdata:
   class: closed
-  link: ''
+  link: 
   notes: Very limited description of the data used for training, and no sources provided.
 
 # [3] Model weights
 modelweights:
   class: closed
-  link: ''
+  link: 
   notes: No model weights provided.
 
 # [4] Code documentation
 codedoc:
   class: closed
-  link: ''
+  link: 
   notes: No source code available so no documentation.
 
 # [5] Training procedure
@@ -56,47 +56,48 @@ trainprocedure:
 evalprocedure:
   class: partial
   link: https://arxiv.org/pdf/2311.07069
-  notes: ''
+  notes: Evaluation procedure is described, but details on the specific 
+    implementation used for some of the evaluation metrics are not given, limiting the reproducibility of results.
 
 # [7] Research paper
 paper:
   class: open
   link: https://dl.acm.org/doi/10.1109/TASLP.2024.3399026
-  notes: A peer-reviewed paper is available and publicly accessible.
+  notes: Accepted at IEEE/ACM Transactions on Audio, Speech, and Laguange Processing (open access). 
   date:
 
 # [8] Licensing
 license:
   class: closed
-  link: ''
+  link: 
   notes: Not available.
 
 # [9] Model Card
 modelcard:
   class: ∅
-  link: ''
+  link: 
   notes: No model card available.
 
 # [10] Datasheet
 datasheet:
   class: ∅
-  link: ''
+  link: 
   notes: No datasheet available.
 
 # [11] Package
 package:
   class: ∅
-  link: ''
+  link: 
   notes: No package available.
 
 # [12] User-oriented application
 ux:
   class: ∅
-  link: ''
+  link: 
   notes: No user interface nor real-time implementation available.
 
 # [13] Demo Page
 suppage:
   class: star
   link: https://musiccontrolnet.github.io/web/
-  notes: https://musiccontrolnet.github.io/web/
+  notes: A complementary website with sound examples and demo of the model is available. 

@@ -14,12 +14,12 @@
 project:
   name: JASCO
   link: https://github.com/facebookresearch/audiocraft
-  license: ' Code is released under MIT, model weights are released under CC-BY-NC
-    4.0.'
+  license:  Code is released under MIT, model weights are released under CC-BY-NC
+    4.0.
   notes:
 
 org:
-  name: The Hebrew University of Jerusalem, Meta AI
+  name: The Hebrew University of Jerusalem and Meta AI
   link:
   notes:
 
@@ -27,81 +27,80 @@ org:
 sourcecode:
   class: open
   link: https://github.com/facebookresearch/audiocraft
-  notes: Code is avialble at https://github.com/facebookresearch/audiocraft/blob/main/docs/JASCO.md
+  notes: Code is avialble at GitHub repository. 
 
 # [2] Training data
 trainingdata:
   class: partial
-  link: ''
-  notes: 'They describe the datasets used to training their model. However, there
-    is a 10k songs set that is not described (proprietary data). '
+  link: 
+  notes: They describe the datasets used to training their model. However, there
+    is a 10k songs set that is not described (proprietary data). 
 
 # [3] Model weights
 modelweights:
   class: open
   link: https://huggingface.co/facebook/jasco-chords-drums-400M/tree/main
-  notes: 'Pretrained models are accessible via API '
+  notes: Pretrained models are accessible via API. 
 
 # [4] Code documentation
 codedoc:
   class: open
   link: https://github.com/facebookresearch/audiocraft/blob/main/docs/JASCO.md
-  notes: 'Code is documented in GitHub repo, including installation requirements. '
+  notes: Code is documented in GitHub repo, including installation requirements. 
 
 # [5] Training procedure
 trainprocedure:
   class: partial
   link: https://arxiv.org/pdf/2406.10970
-  notes: 'Training procedure is described in the research paper, but hardware requirements
-    are not mentioned. '
+  notes: Training procedure is described in the research paper, but hardware requirements
+    are not mentioned. 
 
 # [6] Evaluation procedure
 evalprocedure:
   class: open
   link: https://arxiv.org/pdf/2406.10970
-  notes: ''
+  notes: Evaluation procedure is described, including evaluation data, metrics (with reference to the implementation) and model performance. 
 
 # [7] Research paper
 paper:
   class: open
   link: https://ismir2024program.ismir.net/poster_65.html
-  notes: 'Accepted at ISMIR 2024. '
+  notes: Accepted at ISMIR 2024. 
   date:
 
 # [8] Licensing
 license:
   class: open
   link: https://github.com/facebookresearch/audiocraft/blob/main/LICENSE
-  notes: ' Code is released under MIT, model weights are released under CC-BY-NC 4.0.'
+  notes:  Code is released under MIT, model weights are released under CC-BY-NC 4.0.
 
 # [9] Model Card
 modelcard:
   class: star
   link: 
     https://github.com/facebookresearch/audiocraft/blob/main/model_cards/JASCO_MODEL_CARD.md
-  notes: 
-    https://github.com/facebookresearch/audiocraft/blob/main/model_cards/JASCO_MODEL_CARD.md
+  notes: Model card is available in the GitHub repository. 
 
 # [10] Datasheet
 datasheet:
   class: ∅
-  link: ''
-  notes: ''
+  link: 
+  notes: Not available. 
 
 # [11] Package
 package:
   class: star
   link: https://pypi.org/project/audiocraft/
-  notes: Installable through audiocraft pip package
+  notes: Installable through audiocraft pip package. 
 
 # [12] User-oriented application
 ux:
   class: star
   link: https://github.com/facebookresearch/audiocraft/blob/main/docs/JASCO.md#api
-  notes: https://github.com/facebookresearch/audiocraft/blob/main/docs/JASCO.md#api
+  notes: API is available. 
 
 # [13] Demo Page
 suppage:
   class: star
   link: https://pages.cs.huji.ac.il/adiyoss-lab/JASCO/
-  notes: https://pages.cs.huji.ac.il/adiyoss-lab/JASCO/
+  notes: Demo page is available, including examples of the model's capabilities.

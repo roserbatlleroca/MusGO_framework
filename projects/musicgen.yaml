@@ -29,18 +29,15 @@ org:
 sourcecode:
   class: open
   link: https://github.com/facebookresearch/audiocraft
-  notes: Code is provided in https://github.com/facebookresearch/audiocraft/ (Training
-    and inference)
+  notes: Code is available. 
 
 # [2] Training data
 trainingdata:
   class: partial
-  link: ''
-  notes: “We rely on an internal dataset of 10K high-quality music tracks, and on
-    the ShutterStock and Pond5 music data collections2 with respectively 25K and 365K
-    instrument-only music tracks.” “Note that we do NOT provide any of the datasets
-    used for training MusicGen. We provide a dummy dataset containing just a few examples
-    for illustrative purposes.”
+  link: 
+  notes: They describe the datasets used to training their model (licensed data). However, they rely on 10k music tracks that are not described
+    (proprietary data). They do not provide any of the datasets used for training MusicGen. Only a dummy dataset containing just a few examples
+    for illustrative purposes is provided.
 
 # [3] Model weights
 modelweights:
@@ -52,29 +49,27 @@ modelweights:
 codedoc:
   class: open
   link: https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md
-  notes: 'Training code is available and seem well documented: https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md
-    Warning: Since data is not available is not easy to replicate.'
+  notes: Codebase is documented in the GitHub repository, including installation requirements. 
 
 # [5] Training procedure
 trainprocedure:
   class: open
-  link: https://arxiv.org/pdf/2306.05284
-  notes: 'Training is well documented. https://github.com/facebookresearch/audiocraft/blob/main/docs/TRAINING.md
-    with training pipelines and environment setup described. Note: Hardware use for
-    training is described in the paper. '
+  link: https://github.com/facebookresearch/audiocraft/blob/main/docs/TRAINING.md
+  notes: Training is well documented, with training pipelines and environment setup described. 
+    Note that hardware use for training is described in the paper. 
 
 # [6] Evaluation procedure
 evalprocedure:
   class: open
-  link: https://arxiv.org/pdf/2306.05284
-  notes: ''
+  link: https://github.com/facebookresearch/audiocraft/blob/main/docs/METRICS.md.
+  notes: Evaluation is documented in the paper and the code provides detailed explanation about the implementation of evaluation metrics. 
+   Evaluating the model to reproduce the results still may require some effort. Dataset used for evaluation is MusicCaps benchmark.
 
 # [7] Research paper
 paper:
   class: open
-  link: 
-    https://proceedings.neurips.cc/paper_files/paper/2023/hash/94b472a1842cd7c56dcb125fb2765fbd-Abstract-Conference.html
-  notes: Accepted at NeurIPS 2023
+  link: https://proceedings.neurips.cc/paper_files/paper/2023/hash/94b472a1842cd7c56dcb125fb2765fbd-Abstract-Conference.html
+  notes: Accepted at NeurIPS 2023. 
   date:
 
 # [8] Licensing
@@ -92,30 +87,27 @@ modelcard:
   link: 
     https://github.com/facebookresearch/audiocraft/blob/main/model_cards/MUSICGEN_MODEL_CARD.md
   notes: Model card discusses intended use, limitations and biases. 
-    https://github.com/facebookresearch/audiocraft/blob/main/model_cards/MUSICGEN_MODEL_CARD.md
-
+   
 # [10] Datasheet
 datasheet:
   class: ∅
-  link: ''
+  link: 
   notes: Data is copyrighted and not available.
 
 # [11] Package
 package:
   class: star
   link: https://pypi.org/project/audiocraft/
-  notes: 'Has two packages: audiocraft package from Meta, and transformers package
-    from Hugging Face. '
+  notes: Has two packages: audiocraft package from Meta, and transformers package from Hugging Face. 
 
 # [12] User-oriented application
 ux:
   class: star
   link: https://huggingface.co/spaces/facebook/MusicGen
   notes: Demo in Hugging Face spaces, user-oriented gradio demo, and jupyter notebooks.
-    https://github.com/facebookresearch/audiocraft/blob/main/docs/MUSICGEN.md#usage
 
 # [13] Demo Page
 suppage:
   class: star
   link: https://ai.honu.io/papers/musicgen/
-  notes: Supplementary material web page with sound examples. https://ai.honu.io/papers/musicgen/
+  notes: Supplementary material web page with sound examples. 
