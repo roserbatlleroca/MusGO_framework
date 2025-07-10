@@ -28,7 +28,8 @@ Use lowercase and hyphens to separate words:
 - For each of the **essential categories [1–8]**, classify as `open`, `partial`, or `closed`.
 - For each **desirable category [9–13]**, classify as `star` (⭐) or `∅` (not applicable).
 - Provide a **justification** in the `notes` field for each classification. You can also add a reference link to complement the information. 
-  > _Example:_  If Training Data is `closed`, a note might say:  `"Dataset is closed and only briefly described."`
+  > _Example:_  If Training Data is `closed`, a note might say:  `"Dataset is closed and only briefly described." 
+  
   > _Example:_  If Model Weights is `open`, a note might say:  `"Weights are available." and a link to the weights might be added.`
 
 #### 3. **Submit a Pull Request**
