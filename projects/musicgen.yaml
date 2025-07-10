@@ -14,7 +14,6 @@
 project:
   name: MusicGen
   link: https://github.com/facebookresearch/audiocraft
-  background: open
   license: The code in this repository is released under the MIT license as found
     in the https://github.com/facebookresearch/audiocraft/blob/main/LICENSE. The models
     weights in this repository are released under the CC-BY-NC 4.0 license as found

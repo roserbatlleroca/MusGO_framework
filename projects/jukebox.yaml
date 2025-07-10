@@ -14,7 +14,6 @@
 project:
   name: Jukebox
   link: https://github.com/openai/jukebox
-  background: open
   license: 'Codebase is licensed under a non-commercial use license by OpenAI. '
   notes:
 

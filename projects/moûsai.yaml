@@ -14,7 +14,6 @@
 project:
   name: Moûsai
   link: https://github.com/archinetai/audio-diffusion-pytorch
-  background: open
   license: 'Code is under the MIT license. '
   notes:
 

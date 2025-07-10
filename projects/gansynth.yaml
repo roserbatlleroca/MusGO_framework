@@ -14,7 +14,6 @@
 project:
   name: GANsynth
   link: https://github.com/magenta/magenta/tree/main/magenta/models/gansynth
-  background: popular
   license: 'System is covered by Apache License. '
   notes:
 

@@ -14,7 +14,6 @@
 project:
   name: Diff-A-Riff
   link: ''
-  background: popular
   license: Not available.
   notes:
 
@@ -33,7 +32,7 @@ sourcecode:
 trainingdata:
   class: closed
   link: ''
-  notes: 'Dataset is closed and only briefly described. '
+  notes: Dataset is closed and only briefly described.
 
 # [3] Model weights
 modelweights:
@@ -63,7 +62,7 @@ evalprocedure:
 paper:
   class: open
   link: https://ismir2024program.ismir.net/poster_225.html
-  notes: Accepted at ISMIR 2024
+  notes: Accepted at ISMIR 2024. 
   date:
 
 # [8] Licensing
@@ -100,4 +99,4 @@ ux:
 suppage:
   class: star
   link: https://sonycslparis.github.io/diffariff-companion/
-  notes: https://sonycslparis.github.io/diffariff-companion/
+  notes: A demo page with sound examples and demonstration of the model's capabilities is available.

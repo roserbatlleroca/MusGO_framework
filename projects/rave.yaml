@@ -14,7 +14,6 @@
 project:
   name: RAVE
   link: https://github.com/acids-ircam/RAVE
-  background: open
   license: System covered by an CC BY-NC 4.0 license.
   notes:
 

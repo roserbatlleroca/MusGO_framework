@@ -14,7 +14,6 @@
 project:
   name: Stable Audio Open
   link: https://github.com/Stability-AI/stable-audio-tools
-  background: open
   license: "Stability AI Community License\nhttps://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/LICENSE.md\n
     Not an Open Source Initiate(OSI) approved licences "
   notes:

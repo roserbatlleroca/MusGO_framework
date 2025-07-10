@@ -19,27 +19,27 @@ Every analysed model is evaluated in a specific YAML file. To contribute to the 
 #### 1. **Copy the Template**
 
 Duplicate the file `_template.yaml` and rename it to:  `[model-name].yaml`  
-> Use lowercase and hyphens to separate words.  
+Use lowercase and hyphens to separate words: 
 > _Example:_ `stable-audio-open.yaml`
 
 #### 2. **Fill in the Evaluation**
 
-- For each of the **essential categories [1–8]**, classify as:
-  - `open`, `partial`, or `closed`.
-- For each **desirable category [9–13]**, classify as:
-  - `star` (⭐) or `∅` (not applicable).
-- Provide a **justification** in the `notes` field for each classification.  
+- Fill in all the project information: `name`, `link`, `license` and `org`. 
+- For each of the **essential categories [1–8]**, classify as `open`, `partial`, or `closed`.
+- For each **desirable category [9–13]**, classify as `star` (⭐) or `∅` (not applicable).
+- Provide a **justification** in the `notes` field for each classification. You can also add a reference link to complement the information. 
   > _Example:_  If Training Data is `closed`, a note might say:  `"Dataset is closed and only briefly described."`
+  > _Example:_  If Model Weights is `open`, a note might say:  `"Weights are available." and a link to the weights might be added.`
 
 #### 3. **Submit a Pull Request**
 
 Once your YAML file is complete:
 
-- Open a **pull request** with your new model file.
-- The repository maintainers will **review your submission**:
+1. Open a **pull request** with your new model file.
+2. The repository maintainers will **review your submission**:
   - If everything looks good, your model will be merged into the leaderboard.
-  - If we spot any missing info or inconsistencies, we’ll reach out to clarify or request edits.
-- Once all issues are addressed, the model will be officially added!
+  - If we spot any missing info or inconsistencies, we’ll reach out to clarify or request edits. You may be asked to provide **additional context or evidence**, and suggestions may be revised **collaboratively** before being accepted.
+3. Once all issues are addressed, the model will be officially added! Credit for the contribution will be reflected in the commit and PR history.
 
 
 ## Amending a current evaluation 
@@ -51,22 +51,21 @@ If you'd like to propose an update to the evaluation of a model already listed i
 2. **You disagree with a current classification** — You believe a category's score or justification is inaccurate or outdated.
 
 
-#### How to Proceed
+#### How to proceed?
 
-1. **Open an issue** explaining:
+1. **Open an issue** detailing:
    - The **model name** and YAML file.
    - The **specific category (or categories)** you'd like to update.
    - The **reason for your proposal**, with clear references (e.g., links, publications, repo updates).
   
-2. **Review and Discussion**
-   - The repository maintainers will review the issue.
-   - If the proposal is valid, one of two things will happen:
-     - Maintainers will **update the YAML file directly**, or
-     - You will be invited to **submit a pull request** with your proposed changes.
+2. **Review and discussion**: The repository maintainers will review the issue:
+   - If the proposal is valid, maintainers will **update the YAML file directly** or you will be invited to **submit a pull** request with your proposed changes.
+   - If there are **questions, missing information, or doubts**, or if the maintainers **disagree with the proposed change**, they will **respond in the issue thread** to clarify concerns and open a discussion.
+   - You may be asked to provide **additional context or evidence**, and suggestions may be revised **collaboratively** before being accepted or rejected.
 
 3. **Resolution**
    - Once confirmed, the updated evaluation will be merged into the leaderboard.
-   - Credit for the contribution will be reflected in the commit or PR history.
+   - Credit for the contribution will be reflected in the commit and PR history.
 
 ---
 

@@ -14,7 +14,6 @@
 project:
   name: JASCO
   link: https://github.com/facebookresearch/audiocraft
-  background: popular
   license: ' Code is released under MIT, model weights are released under CC-BY-NC
     4.0.'
   notes:
