@@ -1,0 +1,108 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+# Remember to replace the template values with the actual information of the project you are evaluating.
+# Essential categories [1-8] should be classified as either `open`, `partial`, or `closed`.
+# Desirable categories [9-13] can be classified as `star` or `∅` (not applicable).
+# Notes should be provided for each category, explaining the classification and any relevant details.
+
+
+project:
+    name: SongGen
+    link: https://github.com/LiuZH-19/SongGen
+    license: Apache License
+    notes:
+
+org:
+    name: Beihang University, Shanghai AI Laboratory, The Chinese University of Hong Kong, Harbin Institute of Technology, CPII (InnoHK)
+    link: https://ev.buaa.edu.cn/
+    notes:
+
+# [1] System source code
+sourcecode:
+    class: partial
+    link: https://github.com/LiuZH-19/SongGen
+    notes: The source code is available on GitHub, but there are some parts missing regarding data processing (indicated as to-do in GitHub). 
+
+# [2] Training data
+trainingdata:
+    class: partial
+    link:
+    notes: This model is trained on 8,000 hours of openly licensed music data, including MSD, FMA and MTG-Jamendo. However, the curated version of the dataset is not available (indicated as to-do in GitHub).
+
+# [3] Model weights
+modelweights:
+    class: open
+    link: https://huggingface.co/LiuZH-19/SongGen_mixed_pro/tree/main
+    notes: Weights are available on Hugging Face. 
+
+# [4] Code documentation 
+codedoc:
+    class: open
+    link: https://github.com/LiuZH-19/SongGen
+    notes: Codebase is well documented, with a README file that includes installation and inference instructions, and links to the training procedure. 
+
+# [5] Training procedure
+trainprocedure:
+    class: open
+    link: https://github.com/LiuZH-19/SongGen/blob/master/training/README.md
+    notes: The training procedure is described in the article (see Appendix A). Also, there are specific training guidelines in the GitHub repository.
+
+# [6] Evaluation procedure
+evalprocedure:
+    class: open
+    link: https://huggingface.co/datasets/LiuZH-19/MusicCaps_Test_Song
+    notes: Evaluation procedure is described in the article (see Appendix B). The dataset used for evaluation is available on Hugging Face.
+
+# [7] Research paper
+paper:
+    class: open
+    link: https://arxiv.org/pdf/2502.13128
+    notes: Accepted at ICML 2025. 
+    date: May 30, 2025
+
+# [8] Licensing
+license:
+    class: open
+    link: https://github.com/LiuZH-19/SongGen/tree/master?tab=Apache-2.0-1-ov-file
+    notes: Apache License 2.0
+
+# [9] Model card
+modelcard:
+    class: ∅
+    link:
+    notes:
+
+# [10] Datasheet
+datasheet:
+    class: ∅
+    link:
+    notes:
+
+# [11] Package
+package:
+    class: ∅
+    link:
+    notes:
+
+# [12] User-oriented application
+ux:
+    class: ∅
+    link:
+    notes:
+
+# [13] Supplementary Material Page
+suppage:
+    class: star
+    link: https://liuzh-19.github.io/SongGen/
+    notes: A demo page with sound examples is available. The page also includes a link to the GitHub repository and research paper. 
+
