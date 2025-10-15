@@ -29,7 +29,7 @@ org:
 
 # [1] System source code
 sourcecode:
-    class: partial
+    class: open
     link: https://github.com/LiuZH-19/SongGen
     notes: The source code is available on GitHub, but there are some parts missing regarding data processing (indicated as to-do in GitHub). 
 
