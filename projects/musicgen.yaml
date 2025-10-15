@@ -98,7 +98,7 @@ datasheet:
 package:
   class: star
   link: https://pypi.org/project/audiocraft/
-  notes: Has two packages: audiocraft package from Meta, and transformers package from Hugging Face. 
+  notes: "Has two packages: audiocraft package from Meta, and transformers package from Hugging Face."
 
 # [12] User-oriented application
 ux:
