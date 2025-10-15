@@ -48,19 +48,19 @@ modelweights:
 # [4] Code documentation 
 codedoc:
     class: open
-    link: https://github.com/LiuZH-19/SongGen
+    link: https://github.com/LiuZH-19/SongGen/blob/master/README.md
     notes: Codebase is well documented, with a README file that includes installation and inference instructions, and links to the training procedure. 
 
 # [5] Training procedure
 trainprocedure:
     class: open
-    link: https://github.com/LiuZH-19/SongGen/blob/master/training/README.md
+    link: https://arxiv.org/pdf/2502.13128
     notes: The training procedure is described in the article (see Appendix A). Also, there are specific training guidelines in the GitHub repository.
 
 # [6] Evaluation procedure
 evalprocedure:
     class: open
-    link: https://huggingface.co/datasets/LiuZH-19/MusicCaps_Test_Song
+    link: https://arxiv.org/pdf/2502.13128
     notes: Evaluation procedure is described in the article (see Appendix B). The dataset used for evaluation is available on Hugging Face.
 
 # [7] Research paper
