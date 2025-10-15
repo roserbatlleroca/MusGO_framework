@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MusGO Framework: Assessing Openness in Music-Generative AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="favicon.png" rel="icon" type="image/x-icon"/>
+<script data-domain="roserbatlleroca.github.io/MusGO_framework/" defer="" src="https://plausible.io/js/script.js"></script>
+<style>
+  body {
+  font-family: 'Open Sans', sans-serif;
+  }
+  .highlight {
+    background-color: #f0f0f0;
+    padding: 1em;
+    /* border-left: 4px solid #ccc; */
+  }
+  #table-guide em {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  #table-guide {
+  background-color: #f8f8f8;
+  padding: 1em;
+  font-size: 1em;
+
+  }
+  #table-guide p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  }
+  #table-guide {
+  background-color: #f8f8f8;
+  padding: 0.5em 1em 0.5em 1em; /* top, right, bottom, left */
+  font-size: 1em;
+}
+#footer {
+  padding: 1em;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ccc;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  max-width: 70%;
+}
+
+.footer-image img {
+  max-height: 60px; /* adjust as needed */
+  width: auto;
+}
+
+
+</style>
+</head>
+<body>
+<div id="header">
+<h1>MusGO Framework: Assessing Openness in Music-Generative AI -- Openness Leaderboard</h1>
+</div>
+<div id="content">
+
+		<div id="included-table"></div>
+
+<div class="highlight" id="table-guide"><p>
+<em>How to interpret this table?</em> MusGO framework consists of 13 dimensions of openness, distinguishing between <em>essential</em> (1–8) and <em>desirable</em> (9–13) categories.  
+    Essential categories follow a three-level scale:  
+    (<span class="openness open"><strong>✔︎</strong> open</span>,  
+    <span class="openness partial"><strong>~</strong> partial</span>, or  
+    <span class="openness closed"><strong>✘</strong> closed</span>).  
+    Desirable categories are binary, indicating whether an element exists (⭐) or not.  
+
+  </p>
+<p>
+    Models are ordered using a weighted
+    openness score (O), based on essential categories (E) and
+    normalised to a 100-point scale. Considering survey findings,
+    the three most relevant categories (E<sub>1</sub>, E<sub>2</sub> and E<sub>3</sub>,
+    all with M<sub>1,2,3</sub>=5) are weighted twice as much as the others.
+    Note that the score is used for ordering purposes only,
+    and we do not intend to reduce openness to a single value.
+    When models achieve the same score, the order is determined
+    by the highest number of fulfilled desirable categories.
+  </p>
+<p>
+    Each cell includes <strong>interactive elements</strong>: 
+    <ul>
+<li>Hovering over a cell reveals a tooltip with the justification behind the assigned score.</li>
+<li>Clicking on a cell redirects you to the source of information or relevant supplementary material (e.g., research paper, source code, model checkpoints, etc.).</li>
+</ul>
+
+    For a detailed brakedown of each model’s evaluation, you can explore its corresponding YAML file in the <a href="https://github.com/roserbatlleroca/MusGO_framework/tree/main/projects">project folder</a>.
+  </p>
+</div>
+</div><!-- #content -->
+<div id="footer">
+<p id="build-time"></p>
+</div>
+</body>
+</html>

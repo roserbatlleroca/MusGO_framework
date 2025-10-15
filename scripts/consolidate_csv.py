@@ -13,7 +13,7 @@ def create_dataframe(files):
     df = pd.DataFrame()
     source_file = []
     for fname in files:
-        with open(fname, 'r') as file:
+        with open(fname, 'r', encoding='utf-8') as file:
             file_df = pd.json_normalize(yaml.safe_load(file))
         # append transposed row to df
         source_file.append(fname[1:])
@@ -166,7 +166,7 @@ def write_simplified_html(df):
 
 def create_index(table):
     # read and parse the template file
-    with open("./docs/template.html", "r") as f:
+    with open("./docs/template.html", "r", encoding='utf-8') as f:
         html = f.read()
     soup = BeautifulSoup(html, "html.parser")
     # find the target location
@@ -179,12 +179,12 @@ def create_index(table):
     target_footer = soup.find(id="build-time")
     target_footer.string = build_message
     # write to disk
-    with open("./docs/index.html", 'w') as f:
+    with open("./docs/index.html", 'w', encoding='utf-8') as f:
         f.write(str(soup))
 
 def create_figure(figure):
     # read and parse the template file
-    with open("./docs/template_figure.html", "r") as f:
+    with open("./docs/template_figure.html", "r", encoding='utf-8') as f:
         html = f.read()
     soup = BeautifulSoup(html, "html.parser")
     # find the target location
@@ -197,7 +197,7 @@ def create_figure(figure):
     target_footer = soup.find(id="build-time")
     target_footer.string = build_message
     # write to disk
-    with open("./docs/figure.html", 'w') as f:
+    with open("./docs/figure.html", 'w', encoding='utf-8') as f:
         f.write(str(soup))
 
 #the path of the csv files to combine
