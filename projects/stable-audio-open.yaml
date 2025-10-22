@@ -32,8 +32,8 @@ sourcecode:
 # [2] Training data
 trainingdata:
   class: open
-  link: https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/fma_dataset_attribution2.csv
-  notes: Training data can be mapped from Attribution files. However, accessibility is subject to accepting Stability AI conditions. 
+  link: https://info.stability.ai/attributions
+  notes: Training data can be mapped from Attribution files. These files can also be accessed in HuggingFace after accepting Stability AI conditions: https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/fma_dataset_attribution2.csv / https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/freesound_dataset_attribution2.csv
 
 # [3] Model weights
 modelweights:
@@ -61,10 +61,10 @@ evalprocedure:
 
 # [7] Research paper
 paper:
-  class: partial
-  link: https://arxiv.org/abs/2407.14358
-  notes: Paper is in arxiv but it is not peer-reviewed.
-  date:
+  class: open
+  link: https://ieeexplore.ieee.org/document/10888461
+  notes: 'Accepted at ICASSP 2026.' 
+  date: 
 
 # [8] Licensing
 license:
@@ -93,9 +93,9 @@ package:
 
 # [12] User-oriented application
 ux:
-  class: ∅
-  link: ''
-  notes: 
+  class: star
+  link: https://github.com/Stability-AI/stable-audio-tools/blob/main/stable_audio_tools/interface/gradio.py
+  notes: Gradio interface in source code. 
 
 # [13] Demo Page
 suppage:
