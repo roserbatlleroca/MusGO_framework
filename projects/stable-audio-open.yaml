@@ -14,8 +14,7 @@
 project:
   name: Stable Audio Open
   link: https://github.com/Stability-AI/stable-audio-tools
-  license: Stability AI Community License https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/LICENSE.md. 
-    Not an Open Source Initiate (OSI) or RAIL approved licences. 
+  license: Stability AI Community License https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/LICENSE.md. Not an Open Source Initiate (OSI) or RAIL approved licences. 
   notes:
 
 org:
@@ -33,7 +32,7 @@ sourcecode:
 trainingdata:
   class: open
   link: https://info.stability.ai/attributions
-  notes: Training data can be mapped from Attribution files. These files can also be accessed in HuggingFace after accepting Stability AI conditions: https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/fma_dataset_attribution2.csv / https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/freesound_dataset_attribution2.csv
+  notes: Training data can be mapped from Attribution files. Dataset attribution files can also be accessed in HuggingFace after accepting Stability AI conditions (https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/fma_dataset_attribution2.csv and https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/freesound_dataset_attribution2.csv).
 
 # [3] Model weights
 modelweights:
@@ -57,13 +56,13 @@ trainprocedure:
 evalprocedure:
   class: open
   link: https://arxiv.org/pdf/2407.14358
-  notes: They use stable-audio-metrics for evaluation, which has examples of evaluation pipelines.'
+  notes: They use stable-audio-metrics for evaluation, which has examples of evaluation pipelines.
 
 # [7] Research paper
 paper:
   class: open
   link: https://ieeexplore.ieee.org/document/10888461
-  notes: 'Accepted at ICASSP 2026.' 
+  notes: Accepted at ICASSP 2026.
   date: 
 
 # [8] Licensing
@@ -88,8 +87,7 @@ datasheet:
 package:
   class: star
   link: https://pypi.org/project/stable-audio-tools/
-  notes: 'The model can be used with: 1. the https://github.com/Stability-AI/stable-audio-tools
-    library and 2. the https://huggingface.co/docs/diffusers/main/en/index library'
+  notes: The model can be used with 1) the https://github.com/Stability-AI/stable-audio-tools library and 2) the https://huggingface.co/docs/diffusers/main/en/index library.
 
 # [12] User-oriented application
 ux:
