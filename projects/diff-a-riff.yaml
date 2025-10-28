@@ -13,7 +13,7 @@
 
 project:
   name: Diff-A-Riff
-  link: ''
+  link: https://sonycslparis.github.io/diffariff-companion/
   license: Not available.
   notes:
 
@@ -25,25 +25,25 @@ org:
 # [1] Open Source Code
 sourcecode:
   class: closed
-  link: ''
+  link: 
   notes: No source code.
 
 # [2] Training data
 trainingdata:
   class: closed
-  link: ''
+  link: 
   notes: Dataset is closed and only briefly described.
 
 # [3] Model weights
 modelweights:
   class: closed
-  link: ''
+  link: 
   notes: Not provided.
 
 # [4] Code documentation
 codedoc:
   class: closed
-  link: ''
+  link: 
   notes: No source code.
 
 # [5] Training procedure
@@ -56,7 +56,7 @@ trainprocedure:
 evalprocedure:
   class: partial
   link: https://arxiv.org/pdf/2406.08384
-  notes: ''
+  notes: Missing data and metrics implementations.
 
 # [7] Research paper
 paper:
@@ -68,35 +68,35 @@ paper:
 # [8] Licensing
 license:
   class: closed
-  link: ''
+  link: 
   notes: Not available.
 
 # [9] Model Card
 modelcard:
   class: ∅
-  link: ''
+  link: 
   notes: Not available.
 
 # [10] Datasheet
 datasheet:
   class: ∅
-  link: ''
+  link: 
   notes: Not available.
 
 # [11] Package
 package:
   class: ∅
-  link: ''
+  link: 
   notes: Not available.
 
 # [12] User-oriented application
 ux:
   class: ∅
-  link: ''
+  link: 
   notes: Not available.
 
 # [13] Demo Page
 suppage:
   class: star
   link: https://sonycslparis.github.io/diffariff-companion/
-  notes: A demo page with sound examples and demonstration of the model's capabilities is available.
+  notes: A demo page with sound examples and demonstration of the models capabilities is available.

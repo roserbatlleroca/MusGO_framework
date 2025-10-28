@@ -19,7 +19,7 @@ project:
 
 org:
   name: IRCAM
-  link:
+  link: https://www.ircam.fr/
   notes:
 
 # [1] Open Source Code
@@ -33,7 +33,7 @@ sourcecode:
 trainingdata:
   class: closed
   link: ''
-  notes: 'Training data is internal and just briefly described. '
+  notes: Training data is internal and just briefly described. 
 
 # [3] Model weights
 modelweights:
@@ -58,13 +58,13 @@ trainprocedure:
 evalprocedure:
   class: open
   link: https://arxiv.org/pdf/2111.05011
-  notes: ''
+  notes: Evaluation procedure is described, and the implementations used for the evaluation metrics are referenced.
 
 # [7] Research paper
 paper:
   class: partial
   link: https://arxiv.org/abs/2111.05011
-  notes: 'Rejected at ICLR 2022. No peer-reviewed version. '
+  notes: Preprint only. No pee-reviewed version.
   date:
 
 # [8] Licensing
@@ -77,7 +77,7 @@ license:
 modelcard:
   class: star
   link: https://acids-ircam.github.io/rave_models_download
-  notes: https://acids-ircam.github.io/rave_models_download
+  notes: Model card is available. 
 
 # [10] Datasheet
 datasheet:
@@ -101,4 +101,4 @@ ux:
 suppage:
   class: star
   link: https://anonymous84654.github.io/RAVE_anonymous/
-  notes: https://anonymous84654.github.io/RAVE_anonymous/
+  notes: Demo page is available, showcasing the model's capabilities and providing sound examples of its use.

@@ -14,86 +14,75 @@
 project:
   name: Stable Audio Open
   link: https://github.com/Stability-AI/stable-audio-tools
-  license: "Stability AI Community License\nhttps://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/LICENSE.md\n
-    Not an Open Source Initiate(OSI) approved licences "
+  license: Stability AI Community License https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/LICENSE.md. 
+    Not an Open Source Initiate (OSI) or RAIL approved licences. 
   notes:
 
 org:
   name: Stability AI
-  link:
+  link: https://stability.ai/
   notes:
 
 # [1] Open Source Code
 sourcecode:
   class: open
   link: https://github.com/Stability-AI/stable-audio-tools
-  notes: " Code for data processing, training pipeline, and inference is available
-    in the stable-audio-tools repository. Architecture of the mode is specified in
-    the form of a config file.\nhttps://github.com/Stability-AI/stable-audio-tools"
+  notes: Code for data processing, training pipeline, and inference is available in the stable-audio-tools repository. Architecture of the mode is specified in the form of a config file.
 
 # [2] Training data
 trainingdata:
   class: open
-  link: 
-    https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/fma_dataset_attribution2.csv
-  notes: 'Training data can be mapped from Attribution files.https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/fma_dataset_attribution2.csv.
-    However, accessibility is subject to accepting Stability AI conditions. '
+  link: https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/fma_dataset_attribution2.csv
+  notes: Training data can be mapped from Attribution files. However, accessibility is subject to accepting Stability AI conditions. 
 
 # [3] Model weights
 modelweights:
   class: open
   link: https://huggingface.co/stabilityai/stable-audio-open-1.0/tree/main
-  notes: 'Weights are available at: https://huggingface.co/stabilityai/stable-audio-open-1.0.
-    However, accessibility is subject to accepting Stability AI conditions. '
+  notes: Weights are available in the HuggingFace repository. However, accessibility is subject to accepting Stability AI conditions. 
 
 # [4] Code documentation
 codedoc:
   class: open
   link: https://github.com/Stability-AI/stable-audio-tools/blob/main/README.md
-  notes: "Documentation of the code is limited for training replicating the model
-    (not specific config files, but those from Stable Audio could be used). However,
-    I think we can still consider the documentation of the code to be enough.\nhttps://huggingface.co/stabilityai/stable-audio-open-1.0https://github.com/Stability-AI/stable-audio-tools"
+  notes: Documentation of the code is limited for training replicating the model. Although there are not specific config files for Stable Audio Open, those from Stable Audio could be used. 
 
 # [5] Training procedure
 trainprocedure:
   class: open
   link: https://arxiv.org/pdf/2407.14358
-  notes: 'Described in pre-print. Warning: They say they provide the exact parameters
-    for training in the repository, but I can’t find them. '
+  notes: Described in pre-print. 
 
 # [6] Evaluation procedure
 evalprocedure:
   class: open
   link: https://arxiv.org/pdf/2407.14358
-  notes: ''
+  notes: They use stable-audio-metrics for evaluation, which has examples of evaluation pipelines.'
 
 # [7] Research paper
 paper:
   class: partial
   link: https://arxiv.org/abs/2407.14358
-  notes: 'Paper is in arxiv but it is not peer-reviewed. '
+  notes: Paper is in arxiv but it is not peer-reviewed.
   date:
 
 # [8] Licensing
 license:
   class: partial
   link: https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/LICENSE.md
-  notes: "Stability AI Community License\nhttps://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/LICENSE.md\n
-    Not an Open Source Initiate(OSI) approved licences "
+  notes: Stability AI Community License. Not an Open Source Initiate (OSI) or RAIL approved licences.
 
 # [9] Model Card
 modelcard:
   class: star
   link: https://huggingface.co/stabilityai/stable-audio-open-1.0
-  notes: 'Model card in HuggingFace: https://huggingface.co/stabilityai/stable-audio-open-1.0'
+  notes: Model card in HuggingFace.
 
 # [10] Datasheet
 datasheet:
   class: ∅
   link: ''
-  notes: 'They provide a .csv file listing each wav from Freesound and FMA. But there
-    is no proper datasheet. It’s a pity they don’t get this start because they are
-    careful about the data they use.    '
+  notes: 
 
 # [11] Package
 package:
@@ -106,12 +95,11 @@ package:
 ux:
   class: ∅
   link: ''
-  notes: I can’t find an official user-oriented application apart from the packages
-    and code examples. But I am sure that the community around the model is building
-    this kind of resource. We should check.
+  notes: 
 
 # [13] Demo Page
 suppage:
   class: star
   link: https://stability.ai/news/introducing-stable-audio-open
-  notes: They provide sound examples in https://stability.ai/news/introducing-stable-audio-open
+  notes: A complementary site with sound examples and demonstration of the model's capabilities is available.
+

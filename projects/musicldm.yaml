@@ -27,51 +27,51 @@ org:
 sourcecode:
   class: partial
   link: https://github.com/RetroCirce/MusicLDM
-  notes: 'System source code is available at GitHub repository & Hugging Face Diffusers. '
+  notes: System source code is available at GitHub repository & Hugging Face Diffusers. 
 
 # [2] Training data
 trainingdata:
   class: partial
-  link: ''
-  notes: 'MusicLDM is trained on the Audiostock dataset, which contains 9000 music
+  link: 
+  notes: MusicLDM is trained on the Audiostock dataset, which contains 9000 music
     tracks for training and 1000 tracks for testing. Dataset is not directly provided,
-    no information about the original sources accessibility or requirements is provided. '
+    no information about the original sources accessibility or requirements is provided. 
 
 # [3] Model weights
 modelweights:
   class: open
   link: https://drive.google.com/drive/folders/15VDVcIgf99YRM5oGXhRxa_Rowl54uWho
-  notes: 'Model checkpoints are available here: https://drive.google.com/drive/folders/15VDVcIgf99YRM5oGXhRxa_Rowl54uWho?usp=sharing'
-
+  notes: Model checkpoints are available. 
 # [4] Code documentation
 codedoc:
   class: open
   link: https://github.com/RetroCirce/MusicLDM/blob/main/README.md
-  notes: "Description on how to use the code is provided in the GitHub repo and through
-    Hugging Face Diffusers. \n"
+  notes: Description on how to use the code is provided in the GitHub repo and through
+    Hugging Face Diffusers.
 
 # [5] Training procedure
 trainprocedure:
   class: open
   link: https://arxiv.org/pdf/2308.01546
-  notes: 'Training procedure is documented in the research article preprint and in
-    the appendix additional page for the peer-reviewed version: https://musicldm.github.io/appendix/.
+  notes: Training procedure is documented in the research article preprint and in
+    the appendix additional page for the peer-reviewed version (https://musicldm.github.io/appendix/).
     Authors include specifications on hyperparameters, GPU requirements and model
-    configurations. '
+    configurations. 
 
 # [6] Evaluation procedure
 evalprocedure:
   class: open
   link: https://arxiv.org/pdf/2308.01546
-  notes: ''
+  notes: Evaluation procedure is described in the research paper. Evaluation code is available in the model’s 
+    codebase and in its complementary repo (https://github.com/haoheliu/audioldm_eval). 
 
 # [7] Research paper
 paper:
   class: open
   link: https://ieeexplore.ieee.org/document/10447265
-  notes: 'This article has been accepted at ICASSP 2024. The access of such paper
-    is limited to IEEE Xplore access: https://ieeexplore.ieee.org/document/10447265.
-    A preprint is available in arXiv: https://arxiv.org/pdf/2308.01546'
+  notes: This article has been accepted at ICASSP 2024. The access of such paper
+    is limited to IEEE Xplore access (https://ieeexplore.ieee.org/document/10447265).
+    A preprint is available in arXiv (https://arxiv.org/pdf/2308.01546). 
   date:
 
 # [8] Licensing
@@ -84,33 +84,33 @@ license:
 modelcard:
   class: star
   link: https://huggingface.co/ucsd-reach/musicldm
-  notes: "Available at HuggingFace: https://huggingface.co/ucsd-reach/musicldm \n
+  notes: Available at HuggingFace. 
     Information about model’s evaluation and limitations is missing and model’s architecture
-    is just mentioned.  "
+    is just mentioned. 
 
 # [10] Datasheet
 datasheet:
   class: star
   link: https://github.com/LAION-AI/audio-dataset/blob/main/data_card/Audiostock.md
-  notes: 'There is a data card: https://github.com/LAION-AI/audio-dataset/blob/main/data_card/Audiostock.md.
+  notes: There is a data card. 
     However, content is limited to data sources origin and details on how to reproduce
     the data collection. Details on curation and other considerations, such as consent,
-    limitations and selection strategies are missing. '
+    limitations and selection strategies are missing. 
 
 # [11] Package
 package:
   class: ∅
-  link: ''
-  notes: ''
+  link: 
+  notes: 
 
 # [12] User-oriented application
 ux:
   class: ∅
-  link: ''
-  notes: 'API is shut down temporarily. Should be released again soon. '
+  link: 
+  notes: API is shut down temporarily. Should be released again soon. 
 
 # [13] Demo Page
 suppage:
   class: star
   link: https://musicldm.github.io/
-  notes: https://musicldm.github.io/
+  notes: Demo page is available with sound examples and demonstration of the model's capabilities.

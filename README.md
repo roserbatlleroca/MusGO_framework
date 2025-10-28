@@ -9,23 +9,14 @@
 
 
 [![License: MIT](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![arXiv](https://img.shields.io/badge/arXiv-2507.03599-<COLOR>.svg)]()
+[![arXiv](https://img.shields.io/badge/arXiv-2507.03599-<COLOR>.svg)](http://arxiv.org/pdf/2507.03599)
 
 
-The **Music-Generative Open AI (MusGO)** framework is a community-driven framework built to assess openness in music-generative models. With a collaborative approach, it invites contributions from researchers and artists, supports public scrutiny, and enables tracking of model evolution to promote transparency, accountability, and responsible development. 
+The **Music-Generative Open AI (MusGO)** framework is a community-driven framework built to assess openness in music-generative models. With a collaborative approach, it invites contributions from researchers and artists, supports public scrutiny, and enables tracking of model evolution to promote transparency, accountability, and responsible development. Article _MusGO: A Community-Driven Framework For Assessing Openness in Music-Generative AI_ was accepted at the **26th International Society for Music Information Retrieval (ISMIR) Conference**. 
 
 📍 View the **[MusGO leaderboard](https://roserbatlleroca.github.io/MusGO_framework/index.html)** to explore current model assessments.
 
-
-Article _MusGO: A Community-Driven Framework For Assessing Openness in Music-Generative AI_ has been accepted at the **26th International Society for Music Information Retrieval (ISMIR) Conference**. 
-
-
 </div>
-
----
-## Abstract 
-
-Since 2023, generative AI has rapidly advanced in the music domain. Despite significant technological advancements, music-generative models raise critical ethical challenges, including a lack of transparency and accountability, along with risks such as the replication of artists’ works, which highlights the importance of fostering openness. With upcoming regulations such as the EU AI Act encouraging open models, many generative models are being released labelled as ‘open’. However, the definition of an open model remains widely debated. In this article, we adapt a recently proposed evidence-based framework for assessing openness in LLMs to the music domain. Using feedback from a survey of 110 participants from the Music Information Retrieval (MIR) community, we refine the framework into MusGO (Music-Generative Open AI), which comprises 13 openness categories: 8 *essential* and 5 *desirable*. We evaluate 16 state-of-the-art generative models and provide an openness leaderboard that is fully open to public scrutiny and community contributions. Through this work, we aim to clarify the concept of openness in music-generative AI and promote its transparent and responsible development.
 
 ---
 
@@ -64,6 +55,11 @@ We’d love to hear your feedback, questions, or suggestions for improving the M
 
 You can also contact us directly at [roser.batlle@upf.edu](mailto:roser.batlle@upf.edu) and [laura.ibanez@upf.edu](mailto:laura.ibanez@upf.edu). 
 
+## Disclaimer: Future Developments 🚧
+
+The MusGO framework is a living resource, developed through community collaboration, currently focused on assessing openness in music-generative AI. However, we are actively exploring complementary perspectives and refinements to further expand its scope and adaptability. We aim to better reflect the diverse ways in which music-generative systems can be understood, accessed, and used responsibly. 
+
+Updates will be shared once ready for community feedback.
 
 ## Citation 
 

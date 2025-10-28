@@ -13,7 +13,7 @@
 
 project:
   name: MusicLM
-  link: ''
+  link: https://musiclm.com/
   license: Not available.
   notes:
 
@@ -25,25 +25,25 @@ org:
 # [1] Open Source Code
 sourcecode:
   class: closed
-  link: ''
+  link: 
   notes: Source code not available.
 
 # [2] Training data
 trainingdata:
   class: partial
-  link: ''
+  link: 
   notes: Training data is not available nor properly described.
 
 # [3] Model weights
 modelweights:
   class: closed
-  link: ''
+  link: 
   notes: Not provided.
 
 # [4] Code documentation
 codedoc:
   class: closed
-  link: ''
+  link: 
   notes: Not available.
 
 # [5] Training procedure
@@ -56,7 +56,7 @@ trainprocedure:
 evalprocedure:
   class: partial
   link: https://arxiv.org/pdf/2301.11325
-  notes: ''
+  notes: Evaluation data is provided and metrics are described, but exact implementations are not referenced.
 
 # [7] Research paper
 paper:
@@ -68,35 +68,35 @@ paper:
 # [8] Licensing
 license:
   class: closed
-  link: ''
+  link: 
   notes: Not available.
 
 # [9] Model Card
 modelcard:
   class: ∅
-  link: ''
+  link: 
   notes: Not available.
 
 # [10] Datasheet
 datasheet:
   class: ∅
-  link: ''
+  link: 
   notes: Not available.
 
 # [11] Package
 package:
   class: ∅
-  link: ''
+  link: 
   notes: Not available.
 
 # [12] User-oriented application
 ux:
   class: ∅
-  link: ''
-  notes: In theory available to try in AI Test Kitchen but I never managed?
+  link: 
+  notes: 
 
 # [13] Demo Page
 suppage:
   class: star
   link: https://google-research.github.io/seanet/musiclm/examples/
-  notes: https://google-research.github.io/seanet/musiclm/examples/
+  notes: Complementary page is available with sound examples and demonstration of the model's capabilities.
