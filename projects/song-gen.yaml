@@ -66,7 +66,7 @@ evalprocedure:
 # [7] Research paper
 paper:
     class: open
-    link: https://arxiv.org/pdf/2502.13128
+    link: https://openreview.net/pdf?id=aTyQjpsaB4
     notes: Accepted at ICML 2025. 
     date: May 30, 2025
 
@@ -105,4 +105,5 @@ suppage:
     class: star
     link: https://liuzh-19.github.io/SongGen/
     notes: A demo page with sound examples is available. The page also includes a link to the GitHub repository and research paper. 
+
 
