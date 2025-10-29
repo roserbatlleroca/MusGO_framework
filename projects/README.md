@@ -27,10 +27,13 @@ Use lowercase and hyphens to separate words:
 - Fill in all the project information: `name`, `link`, `license` and `org`. 
 - For each of the **essential categories [1–8]**, classify as `open`, `partial`, or `closed`.
 - For each **desirable category [9–13]**, classify as `star` (⭐) or `∅` (not applicable).
-- Provide a **justification** in the `notes` field for each classification. You can also add a reference link to complement the information. 
-  > _Example:_  If Training Data is `closed`, a note might say:  `"Dataset is closed and only briefly described." 
+- Provide a **justification** in the `notes` field for each classification. You can also add a reference link to complement the information. If some information is missing or some category is incomplete, clearly point out what is missing in the `notes` field. 
+  > _Example:_  If Training Data is `closed`, a note might say:  `"Dataset is closed and only briefly described." ` 
   
-  > _Example:_  If Model Weights is `open`, a note might say:  `"Weights are available." and a link to the weights might be added.`
+  > _Example:_  If Model Weights is `open`, a note might say:  `"Weights are available." ` and a link to the weights might be added.
+
+  > _Example:_  If Source Code is `partial`, a note might say:  `"Source code includes data processing, model architecture, and inference code, but training pipeline is missing". `
+
 
 #### 3. **Submit a Pull Request**
 
@@ -42,14 +45,15 @@ Once your YAML file is complete:
   - If we spot any missing info or inconsistencies, we’ll reach out to clarify or request edits. You may be asked to provide **additional context or evidence**, and suggestions may be revised **collaboratively** before being accepted.
 3. Once all issues are addressed, the model will be officially added! Credit for the contribution will be reflected in the commit and PR history.
 
+An example on how to add a new model evaluation is available [here](https://github.com/roserbatlleroca/MusGO_framework/pull/1). 
+
 
 ## Amending a current evaluation 
 
-
 If you'd like to propose an update to the evaluation of a model already listed in the leaderboard, there are two main reasons this might apply:
 
-1. **The model has changed** — A new version, component, or resource has been released that affects one or more categories.
-2. **You disagree with a current classification** — You believe a category's score or justification is inaccurate or outdated.
+1. **The model has changed** — A new version, component, or resource has been released that affects one or more categories. For example, a peer-reviewed version of the research paper is now available. 
+2. **You disagree with a current classification** — You believe a category's score or justification is inaccurate or outdated. For example, a UX interface for your model is availble but category is empty. 
 
 
 #### How to proceed?
@@ -60,13 +64,16 @@ If you'd like to propose an update to the evaluation of a model already listed i
    - The **reason for your proposal**, with clear references (e.g., links, publications, repo updates).
   
 2. **Review and discussion**: The repository maintainers will review the issue:
-   - If the proposal is valid, maintainers will **update the YAML file directly** or you will be invited to **submit a pull** request with your proposed changes.
+   - If the proposal is valid, maintainers will **update the YAML file directly** or you will be invited to **submit a pull request** with your proposed changes.
    - If there are **questions, missing information, or doubts**, or if the maintainers **disagree with the proposed change**, they will **respond in the issue thread** to clarify concerns and open a discussion.
    - You may be asked to provide **additional context or evidence**, and suggestions may be revised **collaboratively** before being accepted or rejected.
 
 3. **Resolution**
    - Once confirmed, the updated evaluation will be merged into the leaderboard.
    - Credit for the contribution will be reflected in the commit and PR history.
+
+
+An example on how to amend an evaluation is available [here](https://github.com/roserbatlleroca/MusGO_framework/pull/6). 
 
 ---
 
