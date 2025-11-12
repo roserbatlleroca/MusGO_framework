@@ -16,6 +16,7 @@ project:
   link: https://ditto-music.github.io/ditto2/
   license: Not available.
   notes:
+  year: 2024
 
 org:
   name: University of California San Diego and Adobe Research
@@ -49,13 +50,13 @@ codedoc:
 # [5] Training procedure
 trainprocedure:
   class: partial
-  link: https://arxiv.org/abs/2405.20289
+  link: https://arxiv.org/pdf/2405.20289
   notes: Training procedure is partially described.
 
 # [6] Evaluation procedure
 evalprocedure:
   class: partial
-  link: https://arxiv.org/abs/2405.20289
+  link: https://arxiv.org/pdf/2405.20289
   notes: Metrics and data are described but exact implementations are missing.
 
 # [7] Research paper

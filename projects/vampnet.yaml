@@ -16,6 +16,7 @@ project:
   link: https://github.com/hugofloresgarcia/vampnet
   license: MIT License
   notes:
+  year: 2023
 
 org:
   name: Northwestern University and Descript Inc

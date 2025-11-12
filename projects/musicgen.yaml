@@ -19,6 +19,7 @@ project:
     weights in this repository are released under the CC-BY-NC 4.0 license as found
     in the https://github.com/facebookresearch/audiocraft/blob/main/LICENSE_weights.
   notes:
+  year: 2023
 
 org:
   name: Meta AI
@@ -54,14 +55,14 @@ codedoc:
 # [5] Training procedure
 trainprocedure:
   class: open
-  link: https://github.com/facebookresearch/audiocraft/blob/main/docs/TRAINING.md
-  notes: Training is well documented, with training pipelines and environment setup described. 
-    Note that hardware use for training is described in the paper. 
+  link: https://arxiv.org/pdf/2306.05284
+  notes: Training procedure is well documented in the paper, including hardware requirements and model
+    configurations. Additional implementation details are available in the GitHub repository.
 
 # [6] Evaluation procedure
 evalprocedure:
   class: open
-  link: https://github.com/facebookresearch/audiocraft/blob/main/docs/METRICS.md.
+  link: https://arxiv.org/pdf/2306.05284
   notes: Evaluation is documented in the paper and the code provides detailed explanation about the implementation of evaluation metrics. 
    Evaluating the model to reproduce the results still may require some effort. Dataset used for evaluation is MusicCaps benchmark.
 

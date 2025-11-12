@@ -16,6 +16,7 @@ project:
   link: https://github.com/archinetai/audio-diffusion-pytorch
   license: MIT license.
   notes:
+  year: 2023
 
 org:
   name: ETH Zürich, IIT Kharagpur, Max Planck Institute

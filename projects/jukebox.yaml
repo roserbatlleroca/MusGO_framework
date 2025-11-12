@@ -16,6 +16,7 @@ project:
   link: https://github.com/openai/jukebox
   license: Codebase is licensed under a non-commercial use license by OpenAI. 
   notes:
+  year: 2020
 
 org:
   name: OpenAI
