@@ -102,9 +102,14 @@ def write_html(df):
 
         r1_html += "</tr>\n"
         html_table += r1_html
-        # second row
+        # second row - now includes year before organization
+        year = df.loc[p, "project.year"] if "project.year" in df.columns and pd.notna(df.loc[p, "project.year"]) else ""
+        org_name = df.loc[p, "org.name"]
+        # Combine year and organization with space, year gets fixed width
+        year_org_display = f'<span style="display:inline-block;min-width:36px">{year}</span>{org_name}' if year else org_name
+        
         #r2_html = '<tr class="row-b"><td class="org"><a target="_blank" href="{}" title="{}">{}</a></td>'.format(df.loc[p, "org.link"], df.loc[p, "org.name"], df.loc[p, "org.name"])
-        r2_html = '<tr class="row-b"><td class="org"><a target="_blank" href="{}" title="{}">{}</a></td>'.format(df.loc[p, "project.link"], df.loc[p, "project.notes"], df.loc[p, "org.name"])
+        r2_html = '<tr class="row-b"><td class="org"><a target="_blank" href="{}" title="{}">{}</a></td>'.format(df.loc[p, "project.link"], df.loc[p, "project.notes"], year_org_display)
         #r2_html += '<td colspan="3" class="llmbase">LLM base: {}</td><td colspan="3" class="rlbase">RL base: {}</td>'.format(df.loc[p, "project.llmbase"], df.loc[p, "project.rlbase"])
         #r2_html += '<td colspan="7"></td><td class="source-link"><a href="{}" title="{}" target="_blank">&sect;</a></td></tr>\n'.format(source_link, source_file)
         #r2_html += '<td colspan="7"></td><td class="source-link"><a href="{}" title="{}" target="_blank">{}</a></td></tr>\n'.format(df.loc[p, "org.link"], df.loc[p, "org.name"], df.loc[p, "openness"])
