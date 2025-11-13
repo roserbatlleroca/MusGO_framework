@@ -16,6 +16,7 @@ project:
   link: https://github.com/magenta/magenta/tree/main/magenta/models/gansynth
   license: System is covered by Apache License. 
   notes:
+  year: 2019
 
 org:
   name: Google Magenta

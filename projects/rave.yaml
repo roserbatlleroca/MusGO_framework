@@ -16,6 +16,7 @@ project:
   link: https://github.com/acids-ircam/RAVE
   license: System covered by an CC BY-NC 4.0 license.
   notes:
+  year: 2021
 
 org:
   name: IRCAM

@@ -21,6 +21,7 @@ project:
     link: https://github.com/LiuZH-19/SongGen
     license: Apache License
     notes:
+    year: 2025
 
 org:
     name: Beihang University, Shanghai AI Laboratory, The Chinese University of Hong Kong, Harbin Institute of Technology, CPII (InnoHK)
