@@ -39,7 +39,7 @@ Use lowercase and hyphens to separate words:
 
 Once your YAML file is complete:
 
-1. Open a **pull request** with your new model file.
+1. Open a **pull request** with your new evaluation YAML file. Please, name your branch as `model-eval/[model-name]`. 
 2. The repository maintainers will **review your submission**:
   - If everything looks good, your model will be merged into the leaderboard.
   - If we spot any missing info or inconsistencies, we’ll reach out to clarify or request edits. You may be asked to provide **additional context or evidence**, and suggestions may be revised **collaboratively** before being accepted.
@@ -63,9 +63,9 @@ If you'd like to propose an update to the evaluation of a model already listed i
    - The **specific category (or categories)** you'd like to update.
    - The **reason for your proposal**, with clear references (e.g., links, publications, repo updates).
   
-2. **Review and discussion**: The repository maintainers will review the issue:
-   - If the proposal is valid, maintainers will **update the YAML file directly** or you will be invited to **submit a pull request** with your proposed changes.
-   - If there are **questions, missing information, or doubts**, or if the maintainers **disagree with the proposed change**, they will **respond in the issue thread** to clarify concerns and open a discussion.
+2. **Review and discussion**: 
+   - You can then **submit a pull request** with your proposed changes. Please, name your branch as `model-update/[model-name]`. 
+   - The repository maintainers will review the issue. If there are **questions, missing information, or doubts**, or if the maintainers **disagree with the proposed changes**, they will **respond in the PR/issue thread** to clarify concerns and open a discussion.
    - You may be asked to provide **additional context or evidence**, and suggestions may be revised **collaboratively** before being accepted or rejected.
 
 3. **Resolution**
