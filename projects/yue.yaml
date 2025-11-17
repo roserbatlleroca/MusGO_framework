@@ -1,0 +1,109 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+# Remember to replace the template values with the actual information of the project you are evaluating.
+# Essential categories [1-8] should be classified as either `open`, `partial`, or `closed`.
+# Desirable categories [9-13] can be classified as `star` or `∅` (not applicable).
+# Notes should be provided for each category, explaining the classification and any relevant details.
+
+
+project:
+    name: YuE (乐)
+    link: https://github.com/multimodal-art-projection/YuE
+    license: Apache License 2.0
+    notes: 
+    year: 2025
+
+org:
+    name: The Hong Kong University of Science and Technology and Multimodela Art Projection (M-A-P)
+    link: https://hkust.edu.hk/
+    notes:
+
+# [1] System source code
+sourcecode:
+    class: open
+    link: https://github.com/multimodal-art-projection/YuE
+    notes: Source code is available in the GitHub repo, including inference code and model architecture. They also provide instructions on how to fine-tune YuE for specific data (see https://github.com/multimodal-art-projection/YuE/tree/main/finetune), including data processing and training procedure. 
+
+# [2] Training data
+trainingdata:
+    class: closed
+    link: https://arxiv.org/pdf/2503.08638
+    notes: Speech-related datasets are introduced (i.e., WeNetSpeech (zh), LibriHeavy (en), and GigaSpeech (en)). But for music, they only indicate that they rely on 650K hours of music recordings. No information on specific data sources, acquisition methods, and data licensing is given. See "Data Setup" in Section 5.1. of the technical report. 
+
+# [3] Model weights
+modelweights:
+    class: open
+    link: https://huggingface.co/collections/m-a-p/yue
+    notes: Checkpoints are avialble in Hugging Face. 
+
+# [4] Code documentation 
+codedoc:
+    class: open 
+    link: https://github.com/multimodal-art-projection/YuE
+    notes: Codebase is documented in the GitHub repository, including installation requirements and usage instructions.
+
+# [5] Training procedure
+trainprocedure:
+    class: open
+    link: https://arxiv.org/pdf/2503.08638
+    notes: Training procedure is properly described, including hardware requirements and confirgurations (see Section 4 and Section 5.1).
+
+# [6] Evaluation procedure
+evalprocedure:
+    class: open
+    link: https://arxiv.org/pdf/2503.08638
+    notes: Evaluation procedure is described in Section 5.2 of the technical report, including both objective and subjective evaluation methods. Evaluation metrics implementations are referenced in the text. 
+
+# [7] Research paper
+paper:
+    class: partial
+    link: https://arxiv.org/pdf/2503.08638
+    notes: Technical report available, but no peer-reviewed publication yet.
+    date: September 15, 2025
+
+# [8] Licensing
+license:
+    class: open
+    link: https://github.com/multimodal-art-projection/YuE?tab=Apache-2.0-1-ov-file
+    notes: Apache License 2.0
+
+# [9] Model card
+modelcard:
+    class: ∅
+    link:
+    notes:
+
+# [10] Datasheet
+datasheet:
+    class: ∅
+    link:
+    notes:
+
+# [11] Package
+package:
+    class: ∅
+    link:
+    notes:
+
+# [12] User-oriented application
+ux:
+    class: star
+    link: https://github.com/alisson-anjos/YuE-Interface
+    notes: There are user-oriented applications available for YuE, for both Windows and Linux. Here we link the Gradio Linux interface, but additional resources can be found in the GitHub repository (for Windows -- https://github.com/multimodal-art-projection/YuE?tab=readme-ov-file#-windows-users-quickstart, for Linux -- https://github.com/multimodal-art-projection/YuE?tab=readme-ov-file#-linuxwsl-users-quickstart)  
+
+# [13] Supplementary Material Page
+suppage:
+    class: start
+    link: https://map-yue.github.io/
+    notes: A demo page is available showcasing the use of YuE.
+
