@@ -99,7 +99,7 @@ package:
 ux:
     class: ∅
     link: 
-    notes: No official user-oriented application is available. But, there are user-oriented applications available for YuE, for both Windows and Linux. For Windows, check out: https://github.com/multimodal-art-projection/YuE?tab=readme-ov-file#-windows-users-quickstart, and for Linux: https://github.com/multimodal-art-projection/YuE?tab=readme-ov-file#-linuxwsl-users-quickstart.   
+    notes: "No official user-oriented application is available. But there are user-oriented applications available for YuE, for both Windows and Linux. For Windows, check out: https://github.com/multimodal-art-projection/YuE?tab=readme-ov-file#-windows-users-quickstart, and for Linux: https://github.com/multimodal-art-projection/YuE?tab=readme-ov-file#-linuxwsl-users-quickstart."   
 
 # [13] Supplementary Material Page
 suppage:
