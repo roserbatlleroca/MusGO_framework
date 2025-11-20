@@ -30,9 +30,9 @@ org:
 
 # [1] System source code
 sourcecode:
-    class: open
+    class: partial
     link: https://github.com/multimodal-art-projection/YuE
-    notes: Source code is available in the GitHub repo, including inference code and model architecture. They also provide instructions on how to fine-tune YuE for specific data (see https://github.com/multimodal-art-projection/YuE/tree/main/finetune), including data processing and training procedure. 
+    notes: Source code is available in the GitHub repo, including inference code and model architecture. They also provide instructions on how to fine-tune YuE for specific data (see https://github.com/multimodal-art-projection/YuE/tree/main/finetune), including data processing and training procedure. Code to train the model from scratch is missing. 
 
 # [2] Training data
 trainingdata:
@@ -44,7 +44,7 @@ trainingdata:
 modelweights:
     class: open
     link: https://huggingface.co/collections/m-a-p/yue
-    notes: Checkpoints are avialble in Hugging Face. 
+    notes: Checkpoints are available in Hugging Face. 
 
 # [4] Code documentation 
 codedoc:
@@ -97,9 +97,9 @@ package:
 
 # [12] User-oriented application
 ux:
-    class: star
-    link: https://github.com/alisson-anjos/YuE-Interface
-    notes: There are user-oriented applications available for YuE, for both Windows and Linux. Here we link the Gradio Linux interface, but additional resources can be found in the GitHub repository (for Windows -- https://github.com/multimodal-art-projection/YuE?tab=readme-ov-file#-windows-users-quickstart, for Linux -- https://github.com/multimodal-art-projection/YuE?tab=readme-ov-file#-linuxwsl-users-quickstart)  
+    class: ∅
+    link: 
+    notes: No official user-oriented application is available. But, there are user-oriented applications available for YuE, for both Windows and Linux. For Windows, check out: https://github.com/multimodal-art-projection/YuE?tab=readme-ov-file#-windows-users-quickstart, and for Linux: https://github.com/multimodal-art-projection/YuE?tab=readme-ov-file#-linuxwsl-users-quickstart.   
 
 # [13] Supplementary Material Page
 suppage:
