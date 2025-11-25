@@ -103,7 +103,7 @@ ux:
 
 # [13] Supplementary Material Page
 suppage:
-    class: start
+    class: star
     link: https://map-yue.github.io/
     notes: A demo page is available showcasing the use of YuE.
 
