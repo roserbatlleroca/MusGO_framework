@@ -1,0 +1,109 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+# Remember to replace the template values with the actual information of the project you are evaluating.
+# Essential categories [1-8] should be classified as either `open`, `partial`, or `closed`.
+# Desirable categories [9-13] can be classified as `star` or `∅` (not applicable).
+# Notes should be provided for each category, explaining the classification and any relevant details.
+
+
+project:
+    name: JAM
+    link: https://github.com/declare-lab/jamify/tree/main
+    license: Project Jamify License and Stability AI Community License Agreement
+    notes: "A tiny flow-based song generator with fine-grained controllability and aesthetic alignment"
+    year: 2025
+
+org:
+    name: Singapore University of Technology and Design and Lamda Labs
+    link: https://www.sutd.edu.sg/
+    notes:
+
+# [1] System source code
+sourcecode:
+    class: open
+    link: https://github.com/declare-lab/jamify
+    notes: Source code is available in the GitHub repository, including data processing, training and inference code, as well as model architecture. 
+
+# [2] Training data
+trainingdata:
+    class: closed
+    link: https://arxiv.org/pdf/2507.20880
+    notes: Training data is not available nor properly described. In the research paper, they only indicate that they rely on a ~1 million song dataset, resulting into ~54k hours of audion. No information on specific data sources, acquisition methods, and data licensing is given. See "Dataset Setup" in Section 4.1. of the pre-print.
+
+# [3] Model weights
+modelweights:
+    class: open
+    link: https://huggingface.co/declare-lab/JAM-0.5/blob/main/jam-0_5.safetensors
+    notes: Pre-trained version of the model is available in Hugging Face.
+
+# [4] Code documentation 
+codedoc:
+    class: open
+    link: https://github.com/declare-lab/jamify/blob/main/README.md
+    notes: Codebase is documented, including high-level instructions and configuration files.
+
+# [5] Training procedure
+trainprocedure:
+    class: open
+    link: https://arxiv.org/pdf/2507.20880
+    notes: Training procedure is properly described, including hardware requirements and confirgurations (see Section 4.2).
+
+# [6] Evaluation procedure
+evalprocedure:
+    class: open
+    link: https://arxiv.org/pdf/2507.20880
+    notes: "The evaluation procedure is properly described, including evaluation data, metrics, and implementation details (see Section 4.3). With the aim to standarize evaluation across models, they propose JAME: a genre-driverse evaluation dataset for full-track generation. This dataset is publicly available in Hugging Face (https://huggingface.co/datasets/declare-lab/JAME)." 
+    
+# [7] Research paper
+paper:
+    class: partial
+    link: https://arxiv.org/pdf/2507.20880
+    notes: Pre-print is available. No peer-reviewed version of the article has been found.
+    date: July 28, 2025
+
+# [8] Licensing
+license:
+    class: partial
+    link: https://github.com/declare-lab/jamify/blob/main/STABILITY_AI_COMMUNITY_LICENSE.md
+    notes: JAM is released under the Project Jamify License and the Stability AI Community License Agreement, which allow for non-commercial use and research purposes with certain restrictions. 
+
+# [9] Model card
+modelcard:
+    class: star
+    link: https://huggingface.co/declare-lab/JAM-0.5
+    notes: Model card available in Hugging Face.
+
+# [10] Datasheet
+datasheet:
+    class: star
+    link: https://huggingface.co/datasets/declare-lab/JAME 
+    notes: Dataset card for the evaluation dataset (JAME) is available in Hugging Face. However, no datasheet is provided for the training data used to train JAM.
+
+# [11] Package
+package:
+    class: ∅
+    link:
+    notes:
+
+# [12] User-oriented application
+ux:
+    class: ∅
+    link: https://huggingface.co/spaces/declare-lab/JAM
+    notes: There should be a user-oriented application available on Hugging Face Spaces, but it is currently not available.
+
+# [13] Supplementary Material Page
+suppage:
+    class: star
+    link: https://declare-lab.github.io/jamify
+    notes: A supplementary material page is available showcasing the use of JAM.
+
