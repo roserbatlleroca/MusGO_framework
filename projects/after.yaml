@@ -20,7 +20,7 @@ project:
     name: AFTER
     link: https://github.com/acids-ircam/AFTER
     license: Creative Commons Attribution-NonCommercial 4.0 International
-    notes:
+    notes: AFTER is the real-time implementation of the model introduced in 'Combining audio control and style transfer using latent diffusion' by Dermerlé et al. (2024), which we refer to as the original model in this evaluation.
     year: 2024
 
 org:
@@ -32,13 +32,13 @@ org:
 sourcecode:
     class: open
     link: https://github.com/acids-ircam/AFTER
-    notes: Source code is available in the GitHub repository, including training and inference pipelines, as well as model architecture.
+    notes: Source code is available in the GitHub repository, including data processing, training and inference pipelines, as well as model architecture.
 
 # [2] Training data
 trainingdata:
     class: partial
     link: https://arxiv.org/pdf/2408.00196
-    notes: Datasets used for training the original model are publicly available and described in the paper, but the datasets used for training the current model are unknown.
+    notes: Datasets used for training the original model (SLAKH, MaestroV2, GuitarSet and URMP) are publicly available and described in the paper, but the datasets used for training the current model are unknown.
 
 # [3] Model weights
 modelweights:
@@ -73,7 +73,7 @@ paper:
 
 # [8] Licensing
 license:
-    class: open
+    class: partial
     link: https://github.com/acids-ircam/AFTER/blob/main/LICENSE.md
     notes: Creative Commons Attribution-NonCommercial 4.0 International license.
 
