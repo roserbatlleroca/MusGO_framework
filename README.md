@@ -5,16 +5,14 @@
 **Roser Batlle-Roca**<sup>1</sup>, **Laura Ibáñez-Martínez**<sup>1</sup>, **Xavier Serra**<sup>1</sup>, **Emilia Gómez**<sup>1,2</sup>, **Martín Rocamora**<sup>1</sup>
 
 <sup>1</sup>Music Technology Group, Universitat Pompeu Fabra, Barcelona<br>
-<sup>2</sup>Joint Research Centre, European Comission, Sevilla 
+<sup>2</sup>Joint Research Centre, European Commission, Sevilla 
 
-
-[![License: MIT](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![arXiv](https://img.shields.io/badge/arXiv-2507.03599-<COLOR>.svg)](http://arxiv.org/pdf/2507.03599)
-
-
-The **Music-Generative Open AI (MusGO)** framework is a community-driven framework built to assess openness in music-generative models. With a collaborative approach, it invites contributions from researchers and artists, supports public scrutiny, and enables tracking of model evolution to promote transparency, accountability, and responsible development. Article _MusGO: A Community-Driven Framework For Assessing Openness in Music-Generative AI_ was accepted at the **26th International Society for Music Information Retrieval (ISMIR) Conference**. 
+The **Music-Generative Open AI (MusGO)** framework is a community-driven framework built to assess openness in music-generative models. With a collaborative approach, it invites contributions from researchers and artists, supports public scrutiny, and enables tracking of model evolution to promote transparency, accountability, and responsible development. 
 
 📍 View the **[MusGO leaderboard](https://roserbatlleroca.github.io/MusGO_framework/index.html)** to explore current model assessments.
+
+[![License: MIT](https://img.shields.io/badge/License-Apache_2.0-green.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17706575.svg)](https://doi.org/10.5281/zenodo.17706575)
 
 </div>
 
@@ -63,13 +61,19 @@ Updates will be shared once ready for community feedback.
 
 ## Citation 
 
+The article _MusGO: A Community-Driven Framework For Assessing Openness in Music-Generative AI_ was accepted at the **26th International Society for Music Information Retrieval (ISMIR) Conference**. If our work is relevant to you, please cite it as follows: 
+
 ```
-@article{batlleroca2025musgo,
-  title={{MusGO}: A Community-Driven Framework For Assessing Openness in Music-Generative AI},
-  author={Roser Batlle-Roca and Laura Ibáñez-Martínez and Xavier Serra and Emilia Gómez and Martín Rocamora},
-  journal={Proceedings of the 26th International Society for Music Information Retrieval Conference, Daejeon, South Korea},
-  year={2025}, 
-  url={http://arxiv.org/abs/2507.03599}, 
+@inproceedings{batlleroca2025musgo,
+  author       = {Roser Batlle{-}Roca and Laura Ib{\'{a}}{\~{n}}ez{-}Mart{\'{\i}}nez and
+                  Xavier Serra and Emilia G{\'{o}}mez and Mart{\'{\i}}n Rocamora},
+  title        = {MusGO: {A} Community-Driven Framework for Assessing Openness in Music-Generative {AI}},
+  booktitle    = {Proceedings of the 26th International Society for Music Information Retrieval Conference, {ISMIR} 2025, Daejeon, South Korea, September 21-25, 2025},
+  pages        = {727--738},
+  year         = {2025},
+  url          = {https://doi.org/10.5281/zenodo.17706575},
+  doi          = {10.5281/ZENODO.17706575},
+  biburl       = {https://dblp.org/rec/conf/ismir/Batlle-RocaISGR25.bib},
 }
 ```
 
