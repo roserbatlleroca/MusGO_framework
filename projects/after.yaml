@@ -1,0 +1,109 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+# Remember to replace the template values with the actual information of the project you are evaluating.
+# Essential categories [1-8] should be classified as either `open`, `partial`, or `closed`.
+# Desirable categories [9-13] can be classified as `star` or `∅` (not applicable).
+# Notes should be provided for each category, explaining the classification and any relevant details.
+
+
+project:
+    name: AFTER
+    link: https://github.com/acids-ircam/AFTER
+    license: Creative Commons Attribution-NonCommercial 4.0 International
+    notes: AFTER is the real-time implementation of the model introduced in 'Combining audio control and style transfer using latent diffusion' by Dermerlé et al. (2024), which we refer to as the original model in this evaluation.
+    year: 2024
+
+org:
+    name: IRCAM
+    link: https://www.ircam.fr/
+    notes:
+
+# [1] System source code
+sourcecode:
+    class: open
+    link: https://github.com/acids-ircam/AFTER
+    notes: Source code is available in the GitHub repository, including data processing, training and inference pipelines, as well as model architecture.
+
+# [2] Training data
+trainingdata:
+    class: partial
+    link: https://arxiv.org/pdf/2408.00196
+    notes: Datasets used for training the original model (SLAKH, MaestroV2, GuitarSet and URMP) are publicly available and described in the paper, but the datasets used for training the current model are unknown.
+
+# [3] Model weights
+modelweights:
+    class: open
+    link: https://nubo.ircam.fr/index.php/s/8NFD5gWwbkT4G5P
+    notes: Weights are available to download from the link provided in the GitHub repository.
+
+# [4] Code documentation 
+codedoc:
+    class: open
+    link: https://github.com/acids-ircam/AFTER/blob/main/README.md
+    notes: Documentation is available in the GitHub repository, including installation requirements, examples of scripts usage and configuration files. The codebase could still benefit from more detailed documentation.
+
+# [5] Training procedure
+trainprocedure:
+    class: partial
+    link: https://arxiv.org/pdf/2408.00196
+    notes: Training procedure of the original model is fully described in the paper, but relevant changes in the model architecture and training procedure are not properly documented.
+
+# [6] Evaluation procedure
+evalprocedure:
+    class: partial
+    link: https://arxiv.org/pdf/2408.00196
+    notes: Evaluation procedure of the original model is fully described in the paper, including used metrics and implementation details. However, no evaluation is provided for the current model.
+
+# [7] Research paper
+paper:
+    class: partial
+    link: https://zenodo.org/records/14877437
+    notes: Original paper is publicly available and peer-reviewed, but no publication is available for the current model.
+    date:
+
+# [8] Licensing
+license:
+    class: partial
+    link: https://github.com/acids-ircam/AFTER/blob/main/LICENSE.md
+    notes: Creative Commons Attribution-NonCommercial 4.0 International license.
+
+# [9] Model card
+modelcard:
+    class: ∅
+    link:
+    notes:
+
+# [10] Datasheet
+datasheet:
+    class: ∅
+    link:
+    notes:
+
+# [11] Package
+package:
+    class: ∅
+    link:
+    notes:
+
+# [12] User-oriented application
+ux:
+    class: star
+    link: https://nubo.ircam.fr/index.php/s/8NFD5gWwbkT4G5P
+    notes: Max/MSP patches with real-time implementation of the model are provided.
+
+# [13] Supplementary Material Page
+suppage:
+    class: star
+    link: https://nilsdem.github.io/control-transfer-diffusion/
+    notes: There is a supplementary page for the original model.
+
