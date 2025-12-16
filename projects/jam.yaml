@@ -18,7 +18,7 @@
 
 project:
     name: JAM
-    link: https://github.com/declare-lab/jamify/tree/main
+    link: https://declare-lab.github.io/jamify
     license: Project Jamify License and Stability AI Community License Agreement
     notes: "A tiny flow-based song generator with fine-grained controllability and aesthetic alignment"
     year: 2025
