@@ -85,7 +85,7 @@ modelcard:
 
 # [10] Datasheet
 datasheet:
-    class: star
+    class: ∅
     link: https://huggingface.co/datasets/declare-lab/JAME 
     notes: Dataset card for the evaluation dataset (JAME) is available in Hugging Face. However, no datasheet is provided for the training data used to train JAM.
 
