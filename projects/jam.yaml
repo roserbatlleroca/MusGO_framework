@@ -99,7 +99,7 @@ package:
 ux:
     class: star
     link: https://huggingface.co/spaces/declare-lab/JAM
-    notes: There should be a user-oriented application available on Hugging Face Spaces, but it is currently not available.
+    notes: There is a user-oriented application on Hugging Face Spaces, but it is currently not available. Nonetheless, all the files to run the app are provided in the HuggingFace repository. See https://huggingface.co/spaces/declare-lab/JAM/tree/main, and https://huggingface.co/spaces/declare-lab/JAM/blob/main/app.py. 
 
 # [13] Supplementary Material Page
 suppage:
