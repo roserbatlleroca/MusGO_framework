@@ -97,7 +97,7 @@ package:
 
 # [12] User-oriented application
 ux:
-    class: ∅
+    class: star
     link: https://huggingface.co/spaces/declare-lab/JAM
     notes: There should be a user-oriented application available on Hugging Face Spaces, but it is currently not available.
 
