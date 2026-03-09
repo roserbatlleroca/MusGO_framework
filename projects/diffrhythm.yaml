@@ -19,7 +19,7 @@ project:
     name: DiffRhythm
     link: https://aslp-lab.github.io/DiffRhythm.github.io/
     license: Apache 2.0
-    notes: Note that there are two more recent versions of DiffRhythm: DiffRhythm+ and DiffRhythm 2. This evaluation focuses on DiffRhythm, but will share additional information on the other models when available/related.  
+    notes: "Note that there are two more recent versions of DiffRhythm: DiffRhythm+ and DiffRhythm 2." 
     year: 2025
 
 org:
@@ -67,7 +67,7 @@ evalprocedure:
 paper:
     class: partial
     link: https://arxiv.org/pdf/2503.01183
-    notes: Research paper is available as preprint in arXiv. Also for more recent versions of the model: DiffRhythm+ and DiffRhythm 2. No peer reviewed version is avaiable for any of the papers/versions. 
+    notes: "Research paper is available as preprint in arXiv. Also for more recent versions of the model: DiffRhythm+ and DiffRhythm 2. No peer reviewed version is avaiable for any of the papers."
     date: March 3, 2025
 
 # [8] Licensing
