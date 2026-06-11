@@ -1,0 +1,109 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+# Remember to replace the template values with the actual information of the project you are evaluating.
+# Essential categories [1-8] should be classified as either `open`, `partial`, or `closed`.
+# Desirable categories [9-13] can be classified as `star` or `∅` (not applicable).
+# Notes should be provided for each category, explaining the classification and any relevant details.
+
+
+project:
+    name: ACE-Step
+    link: https://ace-step.github.io/
+    license: Apache 2.0 
+    notes: A new version of the model (ACE-Step 1.5) has been released in January 2026 (https://github.com/ace-step/ACE-Step-1.5). 
+    year: 2025
+
+org:
+    name: ACE Studio and StepFun
+    link: https://acestudio.ai/
+    notes:
+
+# [1] System source code
+sourcecode:
+    class: open
+    link: https://github.com/ace-step/ACE-Step
+    notes: Source code incudes model achitecture, training pipeline, inference, and data processing. 
+
+# [2] Training data
+trainingdata:
+    class: closed
+    link: 
+    notes: Training data is not available nor properly described. In the technical report (Section 3.1.1), authors indicate that the model was trained on about 100,000 hours of music (~1.8 million musical pieces). However, no information on specific data sources, acquisition methods, and data licensing is given. 
+
+# [3] Model weights
+modelweights:
+    class: open
+    link: https://huggingface.co/ACE-Step/ACE-Step-v1-3.5B/tree/main
+    notes: Model weights are available in HuggingFace. 
+
+# [4] Code documentation 
+codedoc:
+    class: open
+    link: https://github.com/ace-step/ACE-Step/blob/main/README.md
+    notes: Codebase is properly documented, including details on model's installation and usage. In addition, authors provide a specific page with training instructions (https://github.com/ace-step/ACE-Step/blob/main/TRAIN_INSTRUCTION.md).
+
+# [5] Training procedure
+trainprocedure:
+    class: open
+    link: https://arxiv.org/pdf/2506.00045
+    notes: Training procedure is describe with detail in the technical report. Appendix A provides additional details on training parameters and hardware requirements. 
+
+# [6] Evaluation procedure
+evalprocedure:
+    class: partial
+    link: https://arxiv.org/pdf/2506.00045 
+    notes: Evaluation procedure is described in the technical report, including human-evaluation and objective metrics evaluation. Despite evaluation data not being openly available, Appendix B includes the detailed description of the 20 prompts (with lyrics) used to generate the samples for the model evaluation. 
+
+# [7] Research paper
+paper:
+    class: partial
+    link: https://arxiv.org/pdf/2506.00045
+    notes: A technical report is available. 
+    date: June 2, 2024
+
+# [8] Licensing
+license:
+    class: open
+    link: https://github.com/ace-step/ACE-Step?tab=Apache-2.0-1-ov-file
+    notes: Apache 2.0 License
+
+# [9] Model card
+modelcard:
+    class: star
+    link: https://huggingface.co/ACE-Step/ACE-Step-v1-3.5B
+    notes: Model card available in Hugging Face.
+
+# [10] Datasheet
+datasheet:
+    class: ∅
+    link:
+    notes:
+
+# [11] Package
+package:
+    class: ∅
+    link:
+    notes:
+
+# [12] User-oriented application
+ux:
+    class: star
+    link: https://huggingface.co/spaces/ACE-Step/ACE-Step
+    notes: A demo is available in HuggingFace, as well as a Gradio UI. 
+
+# [13] Supplementary Material Page
+suppage:
+    class: star
+    link: https://ace-step.github.io/
+    notes: A supplementary page is available, including a brief description of the model, links to relevant sites (e.g., demo, paper and code), some examples showcasing the model's abilities, limitations and future work. 
+
