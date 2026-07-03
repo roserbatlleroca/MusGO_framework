@@ -20,7 +20,7 @@ project:
     name: Magenta RealTime 
     link: https://magenta.withgoogle.com/magenta-realtime
     license: Apache-2.0 (codebase) and CC-BY-4.0 (model weights)
-    notes: An open-weights live music model that enables continuous real-time audio generation steered by text or audio style prompts.
+    notes: 
     year: 2025
 
 org:
@@ -30,9 +30,9 @@ org:
 
 # [1] System source code
 sourcecode:
-    class: open
+    class: partial
     link: https://github.com/magenta/magenta-realtime/tree/main
-    notes: The codebase is available on GitHub, including the data processing, model architecture, training scripts, and inference code.
+    notes: The codebase is available on GitHub, including model architecture, and inference code. However, the training code is not publicly available.
 
 # [2] Training data
 trainingdata:
@@ -54,15 +54,15 @@ codedoc:
 
 # [5] Training procedure
 trainprocedure:
-    class: closed
-    link:
-    notes:
+    class: open
+    link: https://arxiv.org/abs/2508.04651
+    notes: Training procedure is documented in the technical report, including hardware requirements and model configurations.
 
 # [6] Evaluation procedure
 evalprocedure:
-    class: closed
-    link:
-    notes:
+    class: open
+    link: https://arxiv.org/abs/2508.04651
+    notes: Evaluation procedure is documented in the technical report, including evaluation metrics and results. Magenta Realtime is compared against two other music genrative models (Stable Audio Open and MusicGen) using the Song Describer dataset. 
 
 # [7] Research paper
 paper:
@@ -105,5 +105,5 @@ ux:
 suppage:
     class: star
     link: https://magenta.withgoogle.com/magenta-realtime
-    notes:  There is a dedicated blog and supplementary page featuring listening examples, demonstrations, and explanations of the core architecture.
+    notes: There is a dedicated blog and supplementary page featuring listening examples, demonstrations, and explanations of the core architecture.
 
