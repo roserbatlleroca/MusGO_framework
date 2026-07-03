@@ -43,8 +43,8 @@ trainingdata:
 # [3] Model weights
 modelweights:
     class: partial
-    link: https://colab.research.google.com/github/magenta/ddsp/blob/master/ddsp/colab/demos/timbre_transfer.ipynb#scrollTo=uQFUlIJ_5r36 
-    notes: Pre-trained model weights are available in demos and tutorial Colab notebooks. However, no independent downloadable weights are provided. 
+    link: https://storage.googleapis.com/storage/v1/b/ddsp/o?prefix=models/timbre_transfer_colab/2021-07-08/&delimiter=/
+    notes: Pre-trained model weights are available in demos and tutorial Colab notebooks, and can be downloaded from there. However, no independent downloadable weights are provided. 
 
 # [4] Code documentation 
 codedoc:
