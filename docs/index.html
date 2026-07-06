@@ -12,9 +12,10 @@
   font-family: 'Open Sans', sans-serif;
   }
   .highlight {
-    background-color: #f0f0f0;
+    background-color:#f7f7f7;
     padding: 1em;
-    /* border-left: 4px solid #ccc; */
+    border-radius: 6px;
+	  border: 1px solid #DBDFD7;
   }
   #table-guide em {
     font-size: 1em;
@@ -25,17 +26,14 @@
   background-color: #f8f8f8;
   padding: 1em;
   font-size: 1em;
+  border: 1px solid #DBDFD7;
 
   }
   #table-guide p {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
   }
-  #table-guide {
-  background-color: #f8f8f8;
-  padding: 0.5em 1em 0.5em 1em; /* top, right, bottom, left */
-  font-size: 1em;
-}
+
 #footer {
   padding: 1em;
   background-color: #f0f0f0;
@@ -63,7 +61,10 @@
 </head>
 <body>
 <div id="header">
+<p class="eyebrow"></p>
 <h1>MusGO Framework: Assessing Openness in Music-Generative AI</h1>
+<div aria-hidden="true" class="meter">
+</div>
 </div>
 <div id="content">
 <p class="highlight" id="description">
@@ -71,8 +72,9 @@
     With a collaborative approach, it invites contributions from researchers and artists, supports public scrutiny, and enables tracking of model evolution to promote transparency, accountability, and responsible development.
   </p>
 <p>
-This website builds on the paper <em>“MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI”</em>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
-Emilia Gómez, and Martín Rocamora.  
+<p>
+  This website builds on the paper <strong>MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI</strong>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
+Emilia Gómez, and Martín Rocamora, and published in the <em>Proceedings of the 26th International Society for Music Information Retrieval Conference</em> (ISMIR 2025).  
 It serves not only as a companion to the publication, but also as a living resource, which is continuously updated and shaped by contributions from the community. 
 <br/>
 <br/><a href="http://arxiv.org/pdf/2507.03599">Read the paper</a>  
@@ -114,7 +116,8 @@ It serves not only as a companion to the publication, but also as a living resou
   </p>
 </div>
 <br/>
-<div id="included-table"><table>
+<div id="included-table">
+<table>
 <thead>
 <tr class="main-header"><th>Project</th><th colspan="8">Essential</th><th colspan="5">Desirable</th>
 <tr class="second-header"><th></th><th>Source code</th><th>Training data</th><th>Model weights</th><th>Code<br/>documentation</th><th>Training<br/>procedure</th><th>Evaluation<br/>procedure</th><th>Research paper</th><th>License</th><th>Model card</th><th>Datasheet</th><th>Package</th><th>UX<br/>application</th><th>Supplementary<br/>material page</th>
@@ -169,6 +172,8 @@ It serves not only as a companion to the publication, but also as a living resou
 </tbody>
 </table>
 </div>
+<div class="insights">
+<div class="insight-block">
 <h3>Key Findings</h3>
 <ul>
 <li>The leaderboard reveals substantial variation in openness across music-generative models, with training procedure often most open, while training data remains the most closed.</li>
@@ -176,12 +181,16 @@ It serves not only as a companion to the publication, but also as a living resou
 <li>Desirable categories like datasheets are less frequently fulfilled, while supplementary material pages with demos are becoming a community norm.</li>
 <li>The leaderboard helps identify incomplete openness claims and potential ‘open-washing’, providing clear, evidence-based signals for transparency and accountability in the field.</li>
 </ul>
+</div>
+<div class="insight-block">
 <h3>Limitations</h3>
 <ul>
 <li>In music, assessing training data openness is challenging due to IP constraints, and fully open status may rely on detailed documentation rather than direct data release.</li>
 <li>Hardware implications are underexplored: while some models can be trained on personal computers, others require heavy computational resources, affecting reproducibility and accessibility.</li>
 <li>The leaderboard does not capture ethical, societal, or creative impacts of these models, focusing strictly on openness dimensions. Yet, it does provide a foundation upon which these critical aspects can be integrated in future iterations.</li>
 </ul>
+</div>
+</div>
 <div class="highlight" id="disclaimer">
 <p><strong>Disclaimer: Future Developments 🚧</strong> </p>
 <p>The MusGO framework is a living resource, developed through community collaboration, currently focused on assessing openness in music-generative AI. 
@@ -224,13 +233,13 @@ Fabra for their thoughtful insights, constructive discussions
 and active engagement throughout the development
 of this work.
 
-</div><!-- #content -->
+</p></div><!-- #content -->
 <div id="footer">
 <div class="footer-content">
 <div class="footer-text">
 <p>This site is an adapted version of <a href="https://opening-up-chatgpt.github.io/">https://opening-up-chatgpt.github.io/</a>.</p>
 <p class="copyright">Website &amp; code © 2025 by the authors.</p>
-<p id="build-time">Table last built on 2026-07-06 at 19:12 UTC</p>
+<p id="build-time">Table last built on 2026-07-06 at 19:13 UTC</p>
 </div>
 <div class="footer-image">
 <img alt="MTG logo" src="fig/MTG-logo.png"/>
