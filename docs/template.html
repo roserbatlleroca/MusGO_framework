@@ -5,14 +5,16 @@
 <title>MusGO Framework: Assessing Openness in Music-Generative AI</title>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 <link href="styles.css" rel="stylesheet"/>
-<script data-domain="roserbatlleroca.github.io/MusGO_framework/" defer src="https://plausible.io/js/script.js"></script>
+<script data-domain="roserbatlleroca.github.io/MusGO_framework/" defer="" src="https://plausible.io/js/script.js"></script>
 <style>
   body {
   font-family: 'Open Sans', sans-serif;
   }
   .highlight {
-    background-color: #f0f0f0;
+    background-color:#f7f7f7;
     padding: 1em;
+    border-radius: 6px;
+	  border: 1px solid #DBDFD7;
     /* border-left: 4px solid #ccc; */
   }
   #table-guide em {
@@ -62,9 +64,11 @@
 </head>
 <body>
 <div id="header">
-<h1>MusGO Framework:</a> Assessing Openness in Music-Generative AI</h1>
+<p class="eyebrow"></p>
+<h1>MusGO Framework: Assessing Openness in Music-Generative AI</h1>
+<div class="meter" aria-hidden="true">
 </div>
-
+</div>
 <div id="content">
 
   <p class="highlight" id="description">
@@ -73,8 +77,10 @@
   </p>
 
   <p>
-This website builds on the paper <em>“MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI”</em>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
-Emilia Gómez, and Martín Rocamora.  
+
+<p>
+  This website builds on the paper <strong>MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI</strong>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
+Emilia Gómez, and Martín Rocamora, and published in the <em>Proceedings of the 26th International Society for Music Information Retrieval Conference</em> (ISMIR 2025).  
 It serves not only as a companion to the publication, but also as a living resource, which is continuously updated and shaped by contributions from the community. 
 <br>
  <br><a href="http://arxiv.org/pdf/2507.03599">Read the paper</a>  
@@ -84,6 +90,7 @@ It serves not only as a companion to the publication, but also as a living resou
   | <a href="survey.html">MIR Survey Results</a>
   | <a href="https://github.com/roserbatlleroca/MusGO_framework/tree/main?tab=readme-ov-file#-any-doubts-or-thoughts-help-us-improve">Help us improve!</a>
 </p>
+
 
 
 
@@ -123,23 +130,29 @@ It serves not only as a companion to the publication, but also as a living resou
 
 <br>
 
-  <div id="included-table"></div>
+  <div id="included-table">
 
-<h3>Key Findings</h3> 
+  </div>
 
+<div class="insights">
+<div class="insight-block">
+<h3>Key Findings</h3>
 <ul>
-  <li>The leaderboard reveals substantial variation in openness across music-generative models, with training procedure often most open, while training data remains the most closed.</li>
-  <li>Models that share source code, model weights, and documentation typically also apply open or responsible licenses, indicating a correlation across these core categories.</li>
-  <li>Desirable categories like datasheets are less frequently fulfilled, while supplementary material pages with demos are becoming a community norm.</li>
-  <li>The leaderboard helps identify incomplete openness claims and potential ‘open-washing’, providing clear, evidence-based signals for transparency and accountability in the field.</li>
+<li>The leaderboard reveals substantial variation in openness across music-generative models, with training procedure often most open, while training data remains the most closed.</li>
+<li>Models that share source code, model weights, and documentation typically also apply open or responsible licenses, indicating a correlation across these core categories.</li>
+<li>Desirable categories like datasheets are less frequently fulfilled, while supplementary material pages with demos are becoming a community norm.</li>
+<li>The leaderboard helps identify incomplete openness claims and potential ‘open-washing’, providing clear, evidence-based signals for transparency and accountability in the field.</li>
 </ul>
-
+</div>
+<div class="insight-block">
 <h3>Limitations</h3>
 <ul>
-  <li>In music, assessing training data openness is challenging due to IP constraints, and fully open status may rely on detailed documentation rather than direct data release.</li>
-  <li>Hardware implications are underexplored: while some models can be trained on personal computers, others require heavy computational resources, affecting reproducibility and accessibility.</li>
-  <li>The leaderboard does not capture ethical, societal, or creative impacts of these models, focusing strictly on openness dimensions. Yet, it does provide a foundation upon which these critical aspects can be integrated in future iterations.</li>
+<li>In music, assessing training data openness is challenging due to IP constraints, and fully open status may rely on detailed documentation rather than direct data release.</li>
+<li>Hardware implications are underexplored: while some models can be trained on personal computers, others require heavy computational resources, affecting reproducibility and accessibility.</li>
+<li>The leaderboard does not capture ethical, societal, or creative impacts of these models, focusing strictly on openness dimensions. Yet, it does provide a foundation upon which these critical aspects can be integrated in future iterations.</li>
 </ul>
+</div>
+</div>
 
 <div id="disclaimer" class="highlight">
   <p><strong>Disclaimer: Future Developments 🚧</strong> </p>
