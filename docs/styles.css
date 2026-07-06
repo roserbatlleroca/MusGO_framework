@@ -276,7 +276,6 @@ tr.row-b .source-link:active, tr.row-b .source-link:hover { font-weight:bold; }
 #disclaimer {
   background-color:#f7f7f7;
   border: 1px solid #DBDFD7;
-  border-left: 3px solid #2C4A7C;
   border-radius: 6px;
   padding: 1.1rem 1.4rem;
   margin-top: 2rem;
