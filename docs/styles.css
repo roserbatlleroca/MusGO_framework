@@ -273,6 +273,8 @@ tr.row-b .source-link:active, tr.row-b .source-link:hover { font-weight:bold; }
 } */
 
 
+
+
 #disclaimer {
   background-color:#f7f7f7;
   border: 1px solid #DBDFD7;
@@ -280,4 +282,21 @@ tr.row-b .source-link:active, tr.row-b .source-link:hover { font-weight:bold; }
   padding: 1.1rem 1.4rem;
   margin-top: 2rem;
 }
-#disclaimer strong { color: #2C4A7C; }
+#disclaimer strong { color: #000000; }
+
+#table-guide em {
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+#table-guide {
+  background-color: #f8f8f8;
+  padding: 1em;
+  font-size: 1em;
+  border: 1px solid #DBDFD7;
+  border-radius: 6px;
+}
+#table-guide p {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
