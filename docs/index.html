@@ -11,12 +11,13 @@
   body {
   font-family: 'Open Sans', sans-serif;
   }
-  .highlight {
-    background-color: #f0f0f0;
+  highlight {
+    background-color:#f7f7f7;
     padding: 1em;
-    /* border-left: 4px solid #ccc; */
+    border-radius: 6px;
+	  border: 1px solid #DBDFD7;
   }
-  #table-guide em {
+  /* #table-guide em {
     font-size: 1em;
     font-weight: bold;
     margin-bottom: 0.5em;
@@ -25,17 +26,14 @@
   background-color: #f8f8f8;
   padding: 1em;
   font-size: 1em;
+  border: 1px solid #DBDFD7;
 
   }
   #table-guide p {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  }
-  #table-guide {
-  background-color: #f8f8f8;
-  padding: 0.5em 1em 0.5em 1em; /* top, right, bottom, left */
-  font-size: 1em;
-}
+  }  */
+
 #footer {
   padding: 1em;
   background-color: #f0f0f0;
@@ -63,7 +61,10 @@
 </head>
 <body>
 <div id="header">
+<p class="eyebrow"></p>
 <h1>MusGO Framework: Assessing Openness in Music-Generative AI</h1>
+<div aria-hidden="true" class="meter">
+</div>
 </div>
 <div id="content">
 <p class="highlight" id="description">
@@ -71,8 +72,9 @@
     With a collaborative approach, it invites contributions from researchers and artists, supports public scrutiny, and enables tracking of model evolution to promote transparency, accountability, and responsible development.
   </p>
 <p>
-This website builds on the paper <em>“MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI”</em>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
-Emilia Gómez, and Martín Rocamora.  
+<p>
+  This website builds on the paper <strong>MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI</strong>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
+Emilia Gómez, and Martín Rocamora, and published in the <em>Proceedings of the 26th International Society for Music Information Retrieval Conference</em> (ISMIR 2025).  
 It serves not only as a companion to the publication, but also as a living resource, which is continuously updated and shaped by contributions from the community. 
 <br/>
 <br/><a href="http://arxiv.org/pdf/2507.03599">Read the paper</a>  
@@ -114,7 +116,8 @@ It serves not only as a companion to the publication, but also as a living resou
   </p>
 </div>
 <br/>
-<div id="included-table"><table>
+<div id="included-table">
+<table>
 <thead>
 <tr class="main-header"><th>Project</th><th colspan="8">Essential</th><th colspan="5">Desirable</th>
 <tr class="second-header"><th></th><th>Source code</th><th>Training data</th><th>Model weights</th><th>Code<br/>documentation</th><th>Training<br/>procedure</th><th>Evaluation<br/>procedure</th><th>Research paper</th><th>License</th><th>Model card</th><th>Datasheet</th><th>Package</th><th>UX<br/>application</th><th>Supplementary<br/>material page</th>
@@ -146,6 +149,8 @@ It serves not only as a companion to the publication, but also as a living resou
 <tr class="row-b"><td class="org"><a href="https://declare-lab.github.io/jamify" target="_blank" title="A tiny flow-based song generator with fine-grained controllability and aesthetic alignment"><span style="display:inline-block;min-width:36px">2025</span>Singapore University of Technology and Design and Lamda Labs</a></td><td colspan="7"></td><td class="source-link"><a href="https://www.sutd.edu.sg/" target="_blank" title="Singapore University of Technology and Design and Lamda Labs"></a></td></tr>
 <tr class="row-a"><td class="name-cell"><a href="https://github.com/roserbatlleroca/MusGO_framework/blob/main/projects/after.yaml" target="_blank" title="data: after.yaml">AFTER</a></td><td class="open data-cell"><a href="https://github.com/acids-ircam/AFTER" target="_blank" title="Source code is available in the GitHub repository, including data processing, training and inference pipelines, as well as model architecture.">✔︎</a></td><td class="partial data-cell"><a href="https://arxiv.org/pdf/2408.00196" target="_blank" title="Datasets used for training the original model (SLAKH, MaestroV2, GuitarSet and URMP) are publicly available and described in the paper, but the datasets used for training the current model are unknown.">~</a></td><td class="open data-cell"><a href="https://nubo.ircam.fr/index.php/s/8NFD5gWwbkT4G5P" target="_blank" title="Weights are available to download from the link provided in the GitHub repository.">✔︎</a></td><td class="open data-cell"><a href="https://github.com/acids-ircam/AFTER/blob/main/README.md" target="_blank" title="Documentation is available in the GitHub repository, including installation requirements, examples of scripts usage and configuration files. The codebase could still benefit from more detailed documentation.">✔︎</a></td><td class="partial data-cell"><a href="https://arxiv.org/pdf/2408.00196" target="_blank" title="Training procedure of the original model is fully described in the paper, but relevant changes in the model architecture and training procedure are not properly documented.">~</a></td><td class="partial data-cell"><a href="https://arxiv.org/pdf/2408.00196" target="_blank" title="Evaluation procedure of the original model is fully described in the paper, including used metrics and implementation details. However, no evaluation is provided for the current model.">~</a></td><td class="partial data-cell"><a href="https://zenodo.org/records/14877437" target="_blank" title="Original paper is publicly available and peer-reviewed, but no publication is available for the current model.">~</a></td><td class="partial data-cell"><a href="https://github.com/acids-ircam/AFTER/blob/main/LICENSE.md" target="_blank" title="Creative Commons Attribution-NonCommercial 4.0 International license.">~</a></td><td class="∅ data-cell"><a href="" target="_blank" title="">∅</a></td><td class="∅ data-cell"><a href="" target="_blank" title="">∅</a></td><td class="∅ data-cell"><a href="" target="_blank" title="">∅</a></td><td class="star data-cell"><a href="https://nubo.ircam.fr/index.php/s/8NFD5gWwbkT4G5P" target="_blank" title="Max/MSP patches with real-time implementation of the model are provided.">⭐</a></td><td class="star data-cell"><a href="https://nilsdem.github.io/control-transfer-diffusion/" target="_blank" title="There is a supplementary page for the original model.">⭐</a></td></tr>
 <tr class="row-b"><td class="org"><a href="https://github.com/acids-ircam/AFTER" target="_blank" title="AFTER is the real-time implementation of the model introduced in 'Combining audio control and style transfer using latent diffusion' by Dermerlé et al. (2024), which we refer to as the original model in this evaluation."><span style="display:inline-block;min-width:36px">2024</span>IRCAM</a></td><td colspan="7"></td><td class="source-link"><a href="https://www.ircam.fr/" target="_blank" title="IRCAM"></a></td></tr>
+<tr class="row-a"><td class="name-cell"><a href="https://github.com/roserbatlleroca/MusGO_framework/blob/main/projects/magenta-realtime.yaml" target="_blank" title="data: magenta-realtime.yaml">Magenta RealTime</a></td><td class="partial data-cell"><a href="https://github.com/magenta/magenta-realtime/tree/main" target="_blank" title="The codebase is available on GitHub, including model architecture, and inference code. However, the training code is not publicly available.">~</a></td><td class="closed data-cell"><a href="https://arxiv.org/pdf/2508.04651" target="_blank" title="Technical report indicates the model has been trained on ~190,000 hours of intrumental stock music. But there is no clear description of the datasets or specifc sources used for training.">✘</a></td><td class="open data-cell"><a href="https://huggingface.co/google/magenta-realtime-2/tree/main/checkpoints" target="_blank" title="Model weights are available on Hugging Face.">✔︎</a></td><td class="open data-cell"><a href="https://github.com/magenta/magenta-realtime/tree/main?tab=readme-ov-file#" target="_blank" title="Model code is well documented in the GitHub repository, including installation requirements, usage instructions, and examples.">✔︎</a></td><td class="open data-cell"><a href="https://arxiv.org/abs/2508.04651" target="_blank" title="Training procedure is documented in the technical report, including hardware requirements and model configurations.">✔︎</a></td><td class="open data-cell"><a href="https://arxiv.org/abs/2508.04651" target="_blank" title="Evaluation procedure is documented in the technical report, including evaluation metrics and results. Magenta Realtime is compared against two other music genrative models (Stable Audio Open and MusicGen) using the Song Describer dataset.">✔︎</a></td><td class="partial data-cell"><a href="https://arxiv.org/abs/2508.04651" target="_blank" title="A comprehensive technical report is available. No peer-reviewed publication has been published yet.">~</a></td><td class="open data-cell"><a href="https://github.com/magenta/magenta-realtime/tree/main?tab=Apache-2.0-1-ov-file#" target="_blank" title="The code in this repository is released under Apache 2.0 License. The models weights in this repository are released under the CC-BY-NC 4.0 license.">✔︎</a></td><td class="star data-cell"><a href="https://huggingface.co/google/magenta-realtime-2" target="_blank" title="Model card is available on Hugging Face.">⭐</a></td><td class="∅ data-cell"><a href="" target="_blank" title="">∅</a></td><td class="star data-cell"><a href="https://github.com/magenta/magenta-realtime/blob/main/README.md" target="_blank" title="Magenta Realtime is available as a Python package, installable via PyPI (`magenta-rt`).">⭐</a></td><td class="star data-cell"><a href="https://colab.research.google.com/github/magenta/magenta-realtime/blob/v1_legacy/notebooks/Magenta_RT_Demo.ipynb" target="_blank" title="There is a demo notebook available on Google Colab, which allows users to interact with the model in real-time.">⭐</a></td><td class="star data-cell"><a href="https://magenta.withgoogle.com/magenta-realtime" target="_blank" title="There is a dedicated blog and supplementary page featuring listening examples, demonstrations, and explanations of the core architecture.">⭐</a></td></tr>
+<tr class="row-b"><td class="org"><a href="https://magenta.withgoogle.com/magenta-realtime" target="_blank" title=""><span style="display:inline-block;min-width:36px">2025</span>Google Magenta</a></td><td colspan="7"></td><td class="source-link"><a href="https://magenta.withgoogle.com/" target="_blank" title="Google Magenta"></a></td></tr>
 <tr class="row-a"><td class="name-cell"><a href="https://github.com/roserbatlleroca/MusGO_framework/blob/main/projects/diffrhythm.yaml" target="_blank" title="data: diffrhythm.yaml">DiffRhythm</a></td><td class="open data-cell"><a href="https://github.com/ASLP-lab/DiffRhythm" target="_blank" title="Souce code is avaiable in the GitHub repo, including model architecture, inference, training and dataset processing.">✔︎</a></td><td class="closed data-cell"><a 4.1.="" dataset="" href="https://arxiv.org/pdf/2503.01183" in="" of="" pre-print."="" section="" setup"="" target="_blank" the="" title="Training data is not available nor properly described. In the research paper, they indicate that the model was trained on 60,000 hours of audio content, including English (60%), Chinese (30%) and instrumental (10%) songs (about 1 million songs). However, no information on specific data sources, acquisition methods, and data licensing is given. See ">✘</a></td><td class="open data-cell"><a href="https://huggingface.co/collections/ASLP-lab/diffrhythm" target="_blank" title="Model weights are avaiable in their HuggingFace page. Multiple versions of the model are avaiable.">✔︎</a></td><td class="partial data-cell"><a coming="" href="https://github.com/ASLP-lab/DiffRhythm/blob/main/Readme.md" soon")."="" target="_blank" title="Code documentation inclues instructions on how to install and inference the model, but there are no instuctions on how to train it (it is indicated at ">~</a></td><td class="open data-cell"><a href="https://arxiv.org/pdf/2503.01183" target="_blank" title="Training procedure is properly described in the research paper, including details on the models parameters and hardware requirements.">✔︎</a></td><td class="partial data-cell"><a href="https://arxiv.org/pdf/2503.01183" target="_blank" title="Evaluation procedure is described in the research paper, including metrics (see 4.3) and detailed results (see 5). However, evaluation data is not sufficently described nor avaiable to reproduce the evaluation.">~</a></td><td class="partial data-cell"><a href="https://arxiv.org/pdf/2503.01183" target="_blank" title="Research paper is available as preprint in arXiv. Also for more recent versions of the model: DiffRhythm+ and DiffRhythm 2. No peer reviewed version is avaiable for any of the papers.">~</a></td><td class="open data-cell"><a href="https://github.com/ASLP-lab/DiffRhythm?tab=Apache-2.0-1-ov-file" target="_blank" title="Apache 2.0 License">✔︎</a></td><td class="star data-cell"><a href="https://huggingface.co/ASLP-lab/DiffRhythm-base" target="_blank" title="Model card available in Hugging Face.">⭐</a></td><td class="∅ data-cell"><a href="" target="_blank" title="">∅</a></td><td class="∅ data-cell"><a href="" target="_blank" title="">∅</a></td><td class="star data-cell"><a href="https://huggingface.co/spaces/ASLP-lab/DiffRhythm" target="_blank" title="A demo is available in HuggingFace.">⭐</a></td><td class="star data-cell"><a href="https://aslp-lab.github.io/DiffRhythm.github.io/" target="_blank" title="A supplementary page is available, including a brief description of the model, links to relevant sites (e.g., demo, paper) and some examples showcasing the model's abilities.">⭐</a></td></tr>
 <tr class="row-b"><td class="org"><a href="https://aslp-lab.github.io/DiffRhythm.github.io/" target="_blank" title="Note that there are two more recent versions of DiffRhythm: DiffRhythm+ and DiffRhythm 2."><span style="display:inline-block;min-width:36px">2025</span>ASLP@NPU and Shenzhen Research Institute of Big Data</a></td><td colspan="7"></td><td class="source-link"><a href="http://www.npu-aslp.org/" target="_blank" title="ASLP@NPU and Shenzhen Research Institute of Big Data"></a></td></tr>
 <tr class="row-a"><td class="name-cell"><a href="https://github.com/roserbatlleroca/MusGO_framework/blob/main/projects/yue.yaml" target="_blank" title="data: yue.yaml">YuE (乐)</a></td><td class="partial data-cell"><a href="https://github.com/multimodal-art-projection/YuE" target="_blank" title="Source code is available in the GitHub repo, including inference code and model architecture. They also provide instructions on how to fine-tune YuE for specific data (see https://github.com/multimodal-art-projection/YuE/tree/main/finetune), including data processing and training procedure. Code to train the model from scratch is missing.">~</a></td><td class="closed data-cell"><a 5.1.="" data="" href="https://arxiv.org/pdf/2503.08638" in="" of="" report."="" section="" setup"="" target="_blank" technical="" the="" title="Speech-related datasets are introduced (i.e., WeNetSpeech (zh), LibriHeavy (en), and GigaSpeech (en)). But for music, they only indicate that they rely on 650K hours of music recordings. No information on specific data sources, acquisition methods, and data licensing is given. See ">✘</a></td><td class="open data-cell"><a href="https://huggingface.co/collections/m-a-p/yue" target="_blank" title="Checkpoints are available in Hugging Face.">✔︎</a></td><td class="open data-cell"><a href="https://github.com/multimodal-art-projection/YuE" target="_blank" title="Codebase is documented in the GitHub repository, including installation requirements and usage instructions.">✔︎</a></td><td class="open data-cell"><a href="https://arxiv.org/pdf/2503.08638" target="_blank" title="Training procedure is properly described, including hardware requirements and confirgurations (see Section 4 and Section 5.1).">✔︎</a></td><td class="open data-cell"><a href="https://arxiv.org/pdf/2503.08638" target="_blank" title="Evaluation procedure is described in Section 5.2 of the technical report, including both objective and subjective evaluation methods. Evaluation metrics implementations are referenced in the text.">✔︎</a></td><td class="partial data-cell"><a href="https://arxiv.org/pdf/2503.08638" target="_blank" title="Technical report available, but no peer-reviewed publication yet.">~</a></td><td class="open data-cell"><a href="https://github.com/multimodal-art-projection/YuE?tab=Apache-2.0-1-ov-file" target="_blank" title="Apache License 2.0">✔︎</a></td><td class="∅ data-cell"><a href="" target="_blank" title="">∅</a></td><td class="∅ data-cell"><a href="" target="_blank" title="">∅</a></td><td class="∅ data-cell"><a href="" target="_blank" title="">∅</a></td><td class="∅ data-cell"><a href="" target="_blank" title="No official user-oriented application is available. But there are user-oriented applications available for YuE, for both Windows and Linux. For Windows, check out: https://github.com/multimodal-art-projection/YuE?tab=readme-ov-file#-windows-users-quickstart, and for Linux: https://github.com/multimodal-art-projection/YuE?tab=readme-ov-file#-linuxwsl-users-quickstart.">∅</a></td><td class="star data-cell"><a href="https://map-yue.github.io/" target="_blank" title="A demo page is available showcasing the use of YuE.">⭐</a></td></tr>
@@ -167,6 +172,8 @@ It serves not only as a companion to the publication, but also as a living resou
 </tbody>
 </table>
 </div>
+<div class="insights">
+<div class="insight-block">
 <h3>Key Findings</h3>
 <ul>
 <li>The leaderboard reveals substantial variation in openness across music-generative models, with training procedure often most open, while training data remains the most closed.</li>
@@ -174,12 +181,16 @@ It serves not only as a companion to the publication, but also as a living resou
 <li>Desirable categories like datasheets are less frequently fulfilled, while supplementary material pages with demos are becoming a community norm.</li>
 <li>The leaderboard helps identify incomplete openness claims and potential ‘open-washing’, providing clear, evidence-based signals for transparency and accountability in the field.</li>
 </ul>
+</div>
+<div class="insight-block">
 <h3>Limitations</h3>
 <ul>
 <li>In music, assessing training data openness is challenging due to IP constraints, and fully open status may rely on detailed documentation rather than direct data release.</li>
 <li>Hardware implications are underexplored: while some models can be trained on personal computers, others require heavy computational resources, affecting reproducibility and accessibility.</li>
 <li>The leaderboard does not capture ethical, societal, or creative impacts of these models, focusing strictly on openness dimensions. Yet, it does provide a foundation upon which these critical aspects can be integrated in future iterations.</li>
 </ul>
+</div>
+</div>
 <div class="highlight" id="disclaimer">
 <p><strong>Disclaimer: Future Developments 🚧</strong> </p>
 <p>The MusGO framework is a living resource, developed through community collaboration, currently focused on assessing openness in music-generative AI. 
@@ -222,13 +233,13 @@ Fabra for their thoughtful insights, constructive discussions
 and active engagement throughout the development
 of this work.
 
-</div><!-- #content -->
+</p></div><!-- #content -->
 <div id="footer">
 <div class="footer-content">
 <div class="footer-text">
 <p>This site is an adapted version of <a href="https://opening-up-chatgpt.github.io/">https://opening-up-chatgpt.github.io/</a>.</p>
 <p class="copyright">Website &amp; code © 2025 by the authors.</p>
-<p id="build-time">Table last built on 2026-07-03 at 16:39 UTC</p>
+<p id="build-time">Table last built on 2026-07-07 at 08:40 UTC</p>
 </div>
 <div class="footer-image">
 <img alt="MTG logo" src="fig/MTG-logo.png"/>

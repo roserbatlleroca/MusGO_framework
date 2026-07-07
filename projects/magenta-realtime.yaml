@@ -1,0 +1,109 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+# Remember to replace the template values with the actual information of the project you are evaluating.
+# Essential categories [1-8] should be classified as either `open`, `partial`, or `closed`.
+# Desirable categories [9-13] can be classified as `star` or `∅` (not applicable).
+# Notes should be provided for each category, explaining the classification and any relevant details.
+
+
+project:
+    name: Magenta RealTime 
+    link: https://magenta.withgoogle.com/magenta-realtime
+    license: Apache-2.0 (codebase) and CC-BY-4.0 (model weights)
+    notes: 
+    year: 2025
+
+org:
+    name: Google Magenta
+    link: https://magenta.withgoogle.com/
+    notes:
+
+# [1] System source code
+sourcecode:
+    class: partial
+    link: https://github.com/magenta/magenta-realtime/tree/main
+    notes: The codebase is available on GitHub, including model architecture, and inference code. However, the training code is not publicly available.
+
+# [2] Training data
+trainingdata:
+    class: closed
+    link: https://arxiv.org/pdf/2508.04651
+    notes: Technical report indicates the model has been trained on ~190,000 hours of intrumental stock music. But there is no clear description of the datasets or specifc sources used for training. 
+
+# [3] Model weights
+modelweights:
+    class: open
+    link: https://huggingface.co/google/magenta-realtime-2/tree/main/checkpoints
+    notes: Model weights are available on Hugging Face. 
+ 
+# [4] Code documentation 
+codedoc:
+    class: open
+    link: https://github.com/magenta/magenta-realtime/tree/main?tab=readme-ov-file#
+    notes: Model code is well documented in the GitHub repository, including installation requirements, usage instructions, and examples. 
+
+# [5] Training procedure
+trainprocedure:
+    class: open
+    link: https://arxiv.org/abs/2508.04651
+    notes: Training procedure is documented in the technical report, including hardware requirements and model configurations.
+
+# [6] Evaluation procedure
+evalprocedure:
+    class: open
+    link: https://arxiv.org/abs/2508.04651
+    notes: Evaluation procedure is documented in the technical report, including evaluation metrics and results. Magenta Realtime is compared against two other music genrative models (Stable Audio Open and MusicGen) using the Song Describer dataset. 
+
+# [7] Research paper
+paper:
+    class: partial
+    link: https://arxiv.org/abs/2508.04651
+    notes: A comprehensive technical report is available. No peer-reviewed publication has been published yet. 
+    date: 6 August, 2025
+
+# [8] Licensing
+license:
+    class: open
+    link: https://github.com/magenta/magenta-realtime/tree/main?tab=Apache-2.0-1-ov-file#
+    notes: The code in this repository is released under Apache 2.0 License. The models weights in this repository are released under the CC-BY-NC 4.0 license.
+
+# [9] Model card
+modelcard:
+    class: star
+    link: https://huggingface.co/google/magenta-realtime-2
+    notes: Model card is available on Hugging Face. 
+
+# [10] Datasheet
+datasheet:
+    class: ∅
+    link:
+    notes:
+
+# [11] Package
+package:
+    class: star
+    link: https://github.com/magenta/magenta-realtime/blob/main/README.md
+    notes: Magenta Realtime is available as a Python package, installable via PyPI (`magenta-rt`). 
+
+# [12] User-oriented application
+ux:
+    class: star
+    link: https://colab.research.google.com/github/magenta/magenta-realtime/blob/v1_legacy/notebooks/Magenta_RT_Demo.ipynb
+    notes: There is a demo notebook available on Google Colab, which allows users to interact with the model in real-time.
+
+# [13] Supplementary Material Page
+suppage:
+    class: star
+    link: https://magenta.withgoogle.com/magenta-realtime
+    notes: There is a dedicated blog and supplementary page featuring listening examples, demonstrations, and explanations of the core architecture.
+
