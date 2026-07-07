@@ -1,0 +1,109 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+# Remember to replace the template values with the actual information of the project you are evaluating.
+# Essential categories [1-8] should be classified as either `open`, `partial`, or `closed`.
+# Desirable categories [9-13] can be classified as `star` or `∅` (not applicable).
+# Notes should be provided for each category, explaining the classification and any relevant details.
+
+
+project:
+    name: Mustango
+    link: https://amaai-lab.github.io/mustango/
+    license: MIT License
+    notes:
+    year: 2024
+
+org:
+    name: AMAAI Lab, Singapore University of Technology and Design and Queen Mary University of London
+    link: https://amaai-lab.github.io/
+    notes: 
+
+# [1] System source code
+sourcecode:
+    class: open
+    link: https://github.com/AMAAI-Lab/mustango
+    notes: The codebase is complete and accesible on GitHub. The repository features model achitecture, training pipeline, inference, and data processing. 
+
+# [2] Training data
+trainingdata:
+    class: open
+    link: https://huggingface.co/datasets/amaai-lab/MusicBench
+    notes: Mustango is trained on the MusicBench dataset, which is a collection of ~52k 10-seconds music samples. These samples were generated through targeted harmonic, rhythmic, and dynamic data augmentations of the original MusicCaps dataset and enriched with automated music theory text descriptions.
+
+# [3] Model weights
+modelweights:
+    class: open
+    link: https://huggingface.co/declare-lab/mustango/tree/main/ldm
+    notes: Model weights are available on HuggingFace. There is also a pretrained model available (https://huggingface.co/declare-lab/mustango-pretrained).
+
+# [4] Code documentation 
+codedoc:
+    class: open
+    link: https://github.com/AMAAI-Lab/mustango/blob/main/README.md
+    notes: The codebase is properly documented, including instructions for installation, basic usage and model training. 
+
+# [5] Training procedure
+trainprocedure:
+    class: open
+    link: https://aclanthology.org/2024.naacl-long.459.pdf
+    notes: Training procedure is well documented in the paper, including hardware requirements and model configurations (see Appendix B for further details). Additional implementation details are available in the GitHub repository.
+
+# [6] Evaluation procedure
+evalprocedure:
+    class: partial
+    link: https://aclanthology.org/2024.naacl-long.459.pdf
+    notes: Evaluation methodology is well documented in the paper, including evaluation metrics and model performance. Evaluation dataset is FMACaps, further information about how this dataset was created is available in Appendix F of the paper. However, the repository lacks a complete evaluation script. 
+
+# [7] Research paper
+paper:
+    class: open
+    link: https://aclanthology.org/2024.naacl-long.459.pdf
+    notes: Accepted paper at NAACL 2024. 
+    date: June, 2024
+
+# [8] Licensing
+license:
+    class: open
+    link: https://github.com/AMAAI-Lab/mustango?tab=MIT-1-ov-file
+    notes: MIT License.
+
+# [9] Model card
+modelcard:
+    class: star
+    link: https://huggingface.co/declare-lab/mustango
+    notes: A model card is available in HuggingFace. 
+
+# [10] Datasheet
+datasheet:
+    class: star
+    link: https://huggingface.co/datasets/amaai-lab/MusicBench/
+    notes: There is a data card available for the MusicBench dataset on HuggingFace, which provides information about the dataset's composition, usage, and licensing.
+
+# [11] Package
+package:
+    class: ∅
+    link:
+    notes:
+
+# [12] User-oriented application
+ux:
+    class: star
+    link: https://replicate.com/declare-lab/mustango
+    notes: A demo is avalaible on Replicate. There should also be a demo on HuggingFace Spaces, but it is currently not working (https://huggingface.co/spaces/declare-lab/mustango).
+
+# [13] Supplementary Material Page
+suppage:
+    class: star
+    link: https://amaai-lab.github.io/mustango/
+    notes: Complementary site with general model overview and sound examples is available. 
+
