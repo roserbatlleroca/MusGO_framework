@@ -1,0 +1,109 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+# Remember to replace the template values with the actual information of the project you are evaluating.
+# Essential categories [1-8] should be classified as either `open`, `partial`, or `closed`.
+# Desirable categories [9-13] can be classified as `star` or `∅` (not applicable).
+# Notes should be provided for each category, explaining the classification and any relevant details.
+
+
+project:
+    name: MusicFlow
+    link: https://musicflowicml.github.io/
+    license: None. 
+    notes: Despite indicating that source code and model would be publicly available in the arXiv version of the paper, the authors have not released any code or model weights, and this statement has been removed in the final version of the paper presented in ICML 2024. 
+    year: 2024
+
+org:
+    name: Meta
+    link: https://www.meta.com/
+    notes: K R Prajwal was an intern at Meta during the development of this project.
+
+# [1] System source code
+sourcecode:
+    class: closed
+    link:
+    notes: Despite the arXiv version of the paper stating "Our code and model will be publicly available", no official source repository, training framework, or inference code has been released. 
+
+# [2] Training data
+trainingdata:
+    class: closed
+    link:
+    notes: MusicFlow was trained on 20K hours of proprietary music. No dataset access, tracklists, origin metadata, or permissions are disclosed.
+
+# [3] Model weights
+modelweights:
+    class: closed
+    link:
+    notes:
+
+# [4] Code documentation 
+codedoc:
+    class: closed
+    link:
+    notes:
+
+# [5] Training procedure
+trainprocedure:
+    class: partial
+    link: https://proceedings.mlr.press/v235/prajwal24a.html
+    notes: The research paper details the mathematical formulations of Conditional Flow Matching, loss objectives, two-stage cascaded flow architecture (semantic and acoustic networks), and core hyperparameters. However, hardware requirements and specific model configurations are missing.
+
+# [6] Evaluation procedure
+evalprocedure:
+    class: open
+    link: https://proceedings.mlr.press/v235/prajwal24a.html
+    notes: Evaluation protocols are thoroughly documented using the public MusicCaps benchmark. It includes standard objective metrics (FAD, FD, KL divergence, CLAP text-audio similarity) and human listening evaluations for text-to-music, infilling, and continuation.
+
+# [7] Research paper
+paper:
+    class: open
+    link: https://proceedings.mlr.press/v235/prajwal24a.html
+    notes: Accepted at ICML 2024. 
+    date: July 2024
+
+# [8] Licensing
+license:
+    class: closed
+    link:
+    notes: None. 
+
+# [9] Model card
+modelcard:
+    class: ∅
+    link:
+    notes:
+
+# [10] Datasheet
+datasheet:
+    class: ∅
+    link:
+    notes:
+
+# [11] Package
+package:
+    class: ∅
+    link:
+    notes:
+
+# [12] User-oriented application
+ux:
+    class: ∅
+    link:
+    notes:
+
+# [13] Supplementary Material Page
+suppage:
+    class: star
+    link: https://musicflowicml.github.io/
+    notes: An official supplementary website showcases audio generation examples across text-to-music, continuation, and infilling tasks, along with comparisons against AudioLDM.
+
