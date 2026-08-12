@@ -1,0 +1,108 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+# Remember to replace the template values with the actual information of the project you are evaluating.
+# Essential categories [1-8] should be classified as either `open`, `partial`, or `closed`.
+# Desirable categories [9-13] can be classified as `star` or `∅` (not applicable).
+# Notes should be provided for each category, explaining the classification and any relevant details.
+
+
+project:
+    name: LeVo
+    link: https://levo-demo.github.io/
+    license: None. 
+    notes: Sometimes, the model is referred to SongGeneration as well as LeVo. Source code has not yet been released, despite mentioning so in the research paper. Complementary website indicates "code will be released soon".
+    year: 2025
+
+org:
+    name: Tsinghua University, Shenzhen and Tencent AI Lab
+    link: https://ailab.tencent.com/ailab/en/index/
+    notes:
+
+# [1] System source code
+sourcecode:
+    class: closed
+    link: https://github.com/tencent-ailab/songgeneration
+    notes: Source code is not currently accessible. 
+
+# [2] Training data
+trainingdata:
+    class: closed
+    link:
+    notes: LeVo is trained on 2 million music tracks (~110,000 hours). No information is provided on the specific datasets used, and the training data is not publicly available. Paper only describes the preprocessing pipeline. 
+
+# [3] Model weights
+modelweights:
+    class: closed
+    link:
+    notes:
+
+# [4] Code documentation 
+codedoc:
+    class: closed
+    link:
+    notes:
+
+# [5] Training procedure
+trainprocedure:
+    class: open
+    link: https://openreview.net/pdf?id=Oul46PkP7Z
+    notes: Training procedure is describes in the research paper, including hardware requirements and model hyperparameters (see Appendix B for further details). 
+
+# [6] Evaluation procedure
+evalprocedure:
+    class: partial
+    link: https://openreview.net/pdf?id=Oul46PkP7Z
+    notes: Evaluation protocols are thoroughly detailed, including objective metrics and a 20-expert subjective evaluation (see Appendix D for futher details). However, dataset for evaluation is not fully specified nor publicly available.
+
+# [7] Research paper
+paper:
+    class: open
+    link: https://openreview.net/pdf?id=Oul46PkP7Z
+    notes: Accepted at NeurIPS 2025. 
+    date: June 2025
+# [8] Licensing
+license:
+    class: closed
+    link:
+    notes:
+
+# [9] Model card
+modelcard:
+    class: ∅
+    link:
+    notes:
+
+# [10] Datasheet
+datasheet:
+    class: ∅
+    link:
+    notes:
+
+# [11] Package
+package:
+    class: ∅
+    link:
+    notes:
+
+# [12] User-oriented application
+ux:
+    class: ∅
+    link:
+    notes:
+
+# [13] Supplementary Material Page
+suppage:
+    class: star
+    link: https://levo-demo.github.io/
+    notes: An official project website is live and provides sonified audio demonstrations of generated music, zero-shot style transfer, and text-based control.
+
