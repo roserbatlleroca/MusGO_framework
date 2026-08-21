@@ -1,0 +1,109 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
+
+# Remember to replace the template values with the actual information of the project you are evaluating.
+# Essential categories [1-8] should be classified as either `open`, `partial`, or `closed`.
+# Desirable categories [9-13] can be classified as `star` or `∅` (not applicable).
+# Notes should be provided for each category, explaining the classification and any relevant details.
+
+
+project:
+    name: DDSP
+    link: https://magenta.withgoogle.com/ddsp
+    license: Apache License 2.0
+    notes: 
+    year: 2020
+
+org:
+    name: Google Magenta
+    link: https://magenta.withgoogle.com/
+    notes:
+
+# [1] System source code
+sourcecode:
+    class: open
+    link: https://github.com/magenta/ddsp
+    notes: The complete source code is publicly available on GitHub, including core differentiable modules, training pipeline and inference code. 
+
+# [2] Training data
+trainingdata:
+    class: open
+    link: https://openreview.net/pdf?id=B1x1ma4tDr
+    notes: The research paper indicates that the autoencoder is trained on public, fully open-source datasets including NSynth and individual instrument stems from the URMP dataset (see Section 4.2). The repository includes open scripts (`ddsp_prepare_tfrecord`) to easily format custom training data.
+
+# [3] Model weights
+modelweights:
+    class: partial
+    link: https://storage.googleapis.com/storage/v1/b/ddsp/o?prefix=models/timbre_transfer_colab/2021-07-08/&delimiter=/
+    notes: Pre-trained model weights are available in demos and tutorial Colab notebooks, and can be downloaded from there. However, no independent downloadable weights are provided. 
+
+# [4] Code documentation 
+codedoc:
+    class: open
+    link: https://github.com/magenta/ddsp?tab=readme-ov-file#
+    notes: The codebase is well documented, with a detailed README file and additional documentation for the core differentiable modules. The repository also includes example notebooks for training and inference, providing clear guidance on how to use the code.
+
+# [5] Training procedure
+trainprocedure:
+    class: open
+    link: https://github.com/magenta/ddsp?tab=readme-ov-file#training
+    notes: The training procedure is described in the research paper. It is also well-documented in the GitHub repository, with clear instructions and scripts provided for training the model. 
+
+# [6] Evaluation procedure
+evalprocedure:
+    class: open
+    link: https://openreview.net/pdf?id=B1x1ma4tDr
+    notes: The evaluation procedure is described in the research paper (see Appendix C, for further details). 
+
+# [7] Research paper
+paper:
+    class: open
+    link: https://openreview.net/pdf?id=B1x1ma4tDr
+    notes: Accepted at ICLR 2020. 
+    date: 14 January, 2020
+
+# [8] Licensing
+license:
+    class: open
+    link: https://github.com/magenta/ddsp?tab=Apache-2.0-1-ov-file
+    notes: The project is licensed under the Apache License 2.0. 
+
+# [9] Model card
+modelcard:
+    class: ∅
+    link:
+    notes: 
+
+# [10] Datasheet
+datasheet:
+    class: ∅
+    link: 
+    notes:
+
+# [11] Package
+package:
+    class: star
+    link: https://github.com/magenta/ddsp/releases
+    notes: It is distributed as an indexed, versioned Python software package that can be installed via pip (`pip install ddsp`).
+
+# [12] User-oriented application
+ux:
+    class: star
+    link: https://magenta.withgoogle.com/ddsp-vst
+    notes: DSSP is a highly accessible model to end-users and creators through user-friendly interactive Google Colab notebooks, web-based demos, and an official real-time VST3/AU audio plugin (ddsp-vst) for digital audio workstations (DAWs).
+
+# [13] Supplementary Material Page
+suppage:
+    class: star
+    link: https://magenta.tensorflow.org/ddsp
+    notes: There is a dedicated blog and supplementary page featuring interactive listening examples, sonified timbre transfers, and explanations of the core architecture.
+

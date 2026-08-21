@@ -1,0 +1,104 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO_framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO_framework/tree/main/projects#criteria
+
+
+project:
+  name: Music ControlNet
+  link: https://musiccontrolnet.github.io/web/
+  license: Not available.
+  notes:
+  year: 2023
+
+org:
+  name: Carnegie Mellon University and Adobe Research
+  link:
+  notes:
+
+# [1] Open Source Code
+sourcecode:
+  class: closed
+  link: 
+  notes: No official code repository available.
+
+# [2] Training data
+trainingdata:
+  class: closed
+  link: 
+  notes: Very limited description of the data used for training, and no sources provided.
+
+# [3] Model weights
+modelweights:
+  class: closed
+  link: 
+  notes: No model weights provided.
+
+# [4] Code documentation
+codedoc:
+  class: closed
+  link: 
+  notes: No source code available so no documentation.
+
+# [5] Training procedure
+trainprocedure:
+  class: open
+  link: https://arxiv.org/pdf/2311.07069
+  notes: Training procedure is described in detail in the paper.
+
+# [6] Evaluation procedure
+evalprocedure:
+  class: partial
+  link: https://arxiv.org/pdf/2311.07069
+  notes: Evaluation procedure is described, but details on the specific 
+    implementation used for some of the evaluation metrics are not given, limiting the reproducibility of results.
+
+# [7] Research paper
+paper:
+  class: open
+  link: https://dl.acm.org/doi/10.1109/TASLP.2024.3399026
+  notes: Accepted at IEEE/ACM Transactions on Audio, Speech, and Laguange Processing (open access). 
+  date:
+
+# [8] Licensing
+license:
+  class: closed
+  link: 
+  notes: Not available.
+
+# [9] Model Card
+modelcard:
+  class: ∅
+  link: 
+  notes: No model card available.
+
+# [10] Datasheet
+datasheet:
+  class: ∅
+  link: 
+  notes: No datasheet available.
+
+# [11] Package
+package:
+  class: ∅
+  link: 
+  notes: No package available.
+
+# [12] User-oriented application
+ux:
+  class: ∅
+  link: 
+  notes: No user interface nor real-time implementation available.
+
+# [13] Demo Page
+suppage:
+  class: star
+  link: https://musiccontrolnet.github.io/web/
+  notes: A complementary website with sound examples and demo of the model is available. 

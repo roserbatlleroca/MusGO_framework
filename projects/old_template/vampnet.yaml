@@ -1,0 +1,103 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO_framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO_framework/tree/main/projects#criteria
+
+
+project:
+  name: VampNet
+  link: https://github.com/hugofloresgarcia/vampnet
+  license: MIT License
+  notes:
+  year: 2023
+
+org:
+  name: Northwestern University and Descript Inc
+  link:
+  notes:
+
+# [1] Open Source Code
+sourcecode:
+  class: open
+  link: https://github.com/hugofloresgarcia/vampnet
+  notes: System source code is available and accessible.
+
+# [2] Training data
+trainingdata:
+  class: closed
+  link: ''
+  notes: Dataset is not available nor is completely described.
+
+# [3] Model weights
+modelweights:
+  class: open
+  link: https://zenodo.org/records/8136629
+  notes: Model checkpoints are available. The weights of the models are licensed https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ml
+
+# [4] Code documentation
+codedoc:
+  class: open
+  link: https://github.com/hugofloresgarcia/vampnet/blob/ismir-2023/README.md
+  notes: Codebase is well documented. 
+
+# [5] Training procedure
+trainprocedure:
+  class: open
+  link: https://arxiv.org/pdf/2307.04686
+  notes: Described in the article, with multiple details on architecture, hyperparameters and GPU usage. 
+
+# [6] Evaluation procedure
+evalprocedure:
+  class: partial
+  link: https://arxiv.org/pdf/2307.04686
+  notes: ''
+
+# [7] Research paper
+paper:
+  class: open
+  link: https://ismir2023program.ismir.net/poster_125.html
+  notes: 'Accepted at ISMIR 2023.'
+  date:
+
+# [8] Licensing
+license:
+  class: open
+  link: https://github.com/hugofloresgarcia/vampnet/blob/ismir-2023/LICENSE
+  notes: MIT License.
+
+# [9] Model Card
+modelcard:
+  class: ∅
+  link: ''
+  notes: ''
+
+# [10] Datasheet
+datasheet:
+  class: ∅
+  link: ''
+  notes: ''
+
+# [11] Package
+package:
+  class: ∅
+  link: ''
+  notes: ''
+
+# [12] User-oriented application
+ux:
+  class: star
+  link: https://github.com/hugofloresgarcia/vampnet/blob/ismir-2023/app.py
+  notes: Gradio UI is provided in the codebase.
+
+# [13] Demo Page
+suppage:
+  class: star
+  link: https://hugo-does-things.notion.site/VampNet-Music-Generation-via-Masked-Acoustic-Token-Modeling-e37aabd0d5f1493aa42c5711d0764b33
+  notes: Complementary demo page with sound examples and demonstration of the model's capabilities is available.

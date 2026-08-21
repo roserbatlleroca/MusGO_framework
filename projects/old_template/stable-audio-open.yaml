@@ -1,0 +1,104 @@
+---
+####################################################################################################################################
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO_framework/). 
+# Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
+# For more details, check out: http://opening-up-chatgpt.github.io  
+####################################################################################################################################
+
+
+# Thank you for contributing!
+# In filling out this yaml file, please follow the criteria as described here: 
+# https://github.com/roserbatlleroca/MusGO_framework/tree/main/projects#criteria
+
+
+project:
+  name: Stable Audio Open
+  link: https://github.com/Stability-AI/stable-audio-tools
+  license: Stability AI Community License https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/LICENSE.md. Not an Open Source Initiate (OSI) or RAIL approved licences. 
+  notes:
+  year: 2024
+
+org:
+  name: Stability AI
+  link: https://stability.ai/
+  notes:
+
+# [1] Open Source Code
+sourcecode:
+  class: open
+  link: https://github.com/Stability-AI/stable-audio-tools
+  notes: Code for data processing, training pipeline, and inference is available in the stable-audio-tools repository. Architecture of the mode is specified in the form of a config file.
+
+# [2] Training data
+trainingdata:
+  class: open
+  link: https://info.stability.ai/attributions
+  notes: Training data can be mapped from Attribution files. Dataset attribution files can also be accessed in HuggingFace after accepting Stability AI conditions (https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/fma_dataset_attribution2.csv and https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/freesound_dataset_attribution2.csv).
+
+# [3] Model weights
+modelweights:
+  class: open
+  link: https://huggingface.co/stabilityai/stable-audio-open-1.0/tree/main
+  notes: Weights are available in the HuggingFace repository. However, accessibility is subject to accepting Stability AI conditions. 
+
+# [4] Code documentation
+codedoc:
+  class: open
+  link: https://github.com/Stability-AI/stable-audio-tools/blob/main/README.md
+  notes: Documentation of the code is limited for training replicating the model. Although there are not specific config files for Stable Audio Open, those from Stable Audio could be used. 
+
+# [5] Training procedure
+trainprocedure:
+  class: open
+  link: https://arxiv.org/pdf/2407.14358
+  notes: Described in pre-print. 
+
+# [6] Evaluation procedure
+evalprocedure:
+  class: open
+  link: https://arxiv.org/pdf/2407.14358
+  notes: They use stable-audio-metrics for evaluation, which has examples of evaluation pipelines.
+
+# [7] Research paper
+paper:
+  class: open
+  link: https://ieeexplore.ieee.org/document/10888461
+  notes: Accepted at ICASSP 2026.
+  date: 
+
+# [8] Licensing
+license:
+  class: partial
+  link: https://huggingface.co/stabilityai/stable-audio-open-1.0/blob/main/LICENSE.md
+  notes: Stability AI Community License. Not an Open Source Initiate (OSI) or RAIL approved licences.
+
+# [9] Model Card
+modelcard:
+  class: star
+  link: https://huggingface.co/stabilityai/stable-audio-open-1.0
+  notes: Model card in HuggingFace.
+
+# [10] Datasheet
+datasheet:
+  class: ∅
+  link: ''
+  notes: 
+
+# [11] Package
+package:
+  class: star
+  link: https://pypi.org/project/stable-audio-tools/
+  notes: The model can be used with 1) the https://github.com/Stability-AI/stable-audio-tools library and 2) the https://huggingface.co/docs/diffusers/main/en/index library.
+
+# [12] User-oriented application
+ux:
+  class: star
+  link: https://github.com/Stability-AI/stable-audio-tools/blob/main/stable_audio_tools/interface/gradio.py
+  notes: Gradio interface in source code. 
+
+# [13] Demo Page
+suppage:
+  class: star
+  link: https://stability.ai/news/introducing-stable-audio-open
+  notes: A complementary site with sound examples and demonstration of the model's capabilities is available.
+
