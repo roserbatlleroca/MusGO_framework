@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MusGO Framework: Assessing Openness in Music-Generative AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="../../styles.css" rel="stylesheet"/>
+<script>
+  // Apply saved theme before first paint to avoid a light-mode flash
+  (function() {
+    var saved = localStorage.getItem('musgo-theme');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+<script data-domain="roserbatlleroca.github.io/MusGO_framework/" defer="" src="https://plausible.io/js/script.js"></script>
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  #footer {
+    padding: 1em;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer-text {
+    max-width: 70%;
+  }
+  .footer-image img {
+    max-height: 60px;
+    width: auto;
+  }
+</style>
+</head>
+<body>
+<div id="header">
+<button aria-label="Switch to dark mode" id="theme-toggle" type="button">
+<span aria-hidden="true" id="theme-toggle-icon">🌙</span>
+</button>
+<p class="eyebrow"></p>
+<h1>MusGO Framework: Assessing Openness in Music-Generative AI</h1>
+<div aria-hidden="true" class="meter"></div>
+<p>
+  This website builds on the paper <strong>MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI</strong>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
+Emilia Gómez, and Martín Rocamora, and published in the <em>Proceedings of the 26th International Society for Music Information Retrieval Conference</em> (ISMIR 2025).  
+It serves not only as a companion to the publication, but also as a living resource, which is continuously updated and shaped by contributions from the community. 
+</p>
+</div>
+<div id="content">
+<div id="model-page"><h1>Music ControlNet</h1><p class="model-meta"><strong>Carnegie Mellon University and Adobe Research</strong> · 2023</p><p class="highlight">Generative model that offers multiple precise, time-varying controls over generated audio.</p><div class="model-tags"><strong>Application types:</strong> <span class="model-tag">Melody-to-music</span><span class="model-tag">Text-to-music</span></div><div class="model-tags"><strong>Architecture:</strong><span class="model-tag">Diffusion</span></div><nav aria-label="Model links" class="model-links"><a href="https://musiccontrolnet.github.io/web/" target="_blank">Website</a><a href="https://dl.acm.org/doi/10.1109/TASLP.2024.3399026" target="_blank">Paper</a><a href="https://musiccontrolnet.github.io/web/" target="_blank">Demo</a><a href="../../index.html">Back to leaderboard</a></nav><div class="category-section"><h2>Essential categories</h2><table class="category-table"><thead><tr><th>Category</th><th>Status</th><th>Notes</th></tr></thead><tbody><tr><td class="cat-name">Source code</td><td class="cat-status"><span class="openness closed">✘ Closed</span></td><td class="cat-notes">No official code repository available.</td></tr><tr><td class="cat-name">Training data</td><td class="cat-status"><span class="openness closed">✘ Closed</span></td><td class="cat-notes">Very limited description of the data used for training, and no sources provided.</td></tr><tr><td class="cat-name">Model weights</td><td class="cat-status"><span class="openness closed">✘ Closed</span></td><td class="cat-notes">No model weights provided.</td></tr><tr><td class="cat-name">Code documentation</td><td class="cat-status"><span class="openness closed">✘ Closed</span></td><td class="cat-notes">No source code available so no documentation.</td></tr><tr><td class="cat-name">Training procedure</td><td class="cat-status"><a class="openness open" href="https://arxiv.org/pdf/2311.07069" target="_blank">✔︎ Open</a></td><td class="cat-notes">Training procedure is described in detail in the paper.</td></tr><tr><td class="cat-name">Evaluation procedure</td><td class="cat-status"><a class="openness partial" href="https://arxiv.org/pdf/2311.07069" target="_blank">~ Partial</a></td><td class="cat-notes">Evaluation procedure is described, but details on the specific implementation used for some of the evaluation metrics are not given, limiting the reproducibility of results.</td></tr><tr><td class="cat-name">Research paper</td><td class="cat-status"><a class="openness open" href="https://dl.acm.org/doi/10.1109/TASLP.2024.3399026" target="_blank">✔︎ Open</a></td><td class="cat-notes">Accepted at IEEE/ACM Transactions on Audio, Speech, and Laguange Processing (open access).</td></tr><tr><td class="cat-name">Licensing</td><td class="cat-status"><span class="openness closed">✘ Closed</span></td><td class="cat-notes">Not available.</td></tr></tbody></table></div><div class="category-section"><h2>Desirable categories</h2><table class="category-table"><thead><tr><th>Category</th><th>Status</th><th>Notes</th></tr></thead><tbody><tr><td class="cat-name">Model card</td><td class="cat-status"><span class="openness na">∅ Not included</span></td><td class="cat-notes">No model card available.</td></tr><tr><td class="cat-name">Datasheet</td><td class="cat-status"><span class="openness na">∅ Not included</span></td><td class="cat-notes">No datasheet available.</td></tr><tr><td class="cat-name">Package</td><td class="cat-status"><span class="openness na">∅ Not included</span></td><td class="cat-notes">No package available.</td></tr><tr><td class="cat-name">User-oriented application</td><td class="cat-status"><span class="openness na">∅ Not included</span></td><td class="cat-notes">No user interface nor real-time implementation available.</td></tr><tr><td class="cat-name">Supplementary material page</td><td class="cat-status"><a class="openness open" href="https://musiccontrolnet.github.io/web/" target="_blank">⭐ Included</a></td><td class="cat-notes">A complementary website with sound examples and demo of the model is available.</td></tr></tbody></table></div></div>
+</div><!-- #content -->
+<div id="footer">
+<div class="footer-content">
+<div class="footer-text">
+<p class="copyright">Website &amp; code © 2026 by the authors.</p>
+<p id="build-time">Model page last updated on 2026-08-21 at 23:30 UTC</p>
+</div>
+<div class="footer-image">
+<img alt="MTG logo" src="../../fig/MTG-logo.png"/>
+</div>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.documentElement;
+  var toggleBtn = document.getElementById('theme-toggle');
+  var icon = document.getElementById('theme-toggle-icon');
+
+  function reflectTheme(theme) {
+    if (icon && toggleBtn) {
+      if (theme === 'dark') {
+        icon.textContent = '☀️';
+        toggleBtn.setAttribute('aria-label', 'Switch to light mode');
+      } else {
+        icon.textContent = '🌙';
+        toggleBtn.setAttribute('aria-label', 'Switch to dark mode');
+      }
+    }
+  }
+  reflectTheme(root.getAttribute('data-theme') || 'light');
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function () {
+      var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('musgo-theme', next);
+      reflectTheme(next);
+    });
+  }
+})();
+</script>
+</body>
+</html>

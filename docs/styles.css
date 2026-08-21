@@ -187,7 +187,7 @@ span.link-icon {
 	display:inline-block;
 } 
 
-span.openness { 
+.openness {
 	display:inline-block;
 	align-items: center;
   gap: 0.3em;
@@ -196,10 +196,12 @@ span.openness {
   font-size: 0.88em;
   font-weight: 600;
   color: #fff;
+  text-decoration: none;
 }
-span.open { background-color:#3e9b74; }
-span.partial { background-color:#dd9f1c; }
-span.closed { background-color:#ca6014; }
+a.openness:hover { opacity: 0.85; }
+.openness.open { background-color:#3e9b74; color: #fff; }
+.openness.partial { background-color:#dd9f1c; color: #fff; }
+.openness.closed { background-color:#ca6014; color: #fff;}
 
 
 /* main table features */
@@ -361,27 +363,9 @@ nav#site-nav {
   padding: 0.6rem;
   margin: 1.5rem 0rem 1.5rem 2.5rem;
 }
-nav#site-nav a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4em;
-  padding: 0.5em 1em;
-  border-radius: 8px;
-  background-color: var(--nav-accent);
-  border: 1.5px solid var(--nav-accent);
-  color: var(--nav-accent-text) !important;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-decoration: none !important;
-  transition: background-color 0.15s ease, color 0.15s ease;
-}
-nav#site-nav a:hover {
-  background-color: transparent;
-  color: var(--nav-accent) !important;
-}
 @media (max-width:600px) {
   nav#site-nav { padding: 0.5rem; }
-  nav#site-nav a { font-size: 0.78rem; padding: 0.4em 0.7em; }
+  nav#site-nav a, .model-links a { font-size: 0.78rem; padding: 0.4em 0.7em;}
 }
 
 /* leaderboard controls (sort + filter) */
@@ -423,4 +407,105 @@ nav#site-nav a:hover {
   background-color: transparent;
   color: var(--muted-text);
   border-style: dashed;
+}
+
+/* individual model pages */
+.openness.na { background-color: var(--muted-text); }
+
+.model-meta {
+  color: var(--muted-text);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.model-meta strong { color: var(--text-color); }
+
+.model-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+.model-tag {
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-size: 0.8rem;
+}
+
+.model-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 0 0 1.4rem 0;
+  padding: 0;
+}
+nav#site-nav a, .model-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.2em;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  background-color: var(--nav-accent);
+  border: 1.5px solid var(--nav-accent);
+  color: var(--nav-accent-text) !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  /* margin: 0rem 0rem 0rem 1rem; */
+}
+nav#site-nav a:hover, .model-links a:hover {
+  background-color: transparent;
+  color: var(--nav-accent) !important;
+}
+
+.category-section h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+table.category-table {
+  table-layout: fixed;
+  width: 100%;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  border-collapse: collapse;
+}
+table.category-table thead {
+  position: static;
+  background-color: transparent;
+}
+table.category-table th {
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid black;
+}
+table.category-table th:nth-child(1), table.category-table td.cat-name { width: 22%; }
+table.category-table th:nth-child(2), table.category-table td.cat-status { width: 18%; }
+table.category-table th:nth-child(3), table.category-table td.cat-notes { width: 60%; }
+
+table.category-table td {
+  padding: 0.6rem;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--border-color);
+}
+table.category-table td.cat-name {
+  font-weight: 600;
+}
+table.category-table td.cat-notes {
+  color: var(--text-color);
+  line-height: 1.35rem;
+}
+
+@media (max-width:700px) {
+  table.category-table, table.category-table thead, table.category-table tbody,
+  table.category-table th, table.category-table td, table.category-table tr {
+    display: block;
+    width: auto;
+}
+  table.category-table td.cat-name { font-weight: 700; }
+  table.category-table td.cat-status { text-align: left; margin: 0.3rem 0; }
 }
