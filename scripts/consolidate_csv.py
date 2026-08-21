@@ -3,13 +3,21 @@
 
 import yaml
 import glob
+import html
 import pandas as pd
 from bs4 import BeautifulSoup
 import datetime
 
+def split_multi(value):
+    """Split a comma-separated multi-value field (e.g. project.apptype or
+    project.architecture) into a list of trimmed, non-empty values.
+    Models with a single value just return a one-item list."""
+    if not value:
+        return []
+    return [v.strip() for v in str(value).split(",") if v.strip()]
 
 def create_dataframe(files):
-    # Read the input YAML file, transpose the rows and columns and save to dataframe
+    # read the input YAML file, transpose the rows and columns and save to dataframe
     df = pd.DataFrame()
     source_file = []
     for fname in files:
@@ -25,7 +33,7 @@ def create_dataframe(files):
     df.set_index("project.name", inplace = True)
     return df
 
-
+# get opennes score for each project based on the classes of the essential categories
 def calculate_openness(df):
     openness_weights = {
         "sourcecode": 2, 
@@ -84,8 +92,23 @@ def write_html(df):
         # first row
         source_link = "https://github.com/roserbatlleroca/MusGO_framework/blob/main" + df.loc[p, "source.file"]
         source_file = source_link.split("/")[-1]
-        #r1_html = '<tr class="row-a"><td class="name-cell"><a target="_blank" href="{}" title="{}">{}</a></td>'.format(df.loc[p, "project.link"], df.loc[p, "project.notes"], p)
-        r1_html = '<tr class="row-a"><td class="name-cell"><a target="_blank" href="{}" title="data: {}">{}</a></td>'.format(source_link, source_file, p)
+        # Attributes that power the leaderboard's sort/filter controls on the front end
+        row_year = df.loc[p, "project.year"] if "project.year" in df.columns and pd.notna(df.loc[p, "project.year"]) else ""
+        row_apptype = df.loc[p, "project.apptype"] if "project.apptype" in df.columns and pd.notna(df.loc[p, "project.apptype"]) else ""
+        row_architecture = df.loc[p, "project.architecture"] if "project.architecture" in df.columns and pd.notna(df.loc[p, "project.architecture"]) else ""
+        row_attrs = ""
+        if row_year != "":
+            row_attrs += ' data-year="{}"'.format(html.escape(str(row_year)))
+        # Multi-value tags (e.g. "text-to-music, audio-to-audio") are normalised
+        # into a comma-separated attribute with no extra spaces, so the front-end
+        # JS can split on "," and treat each tag independently for filtering.
+        apptype_list = split_multi(row_apptype)
+        if apptype_list:
+            row_attrs += ' data-apptype="{}"'.format(html.escape(",".join(apptype_list)))
+        architecture_list = split_multi(row_architecture)
+        if architecture_list:
+            row_attrs += ' data-architecture="{}"'.format(html.escape(",".join(architecture_list)))
+        r1_html = '<tr class="row-a"{}><td class="name-cell"><a target="_blank" href="{}" title="data: {}">{}</a></td>'.format(row_attrs, source_link, source_file, p)
         for c in cells_e:
             cl = df.loc[p, c + ".class"]
             link = df.loc[p, c + ".link"]
@@ -108,11 +131,7 @@ def write_html(df):
         # Combine year and organization with space, year gets fixed width
         year_org_display = f'<span style="display:inline-block;min-width:36px">{year}</span>{org_name}' if year else org_name
         
-        #r2_html = '<tr class="row-b"><td class="org"><a target="_blank" href="{}" title="{}">{}</a></td>'.format(df.loc[p, "org.link"], df.loc[p, "org.name"], df.loc[p, "org.name"])
         r2_html = '<tr class="row-b"><td class="org"><a target="_blank" href="{}" title="{}">{}</a></td>'.format(df.loc[p, "project.link"], df.loc[p, "project.notes"], year_org_display)
-        #r2_html += '<td colspan="3" class="llmbase">LLM base: {}</td><td colspan="3" class="rlbase">RL base: {}</td>'.format(df.loc[p, "project.llmbase"], df.loc[p, "project.rlbase"])
-        #r2_html += '<td colspan="7"></td><td class="source-link"><a href="{}" title="{}" target="_blank">&sect;</a></td></tr>\n'.format(source_link, source_file)
-        #r2_html += '<td colspan="7"></td><td class="source-link"><a href="{}" title="{}" target="_blank">{}</a></td></tr>\n'.format(df.loc[p, "org.link"], df.loc[p, "org.name"], df.loc[p, "openness"])
         r2_html += '<td colspan="7"></td><td class="source-link"><a href="{}" title="{}" target="_blank"></a></td></tr>\n'.format(df.loc[p, "org.link"], df.loc[p, "org.name"])
         html_table += r2_html
     # closing tags
@@ -149,7 +168,22 @@ def write_simplified_html(df):
         
         source_link = "https://github.com/roserbatlleroca/MusGO_framework/blob/main" + df.loc[p, "source.file"]
         source_file = source_link.split("/")[-1]
-        r1_html = '<tr class="row-a"><td class="name-cell"><a target="_blank" href="{}" title="data: {}">{}</a></td>'.format(source_link, source_file, p)
+        row_year = df.loc[p, "project.year"] if "project.year" in df.columns and pd.notna(df.loc[p, "project.year"]) else ""
+        row_apptype = df.loc[p, "project.apptype"] if "project.apptype" in df.columns and pd.notna(df.loc[p, "project.apptype"]) else ""
+        row_architecture = df.loc[p, "project.architecture"] if "project.architecture" in df.columns and pd.notna(df.loc[p, "project.architecture"]) else ""
+        row_attrs = ""
+        if row_year != "":
+            row_attrs += ' data-year="{}"'.format(html.escape(str(row_year)))
+        # Multi-value tags (e.g. "text-to-music, audio-to-audio") are normalised
+        # into a comma-separated attribute with no extra spaces, so the front-end
+        # JS can split on "," and treat each tag independently for filtering.
+        apptype_list = split_multi(row_apptype)
+        if apptype_list:
+            row_attrs += ' data-apptype="{}"'.format(html.escape(",".join(apptype_list)))
+        architecture_list = split_multi(row_architecture)
+        if architecture_list:
+            row_attrs += ' data-architecture="{}"'.format(html.escape(",".join(architecture_list)))
+        r1_html = '<tr class="row-a"{}><td class="name-cell"><a target="_blank" href="{}" title="data: {}">{}</a></td>'.format(row_attrs, source_link, source_file, p)
         for c in cells_e:
             cl = df.loc[p, c + ".class"]
             link = df.loc[p, c + ".link"]
@@ -169,7 +203,7 @@ def write_simplified_html(df):
     html_table += '</table>\n'
     return html_table
 
-def create_index(table):
+def create_index(table, model_count):
     # read and parse the template file
     with open("./docs/template.html", "r", encoding='utf-8') as f:
         html = f.read()
@@ -178,6 +212,10 @@ def create_index(table):
     target_element = soup.find(id="included-table")
     # Convert the HTML code string into a BeautifulSoup object and append it to the target element
     target_element.append(BeautifulSoup(table, 'html.parser'))
+    # Fill in the live count of evaluated models
+    model_count_element = soup.find(id="model-count")
+    if model_count_element is not None:
+        model_count_element.string = str(model_count)
     # Add build time info
     utc_datetime = datetime.datetime.utcnow()
     build_message = utc_datetime.strftime("Table last built on %Y-%m-%d at %H:%M UTC")
@@ -221,9 +259,11 @@ df["star_count"] = df[ [f"{col}.class" for col in nice_to_have_cols] ].apply(lam
 df = df.sort_values(by=["openness", "star_count", "project.name"], ascending=[False, False, True])
 
 table = write_html(df)
-create_index(table)
+create_index(table, len(df))
 figure = write_simplified_html(df)
 create_figure(figure)
+
+print(f"\nCurrently, there are {len(df)} models evaluated with MusGO.")
 
 # csv filename
 df.to_csv("./docs/df.csv", index=False)

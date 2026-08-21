@@ -2,16 +2,76 @@
    HTML & CSS handcrafted by MD */
 
 /* Adapted to MusGO framework
-	by - and - */
+	by Roser Batlle-Roca and Laura Ibáñez-Martínez */
 
+/* theme variables (light default, dark override below) */
+:root {
+	--bg-color:#ffffff;
+	--text-color:#1a1a1a;
+	--muted-text:#696969;
+	--header-bg:#ffffff;
+	--footer-bg:#f0f0f0;
+	--card-bg:#f7f7f7;
+	--border-color:#DBDFD7;
+	--table-header-bg:#ffffff;
+	--table-row-b-color:#4d4d4d;
+	--link-color:#000000;
+	--nav-bg:#f7f7f7;
+	--nav-accent:#20242b;
+	--nav-accent-text:#ffffff;
+	/* --title-font: 'Fraunces', Georgia, serif; */
+	--title-font: 'Open Sans', sans-serif;
+}
 
-/* Colours
-   open:    #3e9b74
-   partial: #dd9f1c
-   closed:  #ca6014
-   (colourblind-friendly yellow, orange, red)
-   (I wish CSS vars worked as expected across browsers.)
-*/
+html[data-theme="dark"] {
+	--bg-color:#12141a;
+	--text-color:#e8e8e8;
+	--muted-text:#a3a3a3;
+	--header-bg:#12141a;
+	--footer-bg:#1a1d24;
+	--card-bg:#1c1f27;
+	--border-color:#2e323c;
+	--table-header-bg:#12141a;
+	--table-row-b-color:#a3a3a3;
+	--link-color:#f0f0f0;
+	--nav-bg:#1c1f27;
+	--nav-accent:#e8e8e8;
+	--nav-accent-text:#12141a;
+}
+
+html, body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+a:link, a:visited { color: var(--link-color); }
+
+/* dark-mode toggle button (icon only) */
+#theme-toggle {
+	display:inline-flex;
+	align-items:center;
+	justify-content:center;
+	position:absolute;
+	top:1rem;
+	right:1rem;
+	width:2.4rem;
+	height:2.4rem;
+	padding:0;
+	border-radius:50%;
+	border:1.5px solid var(--border-color);
+	background-color: var(--nav-accent);
+	color: var(--text-color);
+	font-size:1.15rem;
+	line-height:1;
+	cursor:pointer;
+}
+#theme-toggle:hover { 
+	border-color: var(--nav-accent); 
+	background-color: var(--bg-color);
+}
+
+/* colours */
 .colour-open { color:#129f57; }
 .colour-partial { color:#ff8e27; }
 .colour-closed { color:#c43119; }
@@ -22,23 +82,24 @@
 #header, #content {
 	max-width:1200px;
 	margin: auto;
-	padding:0 1rem 0 1rem;
+	padding:1rem 1rem 0 1rem;
+	position: relative;
 }
 #footer > * {
 	max-width:1200px;
 	margin: auto;
 	padding:0 1rem 0 1rem;
-	color:#696969;
+	color: var(--muted-text);
 }
 
 #footer a:link, #footer a:visited {
-	color:#696969;
+	color: var(--muted-text);
 }
 
 #footer {
 	margin-top:2rem;
 	padding:2rem 1rem 2rem 1rem;
-	background-color:#f7f7f7;
+	background-color: var(--footer-bg);
 	font-size:0.8rem;
 }
 
@@ -49,11 +110,10 @@ div#included-table {
 
 
 /* basic typography */
-
-html {  font-family:Arial, sans-serif;}
+html {  font-family:'Open Sans', sans-serif;}
 
 blockquote { 
-	border-left:4px solid #f7f7f7;
+	border-left:4px solid var(--border-color);
 	padding-left:1em;
 	margin-left:1em;
 }
@@ -85,7 +145,14 @@ p,li,blockquote { line-height:1.4rem; }
 	}
 }
 
-/* Title*/
+/* title*/
+h1 {
+	font-family: var(--title-font);
+	font-weight: 700;
+	letter-spacing: -0.01em;
+	margin-top: 0.5rem;
+	margin-bottom: 0.4rem;
+}
 h1 a { border:none; }
 h1 a img#title-logo { 
 	display:inline-block;
@@ -94,22 +161,23 @@ h1 a img#title-logo {
 	height:60%;
 }
 h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
-	color:#000000;
+	color: var(--text-color);
 	text-decoration:none;
 }
 
-/* Some special paragraphs */
+/* special paragraphs */
 p.highlight { 
 	display:block;
 	padding:15px 20px;
-	background-color:#f7f7f7;
+	background-color: var(--card-bg);
+	color: var(--text-color);
 	border-radius: 6px;
-	border: 1px solid #DBDFD7;
+	border: 1px solid var(--border-color);
 }
 p#tagline a { padding-left:4px; }
 
 p#table-guide {
-	color:#696969;
+	color: var(--muted-text);
 	font-size:0.8rem;
 	line-height:1em;
 }
@@ -161,7 +229,7 @@ thead {
     position: sticky;
     top: 0;
     z-index: 1000;
-	background-color: white;
+	background-color: var(--table-header-bg);
 }
 
 /* custom width for some columns */
@@ -194,10 +262,10 @@ tbody tr td {
 	padding:0;
 }
 tbody tr.row-a td {
-	border-top:4px solid #ffffff;
+	border-top:4px solid var(--bg-color);
 }
 tbody tr.row-b td {
-	border-bottom:4px solid #ffffff;
+	border-bottom:4px solid var(--bg-color);
 }
 
 tr.row-b td {
@@ -216,11 +284,11 @@ th {
 table .data-cell {
 	text-align:center;
 }
-table td.data-cell { background-color:#f7f7f7;}
+table td.data-cell { background-color: var(--card-bg);}
 table td.data-cell.closed { background-color:#ca6014;}
 table td.data-cell.open {	background-color:#3e9b74;}
 table td.data-cell.partial { background-color:#dd9f1c;}
-table td.data-cell.star { background-color:#f7f7f7;}
+table td.data-cell.star { background-color: var(--card-bg);}
 
 td.data-cell a {
 	display:block;
@@ -232,7 +300,7 @@ td.data-cell.partial a { padding:3px 0 3px 0; }
 /* links */
 td a:link, td a:visited, td a:active {
 	text-decoration:none;
-	color:#000;
+	color: var(--text-color);
 }
 td.data-cell a:link, td.data-cell a:visited, td.data-cell a:active {
 	color:#fff;
@@ -240,49 +308,32 @@ td.data-cell a:link, td.data-cell a:visited, td.data-cell a:active {
 td.data-cell a:hover {
 	font-weight:bold;
 }
-/* I wish we could trust CSS vars to work */
+
 td.data-cell.open:hover { border-top-color:#3e9b74; }
 td.data-cell.partial:hover { border-top-color:#dd9f1c; }
 td.data-cell.closed:hover { border-top-color:#ca6014; }
 
-
-
 /* secondary rows should be less prominent */
 tr.row-b {
 	/* color:#cccccc; */
-	color:#4d4d4d;
+	color: var(--table-row-b-color);
 	font-size:0.8rem;
 }
 tr.row-b a:link, tr.row-b a:visited, tr.row-b a:active {
-	color:#4d4d4d
+	color: var(--table-row-b-color);
 }
 tr.row-b .source-link { text-align:right }
 tr.row-b .source-link:active, tr.row-b .source-link:hover { font-weight:bold; }
 
-/* .insights {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-top: 2.5rem;
-}
-
-.insight-block {
-  border: 1px solid #DBDFD7;
-  border-radius: 8px;
-  padding: 1.2rem 1.4rem;
-} */
-
-
-
 
 #disclaimer {
-  background-color:#f7f7f7;
-  border: 1px solid #DBDFD7;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
   border-radius: 6px;
   padding: 1.1rem 1.4rem;
   margin-top: 2rem;
 }
-#disclaimer strong { color: #000000; }
+#disclaimer strong { color: var(--text-color); }
 
 #table-guide em {
     font-size: 1em;
@@ -290,13 +341,86 @@ tr.row-b .source-link:active, tr.row-b .source-link:hover { font-weight:bold; }
     margin-bottom: 0.5em;
 }
 #table-guide {
-  background-color: #f8f8f8;
+  background-color: var(--card-bg);
   padding: 1em;
   font-size: 1em;
-  border: 1px solid #DBDFD7;
+  border: 1px solid var(--border-color);
   border-radius: 6px;
 }
 #table-guide p {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+}
+
+/* navigation bar */
+nav#site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  border-radius: 10px;
+  padding: 0.6rem;
+  margin: 1.5rem 0rem 1.5rem 2.5rem;
+}
+nav#site-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  background-color: var(--nav-accent);
+  border: 1.5px solid var(--nav-accent);
+  color: var(--nav-accent-text) !important;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+nav#site-nav a:hover {
+  background-color: transparent;
+  color: var(--nav-accent) !important;
+}
+@media (max-width:600px) {
+  nav#site-nav { padding: 0.5rem; }
+  nav#site-nav a { font-size: 0.78rem; padding: 0.4em 0.7em; }
+}
+
+/* leaderboard controls (sort + filter) */
+#table-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin: 0.5rem 0 1rem 0;
+  padding: 0.75rem 1rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+#table-controls .control-group {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+#table-controls label {
+  font-size: 0.8rem;
+  color: var(--muted-text);
+}
+#table-controls select,
+#table-controls button {
+  font-size: 0.85rem;
+  padding: 0.35em 0.7em;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+#table-controls button:hover,
+#table-controls select:hover {
+  border-color: var(--nav-accent);
+}
+#table-controls #reset-filters-btn {
+  background-color: transparent;
+  color: var(--muted-text);
+  border-style: dashed;
 }

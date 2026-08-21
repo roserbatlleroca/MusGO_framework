@@ -5,7 +5,6 @@
 # For more details, check out: http://opening-up-chatgpt.github.io  
 ####################################################################################################################################
 
-
 # Thank you for contributing!
 # In filling out this yaml file, please follow the criteria as described here: 
 # https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
@@ -13,20 +12,42 @@
 # Remember to replace the template values with the actual information of the project you are evaluating.
 # Essential categories [1-8] should be classified as either `open`, `partial`, or `closed`.
 # Desirable categories [9-13] can be classified as `star` or `∅` (not applicable).
-# Notes should be provided for each category, explaining the classification and any relevant details.
+# For each category, `notes` should be used ONLY for complementary information about that
+# category's evaluation (i.e., why it was classified the way it was). The overall project
+# `description` field below is the place for a general summary of the model itself.
 
+# `apptype` and `architecture` power the leaderboard's filter menus, so please use
+# consistent, existing values whenever the model fits an established category
+# (see the project folder for examples already in use). Add a new value only when
+# none of the existing ones apply.
+# If a model fits more than one category, list them separated by commas
+# (e.g. apptype: Text-to-music, Timber transfer). Each value will then be
+# filterable independently on the leaderboard.
+# Suggested `apptype` values: Text-to-music, Lyric-to-song, Audio-to-audio,
+#   Audio continuation, Timbre transfer, MIDI-to-audio, other (please specify in notes)
+# Suggested `architecture` values: Diffusion, Transformer, GAN, VAE, Flow matching, 
+# other (please specify in notes)
 
+# Provide project main information 
+# Please, do not remove any of the fields below, even if you do not have information for them.
 project:
     name: DDSP
     link: https://magenta.withgoogle.com/ddsp
-    license: Apache License 2.0
-    notes: 
     year: 2020
+    license: Apache License 2.0
+    description: A library that enables direct integration of classic signal processing elements with DL models.      # 1-3 sentence summary of what the model does and how it works
+    apptype: MIDI-to-audio, Audio synthesis, Style transfer   # specify the application type of the model (see suggestions above)
+    architecture: Differentiable DSP   # specify the architecture type of the model (see suggestions above)
+    notes: A VST version of this model is also available.    # complementary info about the project entry or evaluation (not category-specific)
 
+# Provide information about the organization that developed the model
+# Please, do not remove any of the fields below, even if you do not have information for them.
 org:
     name: Google Magenta
     link: https://magenta.withgoogle.com/
     notes:
+
+# MusGO evaluation
 
 # [1] System source code
 sourcecode:
