@@ -37,7 +37,7 @@ project:
     license: Attribution-NonCommercial-ShareAlike 4.0 International
     description: A text-to-music generation model that is only trained on 10000 songs.       # 1-3 sentence summary of what the model does and how it works
     apptype: Text-to-music          # specify the application type of the model (see suggestions above)
-    architecture: Latent difussion, VAE, GAN     # specify the architecture type of the model (see suggestions above)
+    architecture: Latent diffusion, VAE, GAN     # specify the architecture type of the model (see suggestions above)
     notes:             # complementary info about the project entry or evaluation (not category-specific)
 
 # Provide information about the organization that developed the model

@@ -37,7 +37,7 @@ project:
     license: Apache 2.0 License
     description: Song generation model able to synthesize complete songs with both vocal and accompaintment up to 4m45s.       # 1-3 sentence summary of what the model does and how it works
     apptype: Song generation           # specify the application type of the model (see suggestions above)
-    architecture:  Latent difussion    # specify the architecture type of the model (see suggestions above)
+    architecture:  Latent diffusion    # specify the architecture type of the model (see suggestions above)
     notes: "Note that there are two more recent versions of DiffRhythm: DiffRhythm+ and DiffRhythm 2."           # complementary info about the project entry or evaluation (not category-specific)
 
 # Provide information about the organization that developed the model
