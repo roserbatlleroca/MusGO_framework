@@ -328,8 +328,8 @@ def build_model_page_content(df, p):
     
 
     # Only the links that actually exist for this model appear as buttons,
-    # with "Back to leaderboard" always last in the same row.
-    link_items = []
+    # and "Back to leaderboard" always last.
+        link_items = []
     if website:
         link_items.append(('Website', website, True))
     if repo:
@@ -338,6 +338,7 @@ def build_model_page_content(df, p):
         link_items.append(('Paper', paper_link, True))
     if demo_link:
         link_items.append(('Demo', demo_link, True))
+    # link_items.append(('Raw YAML file', yaml_url, True))
     link_items.append(('Back to leaderboard', '../../index.html', False))
 
     content += '<nav class="model-links" aria-label="Model links">'
@@ -354,6 +355,10 @@ def build_model_page_content(df, p):
     content += build_category_table(df, p, "desirable")
     content += '</div>'
 
+    yaml_url = "https://github.com/roserbatlleroca/MusGO_framework/blob/main" + df.loc[p, "source.file"]
+    content += '<div>'
+    content += f'<p class="model-meta"><a href={yaml_url}>Raw YAML file with complete evaluation.</a></p></div>'
+
     return content
 
 def create_model_pages(df):
@@ -368,7 +373,7 @@ def create_model_pages(df):
     with open(template_path, "r", encoding='utf-8') as f:
         base_html = f.read()
     utc_datetime = datetime.datetime.utcnow()
-    build_message = utc_datetime.strftime("Model page last updated on %Y-%m-%d at %H:%M UTC")
+    build_message = utc_datetime.strftime("Model page last updated on %Y-%m")
     projects = df.index.tolist()
     pages_written = 0
     for p in projects:
@@ -407,7 +412,7 @@ def create_index(table, model_count):
         model_count_element.string = str(model_count)
     # Add build time info
     utc_datetime = datetime.datetime.utcnow()
-    build_message = utc_datetime.strftime("Table last built on %Y-%m-%d at %H:%M UTC")
+    build_message = utc_datetime.strftime("Table last built on %Y-%m")
     target_footer = soup.find(id="build-time")
     target_footer.string = build_message
     # write to disk
@@ -425,7 +430,7 @@ def create_figure(figure):
     target_element.append(BeautifulSoup(figure, 'html.parser'))
     # Add build time info
     utc_datetime = datetime.datetime.utcnow()
-    build_message = utc_datetime.strftime("Figure last built on %Y-%m-%d at %H:%M UTC")
+    build_message = utc_datetime.strftime("Figure last built on %Y-%m")
     target_footer = soup.find(id="build-time")
     target_footer.string = build_message
     # write to disk

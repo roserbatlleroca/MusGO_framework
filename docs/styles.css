@@ -112,6 +112,13 @@ div#included-table {
 /* basic typography */
 html {  font-family:'Open Sans', sans-serif;}
 
+/* Form controls (buttons, selects) don't inherit the page font by default in
+   most browsers, so they need this explicitly or they fall back to the
+   system UI font. */
+button, select, input, textarea {
+  font-family: inherit;
+}
+
 blockquote { 
 	border-left:4px solid var(--border-color);
 	padding-left:1em;
@@ -410,7 +417,10 @@ nav#site-nav {
 }
 
 /* individual model pages */
-.openness.na { background-color: var(--muted-text); }
+.openness.na { 
+	background-color: var(--muted-text);
+	color: var(--nav-accent-text)
+ }
 
 .model-meta {
   color: var(--muted-text);

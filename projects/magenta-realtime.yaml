@@ -20,12 +20,12 @@
 # consistent, existing values whenever the model fits an established category
 # (see the project folder for examples already in use). Add a new value only when
 # none of the existing ones apply.
-# If a model fits more than one category, list them separated by commas
+# # If a model fits more than one category, list them separated by commas
 # (e.g. apptype: Text-to-music, Timber transfer). Each value will then be
 # filterable independently on the leaderboard.
-# Suggested `apptype` values: text-to-music, lyric-to-song, audio-to-audio,
-#   audio-continuation, timbre-transfer, midi-to-audio, other (please specify in notes)
-# Suggested `architecture` values: diffusion, transformer, gan, vae, flow-matching, 
+# Suggested `apptype` values: Text-to-music, Lyrics-to-song, Audio-to-audio,
+# Audio continuation,, Timbre transfer, Style transfer, MIDI-to-audio, other (please specify in notes)
+# Suggested `architecture` values: Diffusion, Transformer, GAN, VAE, Flow matching, 
 # other (please specify in notes)
 
 # Provide project main information 
@@ -59,7 +59,7 @@ sourcecode:
 trainingdata:
     class: closed
     link: https://arxiv.org/pdf/2508.04651
-    notes: Technical report indicates the model has been trained on ~190,000 hours of intrumental stock music. But there is no clear description of the datasets or specifc sources used for training. 
+    notes: Technical report indicates the model has been trained on ~190,000 hours of instrumental stock music. But there is no clear description of the datasets or specifc sources used for training. 
 
 # [3] Model weights
 modelweights:

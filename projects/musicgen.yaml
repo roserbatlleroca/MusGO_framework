@@ -20,12 +20,12 @@
 # consistent, existing values whenever the model fits an established category
 # (see the project folder for examples already in use). Add a new value only when
 # none of the existing ones apply.
-# If a model fits more than one category, list them separated by commas
+# # If a model fits more than one category, list them separated by commas
 # (e.g. apptype: Text-to-music, Timber transfer). Each value will then be
 # filterable independently on the leaderboard.
-# Suggested `apptype` values: text-to-music, lyric-to-song, audio-to-audio,
-#   audio-continuation, timbre-transfer, midi-to-audio, other (please specify in notes)
-# Suggested `architecture` values: diffusion, transformer, gan, vae, flow-matching, 
+# Suggested `apptype` values: Text-to-music, Lyrics-to-song, Audio-to-audio,
+# Audio continuation,, Timbre transfer, Style transfer, MIDI-to-audio, other (please specify in notes)
+# Suggested `architecture` values: Diffusion, Transformer, GAN, VAE, Flow matching, 
 # other (please specify in notes)
 
 # Provide project main information 
@@ -59,7 +59,7 @@ sourcecode:
 trainingdata:
   class: partial
   link: 
-  notes: They describe the datasets used to training their model (licensed data). However, they rely on 10k music tracks that are not described
+  notes: They describe the datasets used to train their model (licensed data). However, they rely on 10k music tracks that are not described
     (proprietary data). They do not provide any of the datasets used for training MusicGen. Only a dummy dataset containing just a few examples
     for illustrative purposes is provided.
 

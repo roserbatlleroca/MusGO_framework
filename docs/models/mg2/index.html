@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MusGO Framework: Assessing Openness in Music-Generative AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="../../styles.css" rel="stylesheet"/>
+<script>
+  // Apply saved theme before first paint to avoid a light-mode flash
+  (function() {
+    var saved = localStorage.getItem('musgo-theme');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+<script data-domain="roserbatlleroca.github.io/MusGO_framework/" defer="" src="https://plausible.io/js/script.js"></script>
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  #footer {
+    padding: 1em;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer-text {
+    max-width: 70%;
+  }
+  .footer-image img {
+    max-height: 60px;
+    width: auto;
+  }
+</style>
+</head>
+<body>
+<div id="header">
+<button aria-label="Switch to dark mode" id="theme-toggle" type="button">
+<span aria-hidden="true" id="theme-toggle-icon">🌙</span>
+</button>
+<p class="eyebrow"></p>
+<h1>MusGO Framework: Assessing Openness in Music-Generative AI</h1>
+<div aria-hidden="true" class="meter"></div>
+<p>
+  This website builds on the paper <strong>MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI</strong>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
+Emilia Gómez, and Martín Rocamora, and published in the <em>Proceedings of the 26th International Society for Music Information Retrieval Conference</em> (ISMIR 2025).  
+It serves not only as a companion to the publication, but also as a living resource, which is continuously updated and shaped by contributions from the community. 
+</p>
+</div>
+<div id="content">
+<div id="model-page"><h1>MG²</h1><p class="model-meta"><strong><a href="https://www.gxu.edu.cn/en/" target="_blank">Guangxi University, China and Southwestern University of Finance and Economics, China</a></strong> · 2024</p><p class="highlight">A lightweight melody-guided text-to-music model. Melody information is incorporated implicitly within the CLMP and explicitly in the retrieval augmented diffusion module.</p><div class="model-tags"><strong>Application types:</strong> <span class="model-tag">Text-to-music</span><span class="model-tag">Melody-to-music</span></div><div class="model-tags"><strong>Architecture:</strong><span class="model-tag">Diffusion</span></div><nav aria-label="Model links" class="model-links"><a href="https://awesome-mmgen.github.io/" target="_blank">Website</a><a href="https://github.com/shaopengw/Awesome-Music-Generation" target="_blank">Repository</a><a href="https://arxiv.org/abs/2409.20196" target="_blank">Paper</a><a href="https://mg2.vip.cpolar.cn/" target="_blank">Demo</a><a href="../../index.html">Back to leaderboard</a></nav><div class="category-section"><h2>Essential categories</h2><table class="category-table"><thead><tr><th>Category</th><th>Status</th><th>Notes</th></tr></thead><tbody><tr><td class="cat-name">Source code</td><td class="cat-status"><a class="openness open" href="https://github.com/shaopengw/Awesome-Music-Generation" target="_blank">✔︎ Open</a></td><td class="cat-notes">Source code is available on GitHub, including data processing, model architecture, training and fine-tuning, and inference scripts.</td></tr><tr><td class="cat-name">Training data</td><td class="cat-status"><a class="openness open" href="https://huggingface.co/datasets/ManzhenWei/MG2-Dataset" target="_blank">✔︎ Open</a></td><td class="cat-notes">This model was trained on about 132 hours from two open datasets: MusicCaps and MusicBench, which are detailed in Hugging Face.</td></tr><tr><td class="cat-name">Model weights</td><td class="cat-status"><a class="openness open" href="https://huggingface.co/ManzhenWei/MG2/tree/main" target="_blank">✔︎ Open</a></td><td class="cat-notes">Checkpoints are available on Hugging Face.</td></tr><tr><td class="cat-name">Code documentation</td><td class="cat-status"><a class="openness open" href="https://github.com/shaopengw/Awesome-Music-Generation/blob/main/README.md" target="_blank">✔︎ Open</a></td><td class="cat-notes">Source code is well-documented, including environment setup,data processing, training and fine-tuning procedure, as well as quick start instructions.</td></tr><tr><td class="cat-name">Training procedure</td><td class="cat-status"><a class="openness open" href="https://arxiv.org/pdf/2409.20196" target="_blank">✔︎ Open</a></td><td class="cat-notes">Training procedure is fully described in the research paper (see Section 5.3). Code documentation provides additional instructions on how the model might be retrained or fine-tuned.</td></tr><tr><td class="cat-name">Evaluation procedure</td><td class="cat-status"><a class="openness open" href="https://arxiv.org/pdf/2409.20196" target="_blank">✔︎ Open</a></td><td class="cat-notes">Evaluation procedure is fully described in the research paper (see Section 5.4). Evaluation data is 1/10 of MusicCaps and MusicBench. Testing splits are properly identified in the dataset card. In addition, a human evaluation was conducted to assess recognizability, text relevance, satisfaction, quality and market potential of generated samples (see Section 6). These samples are shared in their complementary website.</td></tr><tr><td class="cat-name">Research paper</td><td class="cat-status"><a class="openness partial" href="https://arxiv.org/abs/2409.20196" target="_blank">~ Partial</a></td><td class="cat-notes">Research paper is available on arXiv, but it has not yet been peer-reviewed.</td></tr><tr><td class="cat-name">Licensing</td><td class="cat-status"><a class="openness open" href="https://github.com/shaopengw/Awesome-Music-Generation?tab=MIT-1-ov-file" target="_blank">✔︎ Open</a></td><td class="cat-notes">The project is licensed under the MIT License.</td></tr></tbody></table></div><div class="category-section"><h2>Desirable categories</h2><table class="category-table"><thead><tr><th>Category</th><th>Status</th><th>Notes</th></tr></thead><tbody><tr><td class="cat-name">Model card</td><td class="cat-status"><a class="openness open" href="https://huggingface.co/ManzhenWei/MG2" target="_blank">⭐ Included</a></td><td class="cat-notes">A model card is available on Hugging Face.</td></tr><tr><td class="cat-name">Datasheet</td><td class="cat-status"><a class="openness open" href="https://huggingface.co/datasets/ManzhenWei/MG2-Dataset" target="_blank">⭐ Included</a></td><td class="cat-notes">A dataset card is provided on Hugging Face.</td></tr><tr><td class="cat-name">Package</td><td class="cat-status"><span class="openness na">∅ Not included</span></td><td class="cat-notes"></td></tr><tr><td class="cat-name">User-oriented application</td><td class="cat-status"><a class="openness na" href="https://mg2.vip.cpolar.cn/" target="_blank">∅ Not included</a></td><td class="cat-notes">An online-based user-oriented application should be available in the indicated link. However, it is not currently accessible.</td></tr><tr><td class="cat-name">Supplementary material page</td><td class="cat-status"><a class="openness open" href="https://awesome-mmgen.github.io/" target="_blank">⭐ Included</a></td><td class="cat-notes">An official project website showcases sonified audio samples generated by MG² alongside comparative baselines (AudioLDM2, Mustango).</td></tr></tbody></table></div><div><p class="model-meta"><a href="https://github.com/roserbatlleroca/MusGO_framework/blob/main/projects\mg2.yaml">Raw YAML file with complete evaluation.</a></p></div></div>
+</div><!-- #content -->
+<div id="footer">
+<div class="footer-content">
+<div class="footer-text">
+<p class="copyright">Website &amp; code © 2026 by the authors.</p>
+<p id="build-time">Model page last updated on 2026-08</p>
+</div>
+<div class="footer-image">
+<img alt="MTG logo" src="../../fig/MTG-logo.png"/>
+</div>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.documentElement;
+  var toggleBtn = document.getElementById('theme-toggle');
+  var icon = document.getElementById('theme-toggle-icon');
+
+  function reflectTheme(theme) {
+    if (icon && toggleBtn) {
+      if (theme === 'dark') {
+        icon.textContent = '☀️';
+        toggleBtn.setAttribute('aria-label', 'Switch to light mode');
+      } else {
+        icon.textContent = '🌙';
+        toggleBtn.setAttribute('aria-label', 'Switch to dark mode');
+      }
+    }
+  }
+  reflectTheme(root.getAttribute('data-theme') || 'light');
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function () {
+      var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('musgo-theme', next);
+      reflectTheme(next);
+    });
+  }
+})();
+</script>
+</body>
+</html>

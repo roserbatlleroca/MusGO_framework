@@ -14,7 +14,11 @@ Once your assessment is complete, follow the instructions below to learn how to 
 
 ## Adding a new model
 
-Every analysed model is evaluated in a specific YAML file. To contribute to the openness analysis with a new model, please complete the following steps: 
+You can add a new model to the MusGO leaderboard in two ways, depending on whether you want to conduct the evaluation yourself (Option A) or suggest a model for the community to assess (Option B). 
+
+### Option A: Evaluate the model with MusGO
+
+Every analysed model is evaluated in a specific YAML file. To contribute with a new model evaluation, please complete the following steps: 
 
 #### 1. **Copy the Template**
 
@@ -24,7 +28,13 @@ Use lowercase and hyphens to separate words:
 
 #### 2. **Fill in the Evaluation**
 
-- Fill in all the project information: `name`, `link`, `license` and `org`. 
+- Fill in `project` with the main information about the model: `name`, `link`, `year`, `license`, `description`, `apptype` and `architecture`. 
+   - For `description`, you should provide a short overview of the model (1-3 sentences). 
+   - `apptype` and `architecture` power the leaderboard's filter menus, so please use consistent, existing values whenever the model fits an established category (see examples already in use). Add a new value only when none of the existing ones apply.
+   > _Example:_ If a model fits more than one category, list them separated by commas
+(e.g. apptype: Text-to-music, Timber transfer). Each value will then be
+filterable independently on the leaderboard.
+- Fill in `org` with the information regarding the organization or insitution behind the model.  
 - For each of the **essential categories [1–8]**, classify as `open`, `partial`, or `closed`.
 - For each **desirable category [9–13]**, classify as `star` (⭐) or `∅` (not applicable).
 - Provide a **justification** in the `notes` field for each classification. You can also add a reference link to complement the information. If some information is missing or some category is incomplete, clearly point out what is missing in the `notes` field. 
@@ -41,11 +51,21 @@ Once your YAML file is complete:
 
 1. Open a **pull request** with your new evaluation YAML file. Please, name your branch as `model-eval/[model-name]`. 
 2. The repository maintainers will **review your submission**:
-  - If everything looks good, your model will be merged into the leaderboard.
+  - If everything looks good, your evaluation will be merged into the leaderboard.
   - If we spot any missing info or inconsistencies, we’ll reach out to clarify or request edits. You may be asked to provide **additional context or evidence**, and suggestions may be revised **collaboratively** before being accepted.
 3. Once all issues are addressed, the model will be officially added! Credit for the contribution will be reflected in the commit and PR history.
 
 An example on how to add a new model evaluation is available [here](https://github.com/roserbatlleroca/MusGO_framework/pull/1). 
+
+### Option B: Suggest a new model 
+
+If you prefer to suggest a generative model to be evaluated, we invite you to do so by openning a **new issue**. Include:
+
+- Model name and organisation/institution
+- Relevant reference links: official website, research paper, source code, model weights, etc. 
+- A brief explanation of why this model is relevant to the MusGO framework. 
+
+Mantainers will review the proposal and queue the model for evaluation. 
 
 
 ## Amending a current evaluation 
@@ -77,4 +97,6 @@ An example on how to amend an evaluation is available [here](https://github.com/
 
 ---
 
-If you have any doubt or issue, do not heasitate to contact us at [roser.batlle@upf.edu](mailto:roser.batlle@upf.edu) and [laura.ibanez@upf.edu](mailto:laura.ibanez@upf.edu). Your contributions help us maintain fair and up-to-date openness assessments and promote transparency and openness in music-generative AI. Thank you for contributing to MusGO!
+If you have any doubt or issue, do not heasitate to contact us at [roser.batlle@upf.edu](mailto:roser.batlle@upf.edu) and [laura.ibanez@upf.edu](mailto:laura.ibanez@upf.edu). Your contributions help us maintain fair and up-to-date openness assessments and promote transparency and openness in music-generative AI. 
+
+Thank you for contributing to MusGO!

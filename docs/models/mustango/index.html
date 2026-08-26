@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MusGO Framework: Assessing Openness in Music-Generative AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="../../styles.css" rel="stylesheet"/>
+<script>
+  // Apply saved theme before first paint to avoid a light-mode flash
+  (function() {
+    var saved = localStorage.getItem('musgo-theme');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+<script data-domain="roserbatlleroca.github.io/MusGO_framework/" defer="" src="https://plausible.io/js/script.js"></script>
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  #footer {
+    padding: 1em;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer-text {
+    max-width: 70%;
+  }
+  .footer-image img {
+    max-height: 60px;
+    width: auto;
+  }
+</style>
+</head>
+<body>
+<div id="header">
+<button aria-label="Switch to dark mode" id="theme-toggle" type="button">
+<span aria-hidden="true" id="theme-toggle-icon">🌙</span>
+</button>
+<p class="eyebrow"></p>
+<h1>MusGO Framework: Assessing Openness in Music-Generative AI</h1>
+<div aria-hidden="true" class="meter"></div>
+<p>
+  This website builds on the paper <strong>MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI</strong>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
+Emilia Gómez, and Martín Rocamora, and published in the <em>Proceedings of the 26th International Society for Music Information Retrieval Conference</em> (ISMIR 2025).  
+It serves not only as a companion to the publication, but also as a living resource, which is continuously updated and shaped by contributions from the community. 
+</p>
+</div>
+<div id="content">
+<div id="model-page"><h1>Mustango</h1><p class="model-meta"><strong><a href="https://amaai-lab.github.io/" target="_blank">AMAAI Lab, Singapore University of Technology and Design and Queen Mary University of London</a></strong> · 2024</p><p class="highlight">A music-domain-knowledge-inspired text-to-music latent diffusion model capable of fine-grained control over harmonic and rhythmic elements via an integrated MuNet architecture.</p><div class="model-tags"><strong>Application types:</strong> <span class="model-tag">Text-to-music</span></div><div class="model-tags"><strong>Architecture:</strong><span class="model-tag">Latent diffusion</span></div><nav aria-label="Model links" class="model-links"><a href="https://amaai-lab.github.io/mustango/" target="_blank">Website</a><a href="https://github.com/AMAAI-Lab/mustango" target="_blank">Repository</a><a href="https://aclanthology.org/2024.naacl-long.459.pdf" target="_blank">Paper</a><a href="https://replicate.com/declare-lab/mustango" target="_blank">Demo</a><a href="../../index.html">Back to leaderboard</a></nav><div class="category-section"><h2>Essential categories</h2><table class="category-table"><thead><tr><th>Category</th><th>Status</th><th>Notes</th></tr></thead><tbody><tr><td class="cat-name">Source code</td><td class="cat-status"><a class="openness open" href="https://github.com/AMAAI-Lab/mustango" target="_blank">✔︎ Open</a></td><td class="cat-notes">The codebase is complete and accessible on GitHub. The repository features model architecture, training pipeline, inference, and data processing.</td></tr><tr><td class="cat-name">Training data</td><td class="cat-status"><a class="openness open" href="https://huggingface.co/datasets/amaai-lab/MusicBench" target="_blank">✔︎ Open</a></td><td class="cat-notes">Mustango is trained on the MusicBench dataset, which is a collection of ~52k 10-seconds music samples. These samples were generated through targeted harmonic, rhythmic, and dynamic data augmentations of the original MusicCaps dataset and enriched with automated music theory text descriptions.</td></tr><tr><td class="cat-name">Model weights</td><td class="cat-status"><a class="openness open" href="https://huggingface.co/declare-lab/mustango/tree/main/ldm" target="_blank">✔︎ Open</a></td><td class="cat-notes">Model weights are available on HuggingFace. There is also a pretrained model available (https://huggingface.co/declare-lab/mustango-pretrained).</td></tr><tr><td class="cat-name">Code documentation</td><td class="cat-status"><a class="openness open" href="https://github.com/AMAAI-Lab/mustango/blob/main/README.md" target="_blank">✔︎ Open</a></td><td class="cat-notes">The codebase is properly documented, including instructions for installation, basic usage and model training.</td></tr><tr><td class="cat-name">Training procedure</td><td class="cat-status"><a class="openness open" href="https://aclanthology.org/2024.naacl-long.459.pdf" target="_blank">✔︎ Open</a></td><td class="cat-notes">Training procedure is well documented in the paper, including hardware requirements and model configurations (see Appendix B for further details). Additional implementation details are available in the GitHub repository.</td></tr><tr><td class="cat-name">Evaluation procedure</td><td class="cat-status"><a class="openness open" href="https://aclanthology.org/2024.naacl-long.459.pdf" target="_blank">✔︎ Open</a></td><td class="cat-notes">Evaluation methodology is well documented in the paper, including evaluation metrics and model performance. Evaluation dataset is composed of TestA, TestB and FMACaps. TestA and TestB are the testing splits of MusicBench, which is based on MusicCaps (see Section 2.3). Further information about how FMACaps dataset was created is available in Appendix F.</td></tr><tr><td class="cat-name">Research paper</td><td class="cat-status"><a class="openness open" href="https://aclanthology.org/2024.naacl-long.459.pdf" target="_blank">✔︎ Open</a></td><td class="cat-notes">Accepted paper at NAACL 2024.</td></tr><tr><td class="cat-name">Licensing</td><td class="cat-status"><a class="openness open" href="https://github.com/AMAAI-Lab/mustango?tab=MIT-1-ov-file" target="_blank">✔︎ Open</a></td><td class="cat-notes">MIT License.</td></tr></tbody></table></div><div class="category-section"><h2>Desirable categories</h2><table class="category-table"><thead><tr><th>Category</th><th>Status</th><th>Notes</th></tr></thead><tbody><tr><td class="cat-name">Model card</td><td class="cat-status"><a class="openness open" href="https://huggingface.co/declare-lab/mustango" target="_blank">⭐ Included</a></td><td class="cat-notes">A model card is available in HuggingFace.</td></tr><tr><td class="cat-name">Datasheet</td><td class="cat-status"><a class="openness open" href="https://huggingface.co/datasets/amaai-lab/MusicBench/" target="_blank">⭐ Included</a></td><td class="cat-notes">There is a data card available for the MusicBench dataset on HuggingFace, which provides information about the dataset's composition, usage, and licensing.</td></tr><tr><td class="cat-name">Package</td><td class="cat-status"><span class="openness na">∅ Not included</span></td><td class="cat-notes"></td></tr><tr><td class="cat-name">User-oriented application</td><td class="cat-status"><a class="openness open" href="https://replicate.com/declare-lab/mustango" target="_blank">⭐ Included</a></td><td class="cat-notes">A demo is available on Replicate. There should also be a demo on HuggingFace Spaces, but it is currently not working (https://huggingface.co/spaces/declare-lab/mustango).</td></tr><tr><td class="cat-name">Supplementary material page</td><td class="cat-status"><a class="openness open" href="https://amaai-lab.github.io/mustango/" target="_blank">⭐ Included</a></td><td class="cat-notes">Complementary site with general model overview and sound examples is available.</td></tr></tbody></table></div><div><p class="model-meta"><a href="https://github.com/roserbatlleroca/MusGO_framework/blob/main/projects\mustango.yaml">Raw YAML file with complete evaluation.</a></p></div></div>
+</div><!-- #content -->
+<div id="footer">
+<div class="footer-content">
+<div class="footer-text">
+<p class="copyright">Website &amp; code © 2026 by the authors.</p>
+<p id="build-time">Model page last updated on 2026-08</p>
+</div>
+<div class="footer-image">
+<img alt="MTG logo" src="../../fig/MTG-logo.png"/>
+</div>
+</div>
+</div>
+<script>
+(function () {
+  var root = document.documentElement;
+  var toggleBtn = document.getElementById('theme-toggle');
+  var icon = document.getElementById('theme-toggle-icon');
+
+  function reflectTheme(theme) {
+    if (icon && toggleBtn) {
+      if (theme === 'dark') {
+        icon.textContent = '☀️';
+        toggleBtn.setAttribute('aria-label', 'Switch to light mode');
+      } else {
+        icon.textContent = '🌙';
+        toggleBtn.setAttribute('aria-label', 'Switch to dark mode');
+      }
+    }
+  }
+  reflectTheme(root.getAttribute('data-theme') || 'light');
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function () {
+      var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('musgo-theme', next);
+      reflectTheme(next);
+    });
+  }
+})();
+</script>
+</body>
+</html>

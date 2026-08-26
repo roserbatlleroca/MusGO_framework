@@ -122,6 +122,7 @@ It serves not only as a companion to the publication, but also as a living resou
 <div id="table-controls">
   <div class="control-group">
     <button id="sort-year-btn" type="button">Sort by year ⇅</button>
+    <button id="sort-name-btn" type="button">Sort AZ ⇅</button>
   </div>
   <div class="control-group">
     <label for="filter-apptype">Application type</label>
@@ -313,35 +314,80 @@ of this work.
     apptypeSelect.value = '';
     architectureSelect.value = '';
     applyFilters();
+
+    // Reset both sort orders back to the original (openness-ranked) order
+    yearSortState = 'default';
+    sortYearBtn.textContent = 'Sort by Year ⇅';
+    nameSortState = 'default';
+    sortNameBtn.textContent = 'Sort AZ ⇅';
+    applyPairOrder(originalPairs);
   });
 
-  /* Sort by year: cycles default order -> newest first -> oldest first */
-  var sortBtn = document.getElementById('sort-year-btn');
-  var sortState = 'default';
+  /* Sort by year / alphabetically (AZ): each cycles default -> asc -> desc -> default,
+     and activating one resets the other back to its default label, since only
+     one sort order can be applied at a time. Both always sort from the original
+     load order (openness score), never compounding on top of each other. */
+  var sortYearBtn = document.getElementById('sort-year-btn');
+  var sortNameBtn = document.getElementById('sort-name-btn');
+  var yearSortState = 'default';
+  var nameSortState = 'default';
 
   function getYear(rowA) {
     return parseInt(rowA.getAttribute('data-year'), 10) || 0;
   }
 
-  sortBtn.addEventListener('click', function () {
-    var pairs;
-    if (sortState === 'default') {
-      sortState = 'desc';
-      sortBtn.textContent = 'Sorted: Newest first ⇅';
-      pairs = originalPairs.slice().sort(function (a, b) { return getYear(b[0]) - getYear(a[0]); });
-    } else if (sortState === 'desc') {
-      sortState = 'asc';
-      sortBtn.textContent = 'Sorted: Oldest first ⇅';
-      pairs = originalPairs.slice().sort(function (a, b) { return getYear(a[0]) - getYear(b[0]); });
-    } else {
-      sortState = 'default';
-      sortBtn.textContent = 'Sort by Year ⇅';
-      pairs = originalPairs;
-    }
+  function getName(rowA) {
+    var link = rowA.querySelector('.name-cell a');
+    return link ? link.textContent.trim().toLowerCase() : '';
+  }
+
+  function applyPairOrder(pairs) {
     pairs.forEach(function (pair) {
       tbody.appendChild(pair[0]);
       tbody.appendChild(pair[1]);
     });
+  }
+
+  sortYearBtn.addEventListener('click', function () {
+    nameSortState = 'default';
+    sortNameBtn.textContent = 'Sort AZ ⇅';
+
+    var pairs;
+    if (yearSortState === 'default') {
+      yearSortState = 'desc';
+      sortYearBtn.textContent = 'Sorted: Newest first ⇅';
+      pairs = originalPairs.slice().sort(function (a, b) { return getYear(b[0]) - getYear(a[0]); });
+    } else if (yearSortState === 'desc') {
+      yearSortState = 'asc';
+      sortYearBtn.textContent = 'Sorted: Oldest first ⇅';
+      pairs = originalPairs.slice().sort(function (a, b) { return getYear(a[0]) - getYear(b[0]); });
+    } else {
+      yearSortState = 'default';
+      sortYearBtn.textContent = 'Sort by Year ⇅';
+      pairs = originalPairs;
+    }
+    applyPairOrder(pairs);
+  });
+
+  sortNameBtn.addEventListener('click', function () {
+    yearSortState = 'default';
+    sortYearBtn.textContent = 'Sort by Year ⇅';
+
+    var pairs;
+    if (nameSortState === 'default') {
+      nameSortState = 'asc';
+      sortNameBtn.textContent = 'Sorted: A → Z ⇅';
+      pairs = originalPairs.slice().sort(function (a, b) { return getName(a[0]).localeCompare(getName(b[0])); });
+    } else if (nameSortState === 'asc') {
+      nameSortState = 'desc';
+      sortNameBtn.textContent = 'Sorted: Z → A ⇅';
+      pairs = originalPairs.slice().sort(function (a, b) { return getName(b[0]).localeCompare(getName(a[0])); });
+    } else {
+      nameSortState = 'default';
+      sortNameBtn.textContent = 'Sort AZ ⇅';
+      pairs = originalPairs;
+    }
+    applyPairOrder(pairs);
   });
 })();
 </script>

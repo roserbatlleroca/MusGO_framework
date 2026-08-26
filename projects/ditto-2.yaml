@@ -23,8 +23,8 @@
 # If a model fits more than one category, list them separated by commas
 # (e.g. apptype: Text-to-music, Timber transfer). Each value will then be
 # filterable independently on the leaderboard.
-# Suggested `apptype` values: Text-to-music, Lyric-to-song, Audio-to-audio,
-# Audio continuation, Timbre transfer, MIDI-to-audio, other (please specify in notes)
+# Suggested `apptype` values: Text-to-music, Lyrics-to-song, Audio-to-audio,
+# Audio continuation, Timbre transfer, Style transfer, MIDI-to-audio, other (please specify in notes)
 # Suggested `architecture` values: Diffusion, Transformer, GAN, VAE, Flow matching, 
 # other (please specify in notes)
 

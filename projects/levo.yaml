@@ -31,99 +31,98 @@
 # Provide project main information 
 # Please, do not remove any of the fields below, even if you do not have information for them.
 project:
-    name: Diff-A-Riff
-    link: https://sonycslparis.github.io/diffariff-companion/
-    year: 2024
-    license: Not available.
-    description: Generative model for instrumental accompaniments for any musical audio context.       # 1-3 sentence summary of what the model does and how it works
-    apptype: Accompaniment, Audio-to-audio, Text-to-music       # specify the application type of the model (see suggestions above)
-    architecture: Latent diffusion     # specify the architecture type of the model (see suggestions above)
-    notes:             # complementary info about the project entry or evaluation (not category-specific)
+    name: LeVo
+    link: https://levo-demo.github.io/
+    year: 2025
+    license: Not available. 
+    description: Full-song lyrics-to-music foundation model employing parallel token modeling (mixed semantic tokens and dual-track acoustic tokens) and multi-preference alignment.      # 1-3 sentence summary of what the model does and how it works
+    apptype:  Lyrics-to-song, Text-to-music, Style transfer   # specify the application type of the model (see suggestions above)
+    architecture: Autoregressive transformer      # specify the architecture type of the model (see suggestions above)
+    notes: Sometimes, the model is referred to SongGeneration as well as LeVo. Source code has not yet been released, despite mentioning so in the research paper. Complementary website indicates "code will be released soon".            # complementary info about the project entry or evaluation (not category-specific)
 
 # Provide information about the organization that developed the model
 # Please, do not remove any of the fields below, even if you do not have information for them.
 org:
-  name: Sony Computer Science Laboratories Paris and Queen Mary University of London
-  link:
-  notes:
+    name: Tsinghua University, Shenzhen and Tencent AI Lab
+    link: https://ailab.tencent.com/ailab/en/index/
+    notes:
 
 # MusGO evaluation
 
-# [1] Open Source Code
+# [1] System source code
 sourcecode:
-  class: closed
-  link: 
-  notes: No source code.
+    class: closed
+    link: https://github.com/tencent-ailab/songgeneration
+    notes: Source code is not currently accessible. 
 
 # [2] Training data
 trainingdata:
-  class: closed
-  link: 
-  notes: Dataset is closed and only briefly described.
+    class: partial
+    link:
+    notes: LeVo is trained on 2 million music tracks (~110,000 hours), including part of DISCO-10M, Millong Song Dataset and some copyrighted in-house data. No further information is provided, and the training data is not publicly available. 
 
 # [3] Model weights
 modelweights:
-  class: closed
-  link: 
-  notes: Not provided.
+    class: closed
+    link:
+    notes:
 
-# [4] Code documentation
+# [4] Code documentation 
 codedoc:
-  class: closed
-  link: 
-  notes: No source code.
+    class: closed
+    link:
+    notes:
 
 # [5] Training procedure
 trainprocedure:
-  class: open
-  link: https://arxiv.org/pdf/2406.08384
-  notes: Training procedure is properly described.
+    class: open
+    link: https://openreview.net/pdf?id=Oul46PkP7Z
+    notes: Training procedure is describes in the research paper, including hardware requirements and model hyperparameters (see Appendix B for further details). 
 
 # [6] Evaluation procedure
 evalprocedure:
-  class: partial
-  link: https://arxiv.org/pdf/2406.08384
-  notes: Missing data and metrics implementations.
+    class: partial
+    link: https://openreview.net/pdf?id=Oul46PkP7Z
+    notes: Evaluation protocols are thoroughly detailed, including objective metrics and a 20-expert subjective evaluation (see Appendix D for futher details). However, dataset for evaluation is not fully specified nor publicly available.
 
 # [7] Research paper
 paper:
-  class: open
-  link: https://ismir2024program.ismir.net/poster_225.html
-  notes: Accepted at ISMIR 2024. 
-  date:
-
+    class: open
+    link: https://openreview.net/pdf?id=Oul46PkP7Z
+    notes: Accepted at NeurIPS 2025. 
+    date: June 2025
 # [8] Licensing
 license:
-  class: closed
-  link: 
-  notes: Not available.
+    class: closed
+    link:
+    notes:
 
-# [9] Model Card
+# [9] Model card
 modelcard:
-  class: ∅
-  link: 
-  notes: Not available.
+    class: ∅
+    link:
+    notes:
 
 # [10] Datasheet
 datasheet:
-  class: ∅
-  link: 
-  notes: Not available.
+    class: ∅
+    link:
+    notes:
 
 # [11] Package
 package:
-  class: ∅
-  link: 
-  notes: Not available.
+    class: ∅
+    link:
+    notes:
 
 # [12] User-oriented application
 ux:
-  class: ∅
-  link: 
-  notes: Not available.
+    class: ∅
+    link:
+    notes:
 
-# [13] Demo Page
+# [13] Supplementary Material Page
 suppage:
-  class: star
-  link: https://sonycslparis.github.io/diffariff-companion/
-  notes: A demo page with sound examples and demonstration of the models capabilities is available.
+    class: star
+    link: https://levo-demo.github.io/
+    notes: An official project website is live and provides sonified audio demonstrations of generated music, zero-shot style transfer, and text-based control.
