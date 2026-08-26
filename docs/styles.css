@@ -410,7 +410,10 @@ nav#site-nav {
 }
 
 /* individual model pages */
-.openness.na { background-color: var(--muted-text); }
+.openness.na { 
+	background-color: var(--muted-text);
+	color: var(--nav-accent-text)
+ }
 
 .model-meta {
   color: var(--muted-text);
