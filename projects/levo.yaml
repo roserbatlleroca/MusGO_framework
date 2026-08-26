@@ -36,7 +36,7 @@ sourcecode:
 
 # [2] Training data
 trainingdata:
-    class: closed
+    class: partial
     link:
     notes: LeVo is trained on 2 million music tracks (~110,000 hours), including part of DISCO-10M, Millong Song Dataset and some copyrighted in-house data. No further information is provided, and the training data is not publicly available. 
 
