@@ -60,7 +60,7 @@ trainprocedure:
 
 # [6] Evaluation procedure
 evalprocedure:
-    class: partial
+    class: open
     link: https://aclanthology.org/2024.naacl-long.459.pdf
     notes: Evaluation methodology is well documented in the paper, including evaluation metrics and model performance. Evaluation dataset is FMACaps, further information about how this dataset was created is available in Appendix F of the paper. However, the repository lacks a complete evaluation script. 
 
