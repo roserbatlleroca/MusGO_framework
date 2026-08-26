@@ -62,7 +62,7 @@ trainprocedure:
 evalprocedure:
     class: open
     link: https://aclanthology.org/2024.naacl-long.459.pdf
-    notes: Evaluation methodology is well documented in the paper, including evaluation metrics and model performance. Evaluation dataset is FMACaps, further information about how this dataset was created is available in Appendix F of the paper. However, the repository lacks a complete evaluation script. 
+    notes: Evaluation methodology is well documented in the paper, including evaluation metrics and model performance. Evaluation dataset is composed of TestA, TestB and FMACaps. TestA and TestB are the testing splits of MusicBench, which is based on MusicCaps (see Section 2.3). Further information about how FMACaps dataset was created is available in Appendix F. 
 
 # [7] Research paper
 paper:
