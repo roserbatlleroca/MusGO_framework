@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>MusGO Framework: Assessing Openness in Music-Generative AI</title>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet"/> -->
+<!-- <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&amp;display=swap" rel="stylesheet"/> -->
 <link href="styles.css" rel="stylesheet"/>
+<script>
+  // Apply saved theme before first paint to avoid a light-mode flash
+  (function() {
+    var saved = localStorage.getItem('musgo-theme');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
 <script data-domain="roserbatlleroca.github.io/MusGO_framework/" defer="" src="https://plausible.io/js/script.js"></script>
 <style>
   body {
@@ -16,22 +27,6 @@
     border-radius: 6px;
 	  border: 1px solid #DBDFD7;
   }
-  /* #table-guide em {
-    font-size: 1em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-  }
-  #table-guide {
-  background-color: #f8f8f8;
-  padding: 1em;
-  font-size: 1em;
-  border: 1px solid #DBDFD7;
-
-  }
-  #table-guide p {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  }  */
 
 #footer {
   padding: 1em;
@@ -60,6 +55,9 @@
 </head>
 <body>
 <div id="header">
+  <button aria-label="Switch to dark mode" id="theme-toggle" type="button">
+  <span id="theme-toggle-icon" aria-hidden="true">🌙</span>
+</button>
 <p class="eyebrow"></p>
 <h1>MusGO Framework: Assessing Openness in Music-Generative AI</h1>
 <div class="meter" aria-hidden="true">
@@ -68,28 +66,23 @@
 <div id="content">
 
   <p class="highlight" id="description">
-    The <strong>Music-Generative Open AI (MusGO)</strong> framework is a community-driven framework designed to assess the openness of music-generative models. 
-    With a collaborative approach, it invites contributions from researchers and artists, supports public scrutiny, and enables tracking of model evolution to promote transparency, accountability, and responsible development.
+    The <strong>Music-Generative Open AI (MusGO)</strong> framework is a community-driven framework designed to assess the openness of music-generative models, 
+    currently covering <strong><span id="model-count">0</span> models</strong>.
+    With a collaborative approach, it invites contributions from researchers and artists, supports public scrutiny, and enables tracking of model evolution to promote transparency, accountability, and responsible development. 
   </p>
-
-  <p>
-
 <p>
   This website builds on the paper <strong>MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI</strong>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
 Emilia Gómez, and Martín Rocamora, and published in the <em>Proceedings of the 26th International Society for Music Information Retrieval Conference</em> (ISMIR 2025).  
 It serves not only as a companion to the publication, but also as a living resource, which is continuously updated and shaped by contributions from the community. 
-<br>
- <br><a href="http://arxiv.org/pdf/2507.03599">Read the paper</a>  
-  | <a href="https://github.com/roserbatlleroca/MusGO_framework">GitHub Repository</a>
-  | <a href="framework.html">Detailed Criteria</a>
-  | <a href="https://github.com/roserbatlleroca/MusGO_framework/blob/main/projects/README.md">How to contribute?</a>
-  | <a href="survey.html">MIR Survey Results</a>
-  | <a href="https://github.com/roserbatlleroca/MusGO_framework/tree/main?tab=readme-ov-file#-any-doubts-or-thoughts-help-us-improve">Help us improve!</a>
 </p>
-
-
-
-
+<nav id="site-nav" aria-label="Site navigation">
+<a href="http://arxiv.org/pdf/2507.03599">Read the paper</a>
+<a href="https://github.com/roserbatlleroca/MusGO_framework">GitHub Repository</a>
+<a href="framework.html">Detailed Criteria</a>
+<a href="https://github.com/roserbatlleroca/MusGO_framework/blob/main/projects/README.md">How to contribute?</a>
+<a href="survey.html">MIR Survey Results</a>
+<a href="https://github.com/roserbatlleroca/MusGO_framework/tree/main?tab=readme-ov-file#-any-doubts-or-thoughts-help-us-improve">💬 Help us improve!</a>
+</nav>
   <h2>Openness Leaderdboard</h2>
   <div id="table-guide" class="highlight"><p>
     <em>How to interpret this table?</em> MusGO framework consists of 13 dimensions of openness, distinguishing between <em>essential</em> (1–8) and <em>desirable</em> (9–13) categories.  
@@ -124,7 +117,28 @@ It serves not only as a companion to the publication, but also as a living resou
 
 </div>
 
-<br>
+<br/>
+
+<div id="table-controls">
+  <div class="control-group">
+    <button id="sort-year-btn" type="button">Sort by year ⇅</button>
+    <button id="sort-name-btn" type="button">Sort AZ ⇅</button>
+  </div>
+  <div class="control-group">
+    <label for="filter-apptype">Application type</label>
+    <select id="filter-apptype">
+      <option value="">All</option>
+    </select>
+  </div>
+  <div class="control-group">
+    <label for="filter-architecture">Architecture</label>
+    <select id="filter-architecture">
+      <option value="">All</option>
+    </select>
+  </div>
+  <button id="reset-filters-btn" type="button">Reset</button>
+</div>
+
 
   <div id="included-table">
 
@@ -186,7 +200,7 @@ EU, and <em>IMPA: Multimodal AI for Audio Processing</em>
 (PID2023-152250OB-I00), funded by the Ministry of Science,
 Innovation and Universities of the Spanish Government,
 the Agencia Estatal de Investigación (AEI) and cofinanced
-by the European Union. <br><br>
+by the European Union. <br/><br/>
 
 We thank our colleagues
 at the Music Technology Group at Universitat Pompeu
@@ -208,8 +222,175 @@ of this work.
     </div>
   </div>
 </div>
+<script>
+(function () {
+  /* ---------- Dark mode toggle ---------- */
+  var root = document.documentElement;
+  var toggleBtn = document.getElementById('theme-toggle');
+  var icon = document.getElementById('theme-toggle-icon');
 
+  function reflectTheme(theme) {
+    if (icon && toggleBtn) {
+      if (theme === 'dark') {
+        icon.textContent = '☀️';
+        toggleBtn.setAttribute('aria-label', 'Switch to light mode');
+      } else {
+        icon.textContent = '🌙';
+        toggleBtn.setAttribute('aria-label', 'Switch to dark mode');
+      }
+    }
+  }
+  reflectTheme(root.getAttribute('data-theme') || 'light');
 
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function () {
+      var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('musgo-theme', next);
+      reflectTheme(next);
+    });
+  }
+
+  /* ---------- Leaderboard sort + filter ---------- */
+  var tbody = document.querySelector('#included-table table tbody');
+  if (!tbody) return;
+
+  function getPairs() {
+    var rows = Array.prototype.slice.call(tbody.children);
+    var pairs = [];
+    for (var i = 0; i < rows.length; i += 2) {
+      if (rows[i] && rows[i + 1]) pairs.push([rows[i], rows[i + 1]]);
+    }
+    return pairs;
+  }
+
+  var originalPairs = getPairs();
+
+  /* Splits a comma-separated data-attribute value (e.g. "text-to-music,audio-to-audio")
+     into its individual trimmed tags. Models with a single tag just return a
+     one-item array, so this is safe to use everywhere. */
+  function splitTags(raw) {
+    if (!raw) return [];
+    return raw.split(',').map(function (v) { return v.trim(); }).filter(Boolean);
+  }
+
+  function populateFilter(selectEl, attr) {
+    var values = {};
+    originalPairs.forEach(function (pair) {
+      splitTags(pair[0].getAttribute(attr)).forEach(function (v) {
+        values[v] = true;
+      });
+    });
+    Object.keys(values).sort().forEach(function (v) {
+      var opt = document.createElement('option');
+      opt.value = v;
+      opt.textContent = v;
+      selectEl.appendChild(opt);
+    });
+  }
+
+  var apptypeSelect = document.getElementById('filter-apptype');
+  var architectureSelect = document.getElementById('filter-architecture');
+  populateFilter(apptypeSelect, 'data-apptype');
+  populateFilter(architectureSelect, 'data-architecture');
+
+  function applyFilters() {
+    var appVal = apptypeSelect.value;
+    var archVal = architectureSelect.value;
+    getPairs().forEach(function (pair) {
+      var matchApp = !appVal || splitTags(pair[0].getAttribute('data-apptype')).indexOf(appVal) !== -1;
+      var matchArch = !archVal || splitTags(pair[0].getAttribute('data-architecture')).indexOf(archVal) !== -1;
+      var visible = matchApp && matchArch;
+      pair[0].style.display = visible ? '' : 'none';
+      pair[1].style.display = visible ? '' : 'none';
+    });
+  }
+
+  apptypeSelect.addEventListener('change', applyFilters);
+  architectureSelect.addEventListener('change', applyFilters);
+
+  document.getElementById('reset-filters-btn').addEventListener('click', function () {
+    apptypeSelect.value = '';
+    architectureSelect.value = '';
+    applyFilters();
+
+    // Reset both sort orders back to the original (openness-ranked) order
+    yearSortState = 'default';
+    sortYearBtn.textContent = 'Sort by Year ⇅';
+    nameSortState = 'default';
+    sortNameBtn.textContent = 'Sort AZ ⇅';
+    applyPairOrder(originalPairs);
+  });
+
+  /* Sort by year / alphabetically (AZ): each cycles default -> asc -> desc -> default,
+     and activating one resets the other back to its default label, since only
+     one sort order can be applied at a time. Both always sort from the original
+     load order (openness score), never compounding on top of each other. */
+  var sortYearBtn = document.getElementById('sort-year-btn');
+  var sortNameBtn = document.getElementById('sort-name-btn');
+  var yearSortState = 'default';
+  var nameSortState = 'default';
+
+  function getYear(rowA) {
+    return parseInt(rowA.getAttribute('data-year'), 10) || 0;
+  }
+
+  function getName(rowA) {
+    var link = rowA.querySelector('.name-cell a');
+    return link ? link.textContent.trim().toLowerCase() : '';
+  }
+
+  function applyPairOrder(pairs) {
+    pairs.forEach(function (pair) {
+      tbody.appendChild(pair[0]);
+      tbody.appendChild(pair[1]);
+    });
+  }
+
+  sortYearBtn.addEventListener('click', function () {
+    nameSortState = 'default';
+    sortNameBtn.textContent = 'Sort AZ ⇅';
+
+    var pairs;
+    if (yearSortState === 'default') {
+      yearSortState = 'desc';
+      sortYearBtn.textContent = 'Sorted: Newest first ⇅';
+      pairs = originalPairs.slice().sort(function (a, b) { return getYear(b[0]) - getYear(a[0]); });
+    } else if (yearSortState === 'desc') {
+      yearSortState = 'asc';
+      sortYearBtn.textContent = 'Sorted: Oldest first ⇅';
+      pairs = originalPairs.slice().sort(function (a, b) { return getYear(a[0]) - getYear(b[0]); });
+    } else {
+      yearSortState = 'default';
+      sortYearBtn.textContent = 'Sort by Year ⇅';
+      pairs = originalPairs;
+    }
+    applyPairOrder(pairs);
+  });
+
+  sortNameBtn.addEventListener('click', function () {
+    yearSortState = 'default';
+    sortYearBtn.textContent = 'Sort by Year ⇅';
+
+    var pairs;
+    if (nameSortState === 'default') {
+      nameSortState = 'asc';
+      sortNameBtn.textContent = 'Sorted: A → Z ⇅';
+      pairs = originalPairs.slice().sort(function (a, b) { return getName(a[0]).localeCompare(getName(b[0])); });
+    } else if (nameSortState === 'asc') {
+      nameSortState = 'desc';
+      sortNameBtn.textContent = 'Sorted: Z → A ⇅';
+      pairs = originalPairs.slice().sort(function (a, b) { return getName(b[0]).localeCompare(getName(a[0])); });
+    } else {
+      nameSortState = 'default';
+      sortNameBtn.textContent = 'Sort AZ ⇅';
+      pairs = originalPairs;
+    }
+    applyPairOrder(pairs);
+  });
+})();
+</script>
 </body>
 </html>
 

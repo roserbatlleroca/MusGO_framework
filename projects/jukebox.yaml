@@ -1,27 +1,53 @@
 ---
 ####################################################################################################################################
-# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO_framework/). 
+# Project template of the MusGO framework repository (https://github.com/roserbatlleroca/MusGO-framework/). 
 # Note that this document has been adapted from previous work by Andreas Liesenfeld, Alianda Lopez, and Mark Dingemanse. 
 # For more details, check out: http://opening-up-chatgpt.github.io  
 ####################################################################################################################################
 
-
 # Thank you for contributing!
 # In filling out this yaml file, please follow the criteria as described here: 
-# https://github.com/roserbatlleroca/MusGO_framework/tree/main/projects#criteria
+# https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
 
+# Remember to replace the template values with the actual information of the project you are evaluating.
+# Essential categories [1-8] should be classified as either `open`, `partial`, or `closed`.
+# Desirable categories [9-13] can be classified as `star` or `∅` (not applicable).
+# For each category, `notes` should be used ONLY for complementary information about that
+# category's evaluation (i.e., why it was classified the way it was). The overall project
+# `description` field below is the place for a general summary of the model itself.
 
+# `apptype` and `architecture` power the leaderboard's filter menus, so please use
+# consistent, existing values whenever the model fits an established category
+# (see the project folder for examples already in use). Add a new value only when
+# none of the existing ones apply.
+# # If a model fits more than one category, list them separated by commas
+# (e.g. apptype: Text-to-music, Timber transfer). Each value will then be
+# filterable independently on the leaderboard.
+# Suggested `apptype` values: Text-to-music, Lyrics-to-song, Audio-to-audio,
+# Audio continuation,, Timbre transfer, Style transfer, MIDI-to-audio, other (please specify in notes)
+# Suggested `architecture` values: Diffusion, Transformer, GAN, VAE, Flow matching, 
+# other (please specify in notes)
+
+# Provide project main information 
+# Please, do not remove any of the fields below, even if you do not have information for them.
 project:
-  name: Jukebox
-  link: https://github.com/openai/jukebox
-  license: Codebase is licensed under a non-commercial use license by OpenAI. 
-  notes:
-  year: 2020
+    name: Jukebox
+    link: https://github.com/openai/jukebox
+    year: 2020
+    license: Non-commercial use license by OpenAI. 
+    description: Synthesizes raw audio songs with singing vocals conditioned on genre, style, and lyrics.   # 1-3 sentence summary of what the model does and how it works
+    apptype: Text-to-music, Lyrics-to-song     # specify the application type of the model (see suggestions above)
+    architecture: Autoregressive transformer     # specify the architecture type of the model (see suggestions above)
+    notes: Repository has been archived by the owner since April 2026.  # complementary info about the project entry or evaluation (not category-specific)
 
+# Provide information about the organization that developed the model
+# Please, do not remove any of the fields below, even if you do not have information for them.
 org:
   name: OpenAI
   link:
   notes:
+
+# MusGO evaluation
 
 # [1] Open Source Code
 sourcecode:
@@ -36,8 +62,7 @@ trainingdata:
   class: partial
   link: 
   notes: Training data is partially described in the preprint article. However, relevant
-    information is missing, such as specific sources, and data itself cannot be accessed
-    — dataset is not publicly available. 
+    information is missing, such as specific sources, and data itself cannot be accessed. Dataset is not publicly available. 
 
 # [3] Model weights
 modelweights:

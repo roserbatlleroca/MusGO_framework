@@ -5,7 +5,6 @@
 # For more details, check out: http://opening-up-chatgpt.github.io  
 ####################################################################################################################################
 
-
 # Thank you for contributing!
 # In filling out this yaml file, please follow the criteria as described here: 
 # https://github.com/roserbatlleroca/MusGO-framework/tree/main/projects#criteria
@@ -13,20 +12,42 @@
 # Remember to replace the template values with the actual information of the project you are evaluating.
 # Essential categories [1-8] should be classified as either `open`, `partial`, or `closed`.
 # Desirable categories [9-13] can be classified as `star` or `∅` (not applicable).
-# Notes should be provided for each category, explaining the classification and any relevant details.
+# For each category, `notes` should be used ONLY for complementary information about that
+# category's evaluation (i.e., why it was classified the way it was). The overall project
+# `description` field below is the place for a general summary of the model itself.
 
+# `apptype` and `architecture` power the leaderboard's filter menus, so please use
+# consistent, existing values whenever the model fits an established category
+# (see the project folder for examples already in use). Add a new value only when
+# none of the existing ones apply.
+# # If a model fits more than one category, list them separated by commas
+# (e.g. apptype: Text-to-music, Timber transfer). Each value will then be
+# filterable independently on the leaderboard.
+# Suggested `apptype` values: Text-to-music, Lyrics-to-song, Audio-to-audio,
+# Audio continuation,, Timbre transfer, Style transfer, MIDI-to-audio, other (please specify in notes)
+# Suggested `architecture` values: Diffusion, Transformer, GAN, VAE, Flow matching, 
+# other (please specify in notes)
 
+# Provide project main information 
+# Please, do not remove any of the fields below, even if you do not have information for them.
 project:
     name: YuE (乐)
     link: https://github.com/multimodal-art-projection/YuE
-    license: Apache License 2.0
-    notes: 
     year: 2025
+    license: Apache License 2.0
+    description: YuE is an autoregressive LM-based framework tailored for lyrics-to-song generation.        # 1-3 sentence summary of what the model does and how it works
+    apptype: Lyrics-to-song, Style transfer, Text-to-song  # specify the application type of the model (see suggestions above)
+    architecture: Autoregressive transformer    # specify the architecture type of the model (see suggestions above)
+    notes:             # complementary info about the project entry or evaluation (not category-specific)
 
+# Provide information about the organization that developed the model
+# Please, do not remove any of the fields below, even if you do not have information for them.
 org:
-    name: The Hong Kong University of Science and Technology and Multimodela Art Projection (M-A-P)
+    name: The Hong Kong University of Science and Technology and Mutimodal Art Projection (M-A-P)
     link: https://hkust.edu.hk/
     notes:
+
+# MusGO evaluation
 
 # [1] System source code
 sourcecode:
@@ -56,7 +77,7 @@ codedoc:
 trainprocedure:
     class: open
     link: https://arxiv.org/pdf/2503.08638
-    notes: Training procedure is properly described, including hardware requirements and confirgurations (see Section 4 and Section 5.1).
+    notes: Training procedure is properly described, including hardware requirements and configurations (see Section 4 and Section 5.1).
 
 # [6] Evaluation procedure
 evalprocedure:
