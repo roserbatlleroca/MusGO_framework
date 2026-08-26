@@ -19,7 +19,7 @@
 project:
     name: LeVo
     link: https://levo-demo.github.io/
-    license: None. 
+    license: Not available. 
     notes: Sometimes, the model is referred to SongGeneration as well as LeVo. Source code has not yet been released, despite mentioning so in the research paper. Complementary website indicates "code will be released soon".
     year: 2025
 
@@ -38,7 +38,7 @@ sourcecode:
 trainingdata:
     class: closed
     link:
-    notes: LeVo is trained on 2 million music tracks (~110,000 hours). No information is provided on the specific datasets used, and the training data is not publicly available. Paper only describes the preprocessing pipeline. 
+    notes: LeVo is trained on 2 million music tracks (~110,000 hours), including part of DISCO-10M, Millong Song Dataset and some copyrighted in-house data. No further information is provided, and the training data is not publicly available. 
 
 # [3] Model weights
 modelweights:
