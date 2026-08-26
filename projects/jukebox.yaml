@@ -62,8 +62,7 @@ trainingdata:
   class: partial
   link: 
   notes: Training data is partially described in the preprint article. However, relevant
-    information is missing, such as specific sources, and data itself cannot be accessed
-    — dataset is not publicly available. 
+    information is missing, such as specific sources, and data itself cannot be accessed. Dataset is not publicly available. 
 
 # [3] Model weights
 modelweights:
