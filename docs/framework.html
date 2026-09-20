@@ -2,13 +2,21 @@
 <html lang="en">
     <head>
         <title>MusGO Framework: Detailed Criteria</title>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
-    </head>
-    <style>
+<script>
+  // Apply saved theme before first paint to avoid a light-mode flash
+  (function() {
+    var saved = localStorage.getItem('musgo-theme');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+<style>
   body {
   font-family: 'Open Sans', sans-serif;
   }
@@ -60,102 +68,112 @@
 }
 
 </style>
+</head>
 
 
-    
-    <body>
-        <div id="header">
-            <h1>MusGO Framework: Detailed Criteria</h1>
-            </div>
+
+<body>
+<div id="header">
+<button aria-label="Switch to dark mode" id="theme-toggle" type="button">
+<span aria-hidden="true" id="theme-toggle-icon">🌙</span>
+</button>
+<p class="eyebrow"></p>
+<h1>MusGO Framework: Detailed Criteria</h1>
+<div aria-hidden="true" class="meter">
+</div>
+</div>
         
-        <div id="content">
-            <p class="highlight" id="description"> We here describe with complete detail the <strong>Music-Generative Open AI (MusGO) framework</strong>: a community-driven framework for assessing openness in music-generative AI models.
-                This detailed criteria is linked to the research article <em>“MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI”</em>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
-Emilia Gómez, and Martín Rocamora.
-            </p>
+<div id="content">
+<p class="highlight" id="description"> We here describe with complete detail the <strong>Music-Generative Open AI (MusGO) framework</strong>: a community-driven framework for assessing openness in music-generative AI models.
+<br><br>               
+This detailed criteria is linked to the research article <em>MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI</em>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
+Emilia Gómez, and Martín Rocamora, and published in the <em>Proceedings of the 26th International Society for Music Information Retrieval Conference</em> (ISMIR 2025).  
+</p>
 
-            MusGO framework consists of 13 dimensions of openness, distinguishing between <em>essential</em> (1–8) and <em>desirable</em> (9–13) categories.  
+<p>MusGO framework consists of 13 dimensions of openness, distinguishing between <em>essential</em> (1–8) and <em>desirable</em> (9–13) categories.  
     Essential categories follow a three-level scale:  
     (<span class="openness open"><strong>✔︎</strong> open</span>,  
     <span class="openness partial"><strong>~</strong> partial</span>, or  
     <span class="openness closed"><strong>✘</strong> closed</span>).  
     Desirable categories are binary, indicating whether an element exists (⭐) or not.  
-
-
-            <p>
-                <a href="http://arxiv.org/pdf/2507.03599">Read the paper</a>  
-                | <a href="https://github.com/roserbatlleroca/MusGO_framework">GitHub Repository</a>
-                | <a href="index.html">Openness Leaderdboard</a>
-                | <a href="checklist.html">Evaluation Checklist</a>
-                | <a href="https://github.com/roserbatlleroca/MusGO_framework/blob/main/projects/README.md">How to contribute?</a>
-                | <a href="https://github.com/roserbatlleroca/MusGO_framework/tree/main?tab=readme-ov-file#-any-doubts-or-thoughts-help-us-improve">Help us improve!</a>
 </p>
+
+
+<nav aria-label="Site navigation" id="site-nav">
+<a href="http://arxiv.org/pdf/2507.03599">Read the paper</a>
+<a href="https://github.com/roserbatlleroca/MusGO_framework">GitHub Repository</a>
+<a href="framework.html">Detailed Criteria</a>
+<a href="https://github.com/roserbatlleroca/MusGO_framework/blob/main/projects/README.md">How to contribute?</a>
+<a href="survey.html">MIR Survey Results</a>
+<a href="https://github.com/roserbatlleroca/MusGO_framework/tree/main?tab=readme-ov-file#-any-doubts-or-thoughts-help-us-improve">💬 Help us improve!</a>
+</nav>
 
 
             <h2>Essential</h2>
 
             <h4>[1] Source code.</h4>
             <p><strong>Is the system source code, including the data processing, model architecture, training pipeline, and inference, openly available for inspection and use?</strong></p>
-            <ul>
-            <li>✗ <strong>System source code is closed.</strong> The system's source code, including the data processing, model architecture, training pipeline and inference, is not available for inspection or use.</li>
-            <li>≃ <strong>Some source code is provided.</strong> Part of the source code is available, but significant gaps do not enable full reproducibility or understanding.</li>
-            <li>✔ <strong>System source code is fully available.</strong> The complete source code, including the data processing, model architecture, training pipeline, and inference, is accessible for inspection and use.</li>
+            <ul style="list-style-type:none;">
+            <li><span class="openness closed"><strong>✘</strong></span> <strong>System source code is closed.</strong> The system's source code, including the data processing, model architecture, training pipeline and inference, is not available for inspection or use.</li>
+            <li><span class="openness partial"><strong>~</strong></span> <strong>Some source code is provided.</strong> Part of the source code is available, but significant gaps do not enable full reproducibility or understanding.</li>
+            <li><span class="openness open"><strong>✔︎</strong></span> <strong>System source code is fully available.</strong> The complete source code, including the data processing, model architecture, training pipeline, and inference, is accessible for inspection and use.</li>
             </ul>
 
             <h4>[2] Training data.</h4>
             <p><strong>Is the training data of the model fully described, including sources, acquisition methods, and access conditions? Is training data available for inspection?</strong></p>
-            <ul>
-            <li>✗ <strong>Training data of the model is not available nor described.</strong> The training data is not disclosed, and no information about the data sources, acquisition methods, or access conditions is provided.</li>
-            <li>≃ <strong>Some of the training data or information about the data is available.</strong> Some of the training data of the model is available, or information about the data, such as its sources or a general description, is provided. However, the complete dataset is not provided, or information about the data is not complete.</li>
-            <li>✔ <strong>The training data of the model is fully available and described.</strong> The training data used for the model is described in detail, including its sources, acquisition methods, and any permissions or licenses associated with its use.</li>
+            <ul style="list-style-type:none;">
+            <li><span class="openness closed"><strong>✘</strong></span> <strong>Training data of the model is not available nor described.</strong> The training data is not disclosed, and no information about the data sources, acquisition methods, or access conditions is provided.</li>
+            <li><span class="openness partial"><strong>~</strong></span> <strong>Some of the training data or information about the data is available.</strong> Some of the training data of the model is available, or information about the data, such as its sources or a general description, is provided. However, the complete dataset is not provided, or information about the data is not complete.</li>
+            <li><span class="openness open"><strong>✔︎</strong></span> <strong>The training data of the model is fully available and described.</strong> The training data used for the model is described in detail, including its sources, acquisition methods, and any permissions or licenses associated with its use. Although direct access to the data may be restricted due to copyright or other legal concerns, all sources and relevant access conditions are fully disclosed to allow for transparency and informed inspection.
+            </li>
             </ul>
 
             <h4>[3] Model weights.</h4>
             <p><strong>Are the complete model weights (of the production-ready model) fully shared and accessible for inspection and use?</strong></p>
-            <ul>
-            <li>✗ <strong>Model weights are not shared.</strong> Weights of the production-ready model are not publicly available.</li>
-            <li>≃ <strong>Model weights are partially shared.</strong> Some or all model weights are publicly available, but there are limitations or restrictions on their accessibility.</li>
-            <li>✔ <strong>Model weights are fully shared.</strong> The complete model weights are publicly available for inspection and use.</li>
+            <ul style="list-style-type:none;">
+            <li><span class="openness closed"><strong>✘</strong></span> <strong>Model weights are not shared.</strong> Weights of the production-ready model are not publicly available.</li>
+            <li><span class="openness partial"><strong>~</strong></span> Model weights are partially shared.</strong> Some or all model weights are publicly available, but there are limitations or restrictions on their accessibility.</li>
+            <li><span class="openness open"><strong>✔︎</strong></span> <strong>Model weights are fully shared.</strong> The complete model weights are publicly available for inspection and use.</li>
             </ul>
 
             <h4>[4] Code documentation.</h4>
             <p><strong>Is the codebase accompanied by sufficient and complete documentation to allow for its replication, extension, or modification?</strong></p>
-            <ul>
-            <li>✗ <strong>Code documentation is not available.</strong> No documentation for the code is provided, making it difficult or impossible to replicate, extend, or modify the codebase.</li>
-            <li>≃ <strong>Some components of the codebase are documented.</strong> Some parts of the code are documented, but the documentation is incomplete or lacks sufficient detail.</li>
-            <li>✔ <strong>The codebase is fully documented.</strong> All components of the codebase are accompanied by comprehensive documentation that includes clear instructions, explanations, and details.</li>
+            <ul style="list-style-type:none;">
+            <li><span class="openness closed"><strong>✘</strong></span> <strong>Code documentation is not available.</strong> No documentation for the code is provided, making it difficult or impossible to replicate, extend, or modify the codebase.</li>
+            <li><span class="openness partial"><strong>~</strong></span> Some components of the codebase are documented.</strong> Some parts of the code are documented, but the documentation is incomplete or lacks sufficient detail.</li>
+            <li><span class="openness open"><strong>✔︎</strong></span> <strong>The codebase is fully documented.</strong> All components of the codebase are accompanied by comprehensive documentation that includes clear instructions, explanations, and details. This includes well-commented code, guides for configuration, and any necessary setup details to ensure the model is usable by others (i.e., environment requirements, specific configuration settings). While not essential, documentation may include details on how to extend or modify the codebase. </li>
             </ul>
 
             <h4>[5] Training procedure.</h4>
             <p><strong>Is the training procedure of the system fully documented to allow for replication and understanding of the system?</strong></p>
-            <ul>
-            <li>✗ <strong>Training procedure is not documented.</strong> No documentation is provided for the system's training procedure.</li>
-            <li>≃ <strong>Training procedure is partially documented.</strong> Some aspects of the system's training procedure are documented, but the details are incomplete or unclear.</li>
-            <li>✔ <strong>Training procedure is fully documented.</strong> The system's training procedure is thoroughly documented, including details such as hardware requirements and model configuration.</li>
+            <ul style="list-style-type:none;">
+            <li><span class="openness closed"><strong>✘</strong></span> <strong>Training procedure is not documented.</strong> No documentation is provided for the system's training procedure.</li>
+            <li><span class="openness partial"><strong>~</strong></span> Training procedure is partially documented.</strong> Some aspects of the system's training procedure are documented, but the details are incomplete or unclear.</li>
+            <li><span class="openness open"><strong>✔︎</strong></span> <strong>Training procedure is fully documented.</strong> The system's training procedure is thoroughly documented, including details such as hardware requirements and model configuration.</li>
             </ul>
 
             <h4>[6] Evaluation procedure.</h4>
             <p><strong>Is the evaluation procedure of the system fully documented to support reproducibility of evaluation results and performance?</strong></p>
-            <ul>
-            <li>✗ <strong>Evaluation procedure is not documented.</strong> No information is provided about the evaluation procedure of the model.</li>
-            <li>≃ <strong>Evaluation procedure is partially documented.</strong> Some aspects of the system’s evaluation procedure are documented, but the details are incomplete or unclear.</li>
-            <li>✔ <strong>Evaluation procedure is fully documented.</strong> The system’s evaluation procedure is comprehensively documented, including details on evaluation data, evaluation metrics, and the complete evaluation process.</li>
+            <ul style="list-style-type:none;">
+            <li><span class="openness closed"><strong>✘</strong></span> <strong>Evaluation procedure is not documented.</strong> No information is provided about the evaluation procedure of the model.</li>
+            <li><span class="openness partial"><strong>~</strong></span> <strong>Evaluation procedure is partially documented.</strong> Some aspects of the system’s evaluation procedure are documented, but the details are incomplete or unclear.</li>
+            <li><span class="openness open"><strong>✔︎</strong></span> <strong>Evaluation procedure is fully documented.</strong> The system’s evaluation procedure is comprehensively documented, including details on evaluation data, evaluation metrics, and the complete evaluation process.</li>
             </ul>
 
             <h4>[7] Research paper.</h4>
             <p><strong>Is there a publicly available and accessible research paper, or alternative technical report, that provides an overview of the introduced model? Is it peer-reviewed by an external group of reviewers?</strong></p>
-            <ul>
-            <li><strong>✘ No peer-reviewed research paper or alternative technical report is available.</strong> There is no publicly available publication or report that provides an overview of the introduced model.</li>
-            <li><strong>≃ A research paper or alternative technical report exists, but it is either not peer-reviewed or not accessible.</strong> Any available research paper or technical report may describe an overview of the introduced model, but the document is not peer-reviewed and/or not accessible.</li>
-            <li><strong>✓ A peer-reviewed and accessible research paper is available.</strong> An accessible peer-reviewed research paper exists and provides an overview of the introduced model.</li>
+            <ul style="list-style-type:none;">
+            <li><span class="openness closed"><strong>✘</strong></span> <strong>No peer-reviewed research paper or alternative technical report is available.</strong> There is no publicly available publication or report that provides an overview of the introduced model.</li>
+            <li><span class="openness partial"><strong>~</strong></span> <strong> A research paper or alternative technical report exists, but it is either not peer-reviewed or not accessible.</strong> Any available research paper or technical report may describe an overview of the introduced model, but the document is not peer-reviewed and/or not accessible.</li>
+            <li><span class="openness open"><strong>✔︎</strong></span> <strong>A peer-reviewed and accessible research paper is available.</strong> An accessible peer-reviewed research paper exists and provides an overview of the introduced model. If the peer-reviewed research paper is not available through open access publication, we consider the category to be “fully open” when a preprint of such research paper is available.</li>
             </ul>
 
             <h4>[8] Licensing.</h4>
             <p><strong>Is the system and its components licensed under a clear and adequate open framework, such as an OSI, RAIL license, or other context-appropriate license?</strong></p>
-            <ul>
-            <li><strong>✘ No license available.</strong> The system lacks context-appropriate licensing.</li>
-            <li><strong>≃ System is only partially covered by an adequate license.</strong> Some components of the system are covered by clear and adequate open license, such as OSI or RAIL license, but not all distributed materials.</li>
-            <li><strong>✓ System is covered by a clear and adequate open license.</strong> The system and all distributed materials are fully covered by a clear and adequate open license, such as OSI or RAIL license.</li>
+            <ul style="list-style-type:none;">
+            <li><span class="openness closed"><strong>✘</strong></span> <strong>No license available.</strong> The system lacks context-appropriate licensing.</li>
+            <li><li><span class="openness partial"><strong>~</strong></span> <strong> System is only partially covered by an adequate license.</strong> Some components of the system are covered by clear and adequate open license, such as OSI or RAIL license, but not all distributed materials.</li>
+            <li><span class="openness open"><strong>✔︎</strong></span> <strong>System is covered by a clear and adequate open license.</strong> The system and all distributed materials are fully covered by a clear and adequate open license, such as OSI or RAIL license.</li>
             </ul>
 
 
@@ -163,32 +181,32 @@ Emilia Gómez, and Martín Rocamora.
 
             <h4>[9] Model card.</h4>
             <p><strong>Is a model card or equivalent documentation provided?</strong></p>
-            <ul>
+            <ul style="list-style-type:none;">
             <li>⭐ <strong>Model card(s) available.</strong> Model card(s) or equivalent documentation is available, providing insights into architecture, training, tuning, evaluation, or intended use cases and limitations.</li>
             </ul>
 
             <h4>[10] Datasheet.</h4>
             <p><strong>Does the model include datasheets or equivalent documentation that provide a systematic and standardized account of the data used for training?</strong></p>
-            <ul>
+            <ul style="list-style-type:none;">
             <li>⭐ <strong>Datasheet(s) available.</strong> Datasheets or equivalent documentation are available, offering an overview of data collection, curation, and considerations like consent, limitations, and selection strategies.</li>
             </ul>
 
             <h4>[11] Package.</h4>
             <p><strong>Is the model released as an indexed software package or provided through an equivalent developer-oriented solution?</strong></p>
-            <ul>
+            <ul style="list-style-type:none;">
             <li>⭐ <strong>Packaged release available.</strong> A versioned software package release (e.g., PyPI, Conda, Homebrew) or equivalent solution is provided, ensuring easy installation, reproducibility, and usability.</li>
             </ul>
 
             <h4>[12] User-oriented application.</h4>
             <p><strong>Is the model accessible via a user-oriented interface, such as an API or a UX tool for creative contexts?</strong></p>
-            <ul>
-            <li>⭐ <strong>User-oriented application available.</strong> An accessible and user-oriented interface of the model exists, such as an API, a real-time model implementation, or a UX tool designed for creative processes.</li>
+            <ul style="list-style-type:none;">
+            <li>⭐ <strong>User-oriented application available.</strong> An accessible and user-oriented interface of the model exists, such as an API, a real-time model implementation, or a UX tool designed for creative workflows (e.g., tools for live performance, DAWs intregrations). We also consider Colab Notebooks prepared for non-technical users to fulfill this characteristic.</li>
             </ul>
 
             <h4>[13] Supplementary material page.</h4>
             <p><strong>Is there a demo page that showcases its capabilities by providing sonified generated examples of the model?</strong></p>
-            <ul>
-            <li>⭐ <strong>Supplementary material page available.</strong> An accompanying website showcasing diverse examples, including sonified outputs and/or detailed usage demonstrations.</li>
+            <ul style="list-style-type:none;">
+            <li>⭐ <strong>Supplementary material page available.</strong> An accompanying website showcasing diverse examples, including sonified outputs and/or detailed usage demonstrations. In addition, the page may include interactive elements to help users understand the model's capabilities and applications.</li>
             </ul>
 
         </div>
@@ -205,5 +223,36 @@ Emilia Gómez, and Martín Rocamora.
         </div>
     </div>
 </div>
+<script>
+(function () {
+  /* ---------- Dark mode toggle ---------- */
+  var root = document.documentElement;
+  var toggleBtn = document.getElementById('theme-toggle');
+  var icon = document.getElementById('theme-toggle-icon');
+
+  function reflectTheme(theme) {
+    if (icon && toggleBtn) {
+      if (theme === 'dark') {
+        icon.textContent = '☀️';
+        toggleBtn.setAttribute('aria-label', 'Switch to light mode');
+      } else {
+        icon.textContent = '🌙';
+        toggleBtn.setAttribute('aria-label', 'Switch to dark mode');
+      }
+    }
+  }
+  reflectTheme(root.getAttribute('data-theme') || 'light');
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function () {
+      var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('musgo-theme', next);
+      reflectTheme(next);
+    });
+  };
+})();
+</script>
 </body>
 </html>
