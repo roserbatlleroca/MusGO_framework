@@ -53,11 +53,9 @@ We’d love to hear your feedback, questions, or suggestions for improving the M
 
 You can also contact us directly at [roser.batlle@upf.edu](mailto:roser.batlle@upf.edu) and [laura.ibanez@upf.edu](mailto:laura.ibanez@upf.edu). 
 
-## Disclaimer: Future Developments 🚧
+## Relationship to MusGU+
 
-The MusGO framework is a living resource, developed through community collaboration, currently focused on assessing openness in music-generative AI. However, we are actively exploring complementary perspectives and refinements to further expand its scope and adaptability. We aim to better reflect the diverse ways in which music-generative systems can be understood, accessed, and used responsibly. 
-
-Updates will be shared once ready for community feedback.
+MusGO has a sister framework, <strong><a href="https://github.com/lauraibnz/MusGU-plus">MusGU+</a></strong> (Music-Generative Usable+ AI), which adopts the same composite and graded evaluation approach, but shifts the focus from openness toward practical suitability for musicians. While MusGO focuses on openness and responsible research practices, MusGU+ focuses on whether generative music systems can be adapted, used, and controlled in real-world creative workflows. Together, the two frameworks offer complementary perspectives on generative music AI.
 
 ## Citation 
 
