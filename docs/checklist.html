@@ -3,10 +3,19 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusGO Framework: Evaluation Checklist</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
     <link href="styles.css" rel="stylesheet"/>
     <script data-domain="roserbatlleroca.github.io/MusGO_framework/" defer src="https://plausible.io/js/script.js"></script>
-    <style>
+    <script>
+  // Apply saved theme before first paint to avoid a light-mode flash
+    (function() {
+      var saved = localStorage.getItem('musgo-theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = saved || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+</script>
+<style>
     body {
       font-family: 'Open Sans', sans-serif;
     }
@@ -91,32 +100,37 @@
   </style>
 </head>
 <body>
-
-  <div id="header">
-  <h1>MusGO Framework: Evaluation Checklist</h1>
-  </div>
+<div id="header">
+<button aria-label="Switch to dark mode" id="theme-toggle" type="button">
+<span aria-hidden="true" id="theme-toggle-icon">🌙</span>
+</button>
+<p class="eyebrow"></p>
+<h1>MusGO Framework: Evaluation Checklist</h1>
+<div aria-hidden="true" class="meter">
+</div>
+</div>
 
   <div id="content">
     
       <p class="highlight" id="description">
     
       We here provide an evaluation checklist based on the criteria of the <strong>Music-Generative Open AI (MusGO)</strong> framework.   
-       This evaluation checklist is linked to the research article <em>“MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI”</em>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
-Emilia Gómez, and Martín Rocamora.
+      <br><br> This evaluation checklist is linked to the research article <em>MusGO: A Community-Driven Framework for Assessing Openness in Music-Generative AI</em>, authored by Roser Batlle-Roca, Laura Ibáñez-Martínez, Xavier Serra, 
+Emilia Gómez, and Martín Rocamora, and published in the <em>Proceedings of the 26th International Society for Music Information Retrieval Conference</em> (ISMIR 2025).  
       </p>
 
       Use this checklist to assess a music-generative model 
       according to the proposed framework. This checklist is designed to be a practical tool for evaluating the openness of music-generative models, ensuring that all essential and desirable aspects are considered.
 
 
-    <p>
-                <a href="http://arxiv.org/pdf/2507.03599">Read the paper</a>  
-                | <a href="https://github.com/roserbatlleroca/MusGO_framework">GitHub Repository</a>
-                | <a href="index.html">Openness Leaderdboard</a>
-                | <a href="framework.html">Detailed Criteria</a>
-                | <a href="https://github.com/roserbatlleroca/MusGO_framework/blob/main/projects/README.md">How to contribute?</a>
-                | <a href="https://github.com/roserbatlleroca/MusGO_framework/tree/main?tab=readme-ov-file#-any-doubts-or-thoughts-help-us-improve">Help us improve!</a>
-</p>
+    <nav aria-label="Site navigation" id="site-nav">
+<a href="http://arxiv.org/pdf/2507.03599">Read the paper</a>
+<a href="https://github.com/roserbatlleroca/MusGO_framework">GitHub Repository</a>
+<a href="framework.html">Detailed Criteria</a>
+<a href="https://github.com/roserbatlleroca/MusGO_framework/blob/main/projects/README.md">How to contribute?</a>
+<a href="survey.html">MIR Survey Results</a>
+<a href="https://github.com/roserbatlleroca/MusGO_framework/tree/main?tab=readme-ov-file#-any-doubts-or-thoughts-help-us-improve">💬 Help us improve!</a>
+</nav>
 
 <div class="section">
 
@@ -247,6 +261,37 @@ such research paper is available.</em>
         </div>
     </div>
 </div>
+<script>
+(function () {
+  /* ---------- Dark mode toggle ---------- */
+  var root = document.documentElement;
+  var toggleBtn = document.getElementById('theme-toggle');
+  var icon = document.getElementById('theme-toggle-icon');
+
+  function reflectTheme(theme) {
+    if (icon && toggleBtn) {
+      if (theme === 'dark') {
+        icon.textContent = '☀️';
+        toggleBtn.setAttribute('aria-label', 'Switch to light mode');
+      } else {
+        icon.textContent = '🌙';
+        toggleBtn.setAttribute('aria-label', 'Switch to dark mode');
+      }
+    }
+  }
+  reflectTheme(root.getAttribute('data-theme') || 'light');
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function () {
+      var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('musgo-theme', next);
+      reflectTheme(next);
+    });
+  };
+})();
+</script>
 
 </body>
 </html>
